@@ -1,6 +1,6 @@
 # Showdown  ![umbreon](https://play.pokemonshowdown.com/sprites/xyani/umbreon.gif)
 MariBot, an extension of pmariglia's Pokémon battle-bot that can play battles on [Pokemon Showdown](https://pokemonshowdown.com/).
-The bot can play single battles in generations 1 through 8.
+The bot can play single battles in generations 1 through 9.
 
 This is a modification for pmariglia's original Pokemon battle-bot which contains some experimental modifications and extensions. The project was born out of an idea to try to extend the capability of the bot to play gen 1 and gen 2 at a basic support level, which then snowballed into a variety of small-ish changes to the code base which, in my subjective opinion, enhance the experience with the bot in a variety of ways. A lot of the code is experimental and isn't meant to be written in the cleanest way possible, it may also contain bugs, so please be warned :) There's no support for any of these changes at the moment, as this is mostly meant as a personal "sandbox" fork for my friends and me. Please don't bother the original bot author with bug reports as well if you're playing this fork and experiencing any issues.
 
