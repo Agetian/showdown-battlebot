@@ -7,6 +7,8 @@ import time
 import logging
 logger = logging.getLogger(__name__)
 
+from config import ShowdownConfig
+ShowdownConfig.configure()
 
 class LoginError(Exception):
     pass
@@ -31,9 +33,14 @@ class PSWebsocketClient:
         self = PSWebsocketClient()
         self.username = username
         self.password = password
-        self.address = address
+        self.address = "ws://{}/showdown/websocket".format(address)
         self.websocket = await websockets.connect(self.address)
-        self.login_uri = "https://play.pokemonshowdown.com/action.php"
+
+        if ShowdownConfig.local_insecure_login:
+            self.login_uri = "http://127.0.0.1:8000/action.php"
+        else:
+            self.login_uri = "https://play.pokemonshowdown.com/action.php"
+
         return self
 
     async def join_room(self, room_name):
@@ -59,50 +66,84 @@ class PSWebsocketClient:
             if split_message[1] == 'challstr':
                 return split_message[2], split_message[3]
 
+    async def set_random_avatar(self):
+        import os, random
+        if os.path.exists("avatars-list"):
+            with open("avatars-list", "r") as avatar_file:
+                avatars_list = avatar_file.readlines()
+                avatar_id = random.choice(avatars_list).strip()
+                if avatar_id != "":
+                    message = ["/avatar " + avatar_id]
+                    await self.send_message('', message)
+
     async def login(self):
         logger.debug("Logging in...")
         client_id, challstr = await self.get_id_and_challstr()
-        if self.password:
-            response = requests.post(
-                self.login_uri,
-                data={
-                    'act': 'login',
-                    'name': self.username,
-                    'pass': self.password,
-                    'challstr': "|".join([client_id, challstr])
-                }
-            )
 
-        else:
-            response = requests.post(
-                self.login_uri,
-                data={
-                    'act': 'getassertion',
-                    'userid': self.username,
-                    'challstr': '|'.join([client_id, challstr]),
-                }
-            )
-
-        if response.status_code == 200:
+        if not ShowdownConfig.local_insecure_login:
             if self.password:
-                response_json = json.loads(response.text[1:])
-                if "actionsuccess" not in response_json:
-                    logger.error("Login Unsuccessful: {}".format(response_json))
-                    raise LoginError("Could not log-in: {}".format(response_json))
+                response = requests.post(
+                    self.login_uri,
+                    data={
+                        'act': 'login',
+                        'name': self.username,
+                        'pass': self.password,
+                        'challstr': "|".join([client_id, challstr])
+                    }
+                )
 
-                assertion = response_json.get('assertion')
             else:
-                assertion = response.text
+                response = requests.post(
+                    self.login_uri,
+                    data={
+                        'act': 'getassertion',
+                        'userid': self.username,
+                        'challstr': '|'.join([client_id, challstr]),
+                    }
+                )
+
+            if response.status_code == 200:
+                if self.password:
+                    response_json = json.loads(response.text[1:])
+                    if not response_json['actionsuccess']:
+                        logger.error("Login Unsuccessful")
+                        raise LoginError("Could not log-in")
+
+                    assertion = response_json.get('assertion')
+                else:
+                    assertion = response.text
+
+                message = ["/trn " + self.username + ",0," + assertion]
+                logger.debug("Successfully logged in")
+                await self.send_message('', message)
+            else:
+                logger.error("Could not log-in\nDetails:\n{}".format(response.content))
+                raise LoginError("Could not log-in")
+        else:
+            # This branch assumes local login to localhost without a set up login server, with authentication disabled (insecure mode)
+            assertion = ""
 
             message = ["/trn " + self.username + ",0," + assertion]
             logger.debug("Successfully logged in")
             await self.send_message('', message)
+
+            message = ["/join lobby"]
+            await self.send_message('', message)
+
+            message = ["Hi there!"]
+            await self.send_message('lobby', message)
+
+        # Set the avatar
+        avatar_id = ShowdownConfig.preferred_avatar.strip()
+        if avatar_id != "":
+            message = ["/avatar " + avatar_id]
+            await self.send_message('', message)
         else:
-            logger.error("Could not log-in\nDetails:\n{}".format(response.content))
-            raise LoginError("Could not log-in")
+            await self.set_random_avatar()
 
     async def update_team(self, battle_format, team):
-        if "random" in battle_format:
+        is_random_battle = any(mode in battle_format for mode in ["random", "bssfactory", "battlefactory", "challengecup", "computergeneratedteams"])
+        if is_random_battle:
             logger.info("Setting team to None because the pokemon mode is {}".format(battle_format))
             message = ["/utm None"]
         else:
@@ -134,9 +175,12 @@ class PSWebsocketClient:
                 split_msg[1] == "pm" and
                 split_msg[3].strip().replace("!", "").replace("‽", "") == self.username and
                 split_msg[4].startswith("/challenge") and
-                split_msg[5] == battle_format
+                split_msg[5].split("@@@")[0] == battle_format # Account for custom rule possibility which doesn't change the overall format
             ):
                 username = split_msg[2].strip()
+                # Also signal the bot that the relevant mod(s) are expected, just in case the user didn't specify them in env
+                if "@@@" in split_msg[5]:
+                    ShowdownConfig.expected_mods_derived += f" {split_msg[5].split('@@@')[1]}"
 
         message = ["/accept " + username]
         await self.send_message('', message)

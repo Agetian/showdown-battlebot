@@ -53,6 +53,7 @@ class Scoring:
         constants.CONFUSION: -20
     }
 
+    # TODO: test if Trick Room is needed here?
     STATIC_SCORED_SIDE_CONDITIONS = {
         constants.REFLECT: 20,
         constants.STICKY_WEB: -25,

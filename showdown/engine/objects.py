@@ -1,5 +1,6 @@
 from collections import defaultdict
 from copy import copy
+from dataclasses import dataclass
 
 import constants
 from data import all_move_json
@@ -22,25 +23,39 @@ boost_multiplier_lookup = {
 }
 
 
-class State(object):
-    __slots__ = ('user', 'opponent', 'weather', 'field', 'trick_room')
+@dataclass(frozen=True)
+class MoveChoice:
+    id: str
+    is_switch: bool = False
+    terastallize: bool = False
 
-    def __init__(self, user, opponent, weather, field, trick_room):
+
+class State(object):
+    __slots__ = ('user', 'opponent', 'weather', 'field', 'trick_room', 'tera_allowed')
+
+    def __init__(self, user, opponent, weather, field, trick_room, tera_allowed=False):
         self.user = user
         self.opponent = opponent
         self.weather = weather
         self.field = field
         self.trick_room = trick_room
+        self.tera_allowed = tera_allowed
 
     def get_self_options(self, force_switch):
         forced_move = self.user.active.forced_move()
         if forced_move:
-            return [forced_move]
+            return [MoveChoice(forced_move)]
 
         if force_switch:
             possible_moves = []
         else:
-            possible_moves = [m[constants.ID] for m in self.user.active.moves if not m[constants.DISABLED]]
+            possible_moves = [
+                MoveChoice(m[constants.ID]) for m in self.user.active.moves if not m[constants.DISABLED]
+            ]
+
+        if not self.user.used_tera and self.tera_allowed:
+            for mv in possible_moves[:]:
+                possible_moves.append(MoveChoice(mv.id, terastallize=True))
 
         if self.user.trapped(self.opponent.active):
             possible_switches = []
@@ -52,12 +67,18 @@ class State(object):
     def get_opponent_options(self):
         forced_move = self.opponent.active.forced_move()
         if forced_move:
-            return [forced_move]
+            return [MoveChoice(forced_move)]
 
         if self.opponent.active.hp <= 0:
             possible_moves = []
         else:
-            possible_moves = [m[constants.ID] for m in self.opponent.active.moves if not m[constants.DISABLED]]
+            possible_moves = [
+                MoveChoice(m[constants.ID]) for m in self.opponent.active.moves if not m[constants.DISABLED]
+            ]
+
+        if not self.opponent.used_tera and self.tera_allowed:
+            for mv in possible_moves[:]:
+                possible_moves.append(MoveChoice(mv.id, terastallize=True))
 
         if self.opponent.trapped(self.user.active):
             possible_switches = []
@@ -72,25 +93,25 @@ class State(object):
 
         # double faint or team preview
         if force_switch and wait:
-            user_options = self.get_self_options(force_switch) or [constants.DO_NOTHING_MOVE]
-            opponent_options = self.get_opponent_options() or [constants.DO_NOTHING_MOVE]
+            user_options = self.get_self_options(force_switch) or [MoveChoice(id=constants.DO_NOTHING_MOVE)]
+            opponent_options = self.get_opponent_options() or [MoveChoice(id=constants.DO_NOTHING_MOVE)]
             return user_options, opponent_options
 
         if force_switch:
-            opponent_options = [constants.DO_NOTHING_MOVE]
+            opponent_options = [MoveChoice(id=constants.DO_NOTHING_MOVE)]
         else:
             opponent_options = self.get_opponent_options()
 
         if wait:
-            user_options = [constants.DO_NOTHING_MOVE]
+            user_options = [MoveChoice(id=constants.DO_NOTHING_MOVE)]
         else:
             user_options = self.get_self_options(force_switch)
 
         if not user_options:
-            user_options = [constants.DO_NOTHING_MOVE]
+            user_options = [MoveChoice(id=constants.DO_NOTHING_MOVE)]
 
         if not opponent_options:
-            opponent_options = [constants.DO_NOTHING_MOVE]
+            opponent_options = [MoveChoice(id=constants.DO_NOTHING_MOVE)]
 
         return user_options, opponent_options
 
@@ -130,20 +151,22 @@ class State(object):
 
 
 class Side(object):
-    __slots__ = ('active', 'reserve', 'wish', 'side_conditions', 'future_sight')
+    __slots__ = ('active', 'reserve', 'wish', 'side_conditions', 'future_sight', 'used_tera', 'last_used_move')
 
-    def __init__(self, active, reserve, wish, side_conditions, future_sight):
+    def __init__(self, active, reserve, wish, side_conditions, future_sight, used_tera=False):
         self.active = active
         self.reserve = reserve
         self.wish = wish
         self.side_conditions = side_conditions
         self.future_sight = future_sight
+        self.used_tera = used_tera
+        self.last_used_move = None
 
     def get_switches(self):
         switches = []
         for pkmn_name, pkmn in self.reserve.items():
             if pkmn.hp > 0:
-                switches.append("{} {}".format(constants.SWITCH_STRING, pkmn_name))
+                switches.append(MoveChoice(id=pkmn_name, is_switch=True))
         return switches
 
     def trapped(self, opponent_active):
@@ -167,7 +190,8 @@ class Side(object):
             {p[constants.ID]: Pokemon.from_dict(p) for p in side_dict[constants.RESERVE].values()},
             side_dict[constants.WISH],
             defaultdict(int, side_dict[constants.SIDE_CONDITIONS]),
-            side_dict[constants.FUTURE_SIGHT]
+            side_dict[constants.FUTURE_SIGHT],
+            side_dict.get(constants.TERASTALLIZED, False),
         )
 
     def __repr__(self):
@@ -176,7 +200,8 @@ class Side(object):
             constants.RESERVE: self.reserve,
             constants.WISH: self.wish,
             constants.SIDE_CONDITIONS: dict(self.side_conditions),
-            constants.FUTURE_SIGHT: self.future_sight
+            constants.FUTURE_SIGHT: self.future_sight,
+            constants.TERASTALLIZED: self.used_tera
         })
 
 
@@ -207,6 +232,7 @@ class Pokemon(object):
         'volatile_status',
         'moves',
         'terastallized',
+        'tera_type',
         'burn_multiplier'
     )
 
@@ -235,6 +261,7 @@ class Pokemon(object):
         evasion_boost=0,
         status=None,
         terastallized=False,
+        tera_type=None,
         volatile_status=None,
         moves=None
     ):
@@ -261,6 +288,7 @@ class Pokemon(object):
         self.evasion_boost = evasion_boost
         self.status = status
         self.terastallized = terastallized
+        self.tera_type = tera_type or self.types[0]
         self.volatile_status = volatile_status or set()
         self.moves = moves or list()
 
@@ -295,6 +323,7 @@ class Pokemon(object):
        }.items(), key=lambda x: x[1])[0]
 
     def get_boost_from_boost_string(self, boost_string):
+        # FIXME: Gen 1 boost support ("spa" maps to both special-attack and special-defense) - is anything needed on top of the Pokedex mod?
         if boost_string == constants.ATTACK:
             return self.attack_boost
         elif boost_string == constants.DEFENSE:
@@ -370,6 +399,7 @@ class Pokemon(object):
             d[constants.BOOSTS][constants.EVASION],
             d[constants.STATUS],
             d[constants.TERASTALLIZED],
+            d[constants.TERA_TYPE],
             d[constants.VOLATILE_STATUS],
             d[constants.MOVES]
         )
@@ -400,6 +430,7 @@ class Pokemon(object):
             d.get(constants.EVASION_BOOST, 0),
             d[constants.STATUS],
             d[constants.TERASTALLIZED],
+            d.get(constants.TERA_TYPE, d[constants.TYPES][0]),
             set(d[constants.VOLATILE_STATUS]),
             d[constants.MOVES]
         )
@@ -444,6 +475,7 @@ class Pokemon(object):
                 constants.EVASION_BOOST: self.evasion_boost,
                 constants.STATUS: self.status,
                 constants.TERASTALLIZED: self.terastallized,
+                constants.TERA_TYPE: self.tera_type,
                 constants.VOLATILE_STATUS: list(self.volatile_status),
                 constants.MOVES: self.moves
             }
@@ -507,7 +539,8 @@ class StateMutator:
             constants.MUTATOR_TOGGLE_TRICKROOM: self.toggle_trickroom,
             constants.MUTATOR_CHANGE_TYPE: self.change_types,
             constants.MUTATOR_CHANGE_ITEM: self.change_item,
-            constants.MUTATOR_CHANGE_STATS: self.change_stats
+            constants.MUTATOR_CHANGE_STATS: self.change_stats,
+            constants.MUTATOR_TERASTALLIZE: self.terastallize,
         }
         self.reverse_instructions = {
             constants.MUTATOR_SWITCH: self.reverse_switch,
@@ -533,7 +566,8 @@ class StateMutator:
             constants.MUTATOR_TOGGLE_TRICKROOM: self.toggle_trickroom,
             constants.MUTATOR_CHANGE_TYPE: self.reverse_change_types,
             constants.MUTATOR_CHANGE_ITEM: self.reverse_change_item,
-            constants.MUTATOR_CHANGE_STATS: self.reverse_change_stats
+            constants.MUTATOR_CHANGE_STATS: self.reverse_change_stats,
+            constants.MUTATOR_TERASTALLIZE: self.reverse_terastallize,
         }
 
     def apply_one(self, instruction):
@@ -747,3 +781,15 @@ class StateMutator:
         side.active.special_attack = old_stats[3]
         side.active.special_defense = old_stats[4]
         side.active.speed = old_stats[5]
+
+    def terastallize(self, side, tera_type, previous_types):
+        side = self.get_side(side)
+        side.active.types = [tera_type]
+        side.active.terastallized = True
+        side.used_tera = True
+
+    def reverse_terastallize(self, side, tera_type, previous_types):
+        side = self.get_side(side)
+        side.active.terastallized = False
+        side.active.types = previous_types
+        side.used_tera = False

@@ -3,6 +3,10 @@ from data import pokedex
 from ...damage_calculator import is_super_effective
 
 
+from config import ShowdownConfig
+gen = ShowdownConfig.get_generation()
+
+
 def collisioncourse(attacking_side, attacking_move, defending_move, attacking_pokemon, defending_pokemon, first_move, weather, terrain):
     if is_super_effective(attacking_move[constants.TYPE], defending_pokemon.types):
         attacking_move = attacking_move.copy()
@@ -634,6 +638,26 @@ def hydrosteam(attacking_side, attacking_move, defending_move, attacking_pokemon
     return attacking_move
 
 
+def counter(attacking_side, attacking_move, defending_move, attacking_pokemon, defending_pokemon, first_move, weather, terrain):
+    attacking_move = attacking_move.copy()
+    if first_move or defending_move.get(constants.CATEGORY) != constants.PHYSICAL:
+        attacking_move[constants.ACCURACY] = 0
+    elif gen == 1 and defending_move.get(constants.TYPE) != 'normal' and defending_move.get(constants.TYPE) != 'fighting':
+        attacking_move[constants.ACCURACY] = 0
+    else:
+        attacking_move[constants.BASE_POWER] = defending_move[constants.BASE_POWER] * 2 # not quite correct, should calculate the actual damage dealt to the mon?
+    return attacking_move
+
+
+def mirrorcoat(attacking_side, attacking_move, defending_move, attacking_pokemon, defending_pokemon, first_move, weather, terrain):
+    attacking_move = attacking_move.copy()
+    if first_move or defending_move.get(constants.CATEGORY) != constants.SPECIAL:
+        attacking_move[constants.ACCURACY] = 0
+    else:
+        attacking_move[constants.BASE_POWER] = defending_move[constants.BASE_POWER] * 2 # not quite correct, should calculate the actual damage dealt to the mon?
+    return attacking_move
+
+
 move_lookup = {
     "hydrosteam": hydrosteam,
     "psyblade": psyblade,
@@ -722,6 +746,8 @@ move_lookup = {
     'electrodrift': collisioncourse,
     'filletaway': filletaway,
     'terablast': terablast,
+    'counter': counter,
+    'mirrorcoat': mirrorcoat,
 }
 
 

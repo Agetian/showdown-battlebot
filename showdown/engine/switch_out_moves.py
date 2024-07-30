@@ -1,4 +1,5 @@
 import constants
+from showdown.engine.objects import MoveChoice
 
 
 def switch_out_move_triggered(move, damage_amounts):
@@ -17,13 +18,13 @@ def get_best_switch_pokemon(mutator, instructions, attacker, attacking_side, def
         return None
 
     if first_move:
-        other_move = defending_move[constants.ID]
+        other_move = MoveChoice(defending_move[constants.ID])
     else:
-        other_move = constants.DO_NOTHING_MOVE
+        other_move = MoveChoice(constants.DO_NOTHING_MOVE)
 
     if attacker == constants.USER:
         best_switch = max(get_payoff_matrix(mutator, switches, [other_move], depth=1).items(), key=lambda x: x[1])[0][0]
     else:
         best_switch = min(get_payoff_matrix(mutator, [other_move], switches, depth=1).items(), key=lambda x: x[1])[0][1]
 
-    return best_switch.split()[-1].strip()
+    return best_switch.id

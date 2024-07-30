@@ -1,0 +1,7514 @@
+{
+    "abra": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 121,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "substitute",
+                35.537
+            ],
+            [
+                "seismictoss",
+                100.0
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "counter",
+                35.537
+            ],
+            [
+                "reflect",
+                28.926
+            ]
+        ],
+        "sets": {
+            "counter|psychic|seismictoss|thunderwave": 35.537,
+            "psychic|reflect|seismictoss|thunderwave": 28.926,
+            "psychic|seismictoss|substitute|thunderwave": 35.537
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "aerodactyl": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 64,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "skyattack",
+                60.938
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "agility",
+                39.062
+            ]
+        ],
+        "sets": {
+            "agility|doubleedge|fireblast|hyperbeam": 39.062,
+            "doubleedge|fireblast|hyperbeam|skyattack": 60.938
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "alakazam": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 131,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "reflect",
+                44.275
+            ],
+            [
+                "seismictoss",
+                45.038
+            ],
+            [
+                "counter",
+                10.687
+            ]
+        ],
+        "sets": {
+            "counter|psychic|recover|thunderwave": 10.687,
+            "psychic|recover|reflect|thunderwave": 44.275,
+            "psychic|recover|seismictoss|thunderwave": 45.038
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "arbok": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 61,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                29.508
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "glare",
+                100.0
+            ],
+            [
+                "rockslide",
+                70.492
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|glare|hyperbeam": 29.508,
+            "earthquake|glare|hyperbeam|rockslide": 70.492
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "arcanine": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 83,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "reflect",
+                12.048
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "agility",
+                30.12
+            ],
+            [
+                "flamethrower",
+                38.554
+            ],
+            [
+                "rest",
+                19.277
+            ]
+        ],
+        "sets": {
+            "agility|bodyslam|fireblast|hyperbeam": 30.12,
+            "bodyslam|fireblast|flamethrower|hyperbeam": 38.554,
+            "bodyslam|fireblast|hyperbeam|reflect": 12.048,
+            "bodyslam|fireblast|hyperbeam|rest": 19.277
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "articuno": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 93,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                49.462
+            ],
+            [
+                "icebeam",
+                60.215
+            ],
+            [
+                "reflect",
+                73.118
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                50.538
+            ],
+            [
+                "agility",
+                50.538
+            ],
+            [
+                "mimic",
+                16.129
+            ]
+        ],
+        "sets": {
+            "agility|blizzard|hyperbeam|icebeam": 10.753,
+            "agility|blizzard|hyperbeam|mimic": 16.129,
+            "agility|blizzard|hyperbeam|reflect": 23.656,
+            "blizzard|icebeam|reflect|rest": 49.462
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "beedrill": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 97,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "twineedle",
+                100.0
+            ],
+            [
+                "agility",
+                57.732
+            ],
+            [
+                "megadrain",
+                42.268
+            ]
+        ],
+        "sets": {
+            "agility|hyperbeam|swordsdance|twineedle": 57.732,
+            "hyperbeam|megadrain|swordsdance|twineedle": 42.268
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "bellsprout": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 62,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "swordsdance",
+                32.258
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "razorleaf",
+                100.0
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "stunspore",
+                67.742
+            ]
+        ],
+        "sets": {
+            "doubleedge|razorleaf|sleeppowder|stunspore": 67.742,
+            "doubleedge|razorleaf|sleeppowder|swordsdance": 32.258
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "blastoise": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 99,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "earthquake",
+                47.475
+            ],
+            [
+                "surf",
+                68.687
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "rest",
+                52.525
+            ],
+            [
+                "hydropump",
+                31.313
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|earthquake|hydropump": 16.162,
+            "blizzard|bodyslam|earthquake|surf": 31.313,
+            "blizzard|bodyslam|hydropump|rest": 15.152,
+            "blizzard|bodyslam|rest|surf": 37.374
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "bulbasaur": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 64,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "razorleaf",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|razorleaf|sleeppowder|swordsdance": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "butterfree": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 58,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                20.69
+            ],
+            [
+                "stunspore",
+                100.0
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "doubleedge",
+                29.31
+            ],
+            [
+                "megadrain",
+                27.586
+            ],
+            [
+                "substitute",
+                22.414
+            ]
+        ],
+        "sets": {
+            "doubleedge|psychic|sleeppowder|stunspore": 29.31,
+            "hyperbeam|psychic|sleeppowder|stunspore": 20.69,
+            "megadrain|psychic|sleeppowder|stunspore": 27.586,
+            "psychic|sleeppowder|stunspore|substitute": 22.414
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "chansey": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 110,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "softboiled",
+                100.0
+            ],
+            [
+                "icebeam",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                44.545
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "seismictoss",
+                16.364
+            ],
+            [
+                "reflect",
+                12.727
+            ],
+            [
+                "sing",
+                10.0
+            ],
+            [
+                "counter",
+                16.364
+            ]
+        ],
+        "sets": {
+            "counter|icebeam|softboiled|thunderwave": 16.364,
+            "icebeam|reflect|softboiled|thunderwave": 12.727,
+            "icebeam|seismictoss|softboiled|thunderwave": 16.364,
+            "icebeam|sing|softboiled|thunderwave": 10.0,
+            "icebeam|softboiled|thunderbolt|thunderwave": 44.545
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "charizard": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 68,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                55.882
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "swordsdance",
+                55.882
+            ],
+            [
+                "slash",
+                44.118
+            ],
+            [
+                "bodyslam",
+                44.118
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|fireblast|slash": 44.118,
+            "earthquake|fireblast|hyperbeam|swordsdance": 55.882
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "charmander": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 79,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "counter",
+                22.785
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "seismictoss",
+                43.038
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "slash",
+                40.506
+            ],
+            [
+                "submission",
+                46.835
+            ],
+            [
+                "swordsdance",
+                46.835
+            ]
+        ],
+        "sets": {
+            "bodyslam|counter|fireblast|seismictoss": 12.658,
+            "bodyslam|counter|fireblast|slash": 10.127,
+            "bodyslam|fireblast|seismictoss|slash": 30.38,
+            "bodyslam|fireblast|submission|swordsdance": 46.835
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "charmeleon": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 101,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "slash",
+                44.554
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "seismictoss",
+                37.624
+            ],
+            [
+                "counter",
+                30.693
+            ],
+            [
+                "submission",
+                43.564
+            ],
+            [
+                "swordsdance",
+                43.564
+            ]
+        ],
+        "sets": {
+            "bodyslam|counter|fireblast|seismictoss": 11.881,
+            "bodyslam|counter|fireblast|slash": 18.812,
+            "bodyslam|fireblast|seismictoss|slash": 25.743,
+            "bodyslam|fireblast|submission|swordsdance": 43.564
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "clefable": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 111,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                81.982
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                56.757
+            ],
+            [
+                "sing",
+                27.928
+            ],
+            [
+                "thunderwave",
+                80.18
+            ],
+            [
+                "counter",
+                12.613
+            ],
+            [
+                "hyperbeam",
+                27.928
+            ],
+            [
+                "psychic",
+                12.613
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|counter|thunderbolt": 2.703,
+            "blizzard|bodyslam|counter|thunderwave": 6.306,
+            "blizzard|bodyslam|hyperbeam|thunderbolt": 4.505,
+            "blizzard|bodyslam|hyperbeam|thunderwave": 16.216,
+            "blizzard|bodyslam|psychic|thunderbolt": 2.703,
+            "blizzard|bodyslam|psychic|thunderwave": 5.405,
+            "blizzard|bodyslam|sing|thunderbolt": 9.91,
+            "blizzard|bodyslam|sing|thunderwave": 15.315,
+            "blizzard|bodyslam|thunderbolt|thunderwave": 18.919,
+            "blizzard|counter|thunderbolt|thunderwave": 3.604,
+            "blizzard|hyperbeam|thunderbolt|thunderwave": 7.207,
+            "blizzard|psychic|thunderbolt|thunderwave": 4.505,
+            "blizzard|sing|thunderbolt|thunderwave": 2.703
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "clefairy": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 104,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                40.385
+            ],
+            [
+                "sing",
+                37.5
+            ],
+            [
+                "seismictoss",
+                38.462
+            ],
+            [
+                "bodyslam",
+                57.692
+            ],
+            [
+                "counter",
+                14.423
+            ],
+            [
+                "psychic",
+                11.538
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|counter|thunderwave": 1.923,
+            "blizzard|bodyslam|psychic|thunderwave": 6.731,
+            "blizzard|bodyslam|seismictoss|thunderwave": 16.346,
+            "blizzard|bodyslam|sing|thunderwave": 19.231,
+            "blizzard|bodyslam|thunderbolt|thunderwave": 13.462,
+            "blizzard|counter|seismictoss|thunderwave": 5.769,
+            "blizzard|counter|thunderbolt|thunderwave": 6.731,
+            "blizzard|psychic|seismictoss|thunderwave": 1.923,
+            "blizzard|psychic|thunderbolt|thunderwave": 2.885,
+            "blizzard|seismictoss|sing|thunderwave": 7.692,
+            "blizzard|seismictoss|thunderbolt|thunderwave": 6.731,
+            "blizzard|sing|thunderbolt|thunderwave": 10.577
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "cloyster": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 86,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                65.116
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "doubleedge",
+                34.884
+            ]
+        ],
+        "sets": {
+            "blizzard|doubleedge|explosion|surf": 34.884,
+            "blizzard|explosion|hyperbeam|surf": 65.116
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "cubone": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 88,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "seismictoss",
+                100.0
+            ],
+            [
+                "blizzard",
+                100.0
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|earthquake|seismictoss": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "dewgong": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 89,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                74.157
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                25.843
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|hyperbeam|surf": 25.843,
+            "blizzard|bodyslam|rest|surf": 74.157
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "diglett": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 79,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "substitute",
+                40.506
+            ],
+            [
+                "slash",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "bodyslam",
+                59.494
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|rockslide|slash": 59.494,
+            "earthquake|rockslide|slash|substitute": 40.506
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "dodrio": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 57,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "drillpeck",
+                100.0
+            ]
+        ],
+        "sets": {
+            "agility|bodyslam|drillpeck|hyperbeam": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "doduo": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 45,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "drillpeck",
+                100.0
+            ]
+        ],
+        "sets": {
+            "agility|bodyslam|doubleedge|drillpeck": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "dragonair": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 94,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderbolt",
+                87.234
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                47.872
+            ],
+            [
+                "bodyslam",
+                64.894
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|hyperbeam|thunderwave": 12.766,
+            "blizzard|bodyslam|thunderbolt|thunderwave": 52.128,
+            "blizzard|hyperbeam|thunderbolt|thunderwave": 35.106
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "dragonite": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 94,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                75.532
+            ],
+            [
+                "thunderwave",
+                90.426
+            ],
+            [
+                "bodyslam",
+                69.149
+            ],
+            [
+                "hyperbeam",
+                64.894
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|hyperbeam|thunderbolt": 9.574,
+            "blizzard|bodyslam|hyperbeam|thunderwave": 24.468,
+            "blizzard|bodyslam|thunderbolt|thunderwave": 35.106,
+            "blizzard|hyperbeam|thunderbolt|thunderwave": 30.851
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "dratini": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 89,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                60.674
+            ],
+            [
+                "thunderbolt",
+                73.034
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "bodyslam",
+                66.292
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|hyperbeam|thunderwave": 26.966,
+            "blizzard|bodyslam|thunderbolt|thunderwave": 39.326,
+            "blizzard|hyperbeam|thunderbolt|thunderwave": 33.708
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "drowzee": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 138,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "reflect",
+                19.565
+            ],
+            [
+                "hypnosis",
+                100.0
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "seismictoss",
+                39.855
+            ],
+            [
+                "counter",
+                19.565
+            ],
+            [
+                "rest",
+                21.014
+            ]
+        ],
+        "sets": {
+            "counter|hypnosis|psychic|thunderwave": 19.565,
+            "hypnosis|psychic|reflect|thunderwave": 19.565,
+            "hypnosis|psychic|rest|thunderwave": 21.014,
+            "hypnosis|psychic|seismictoss|thunderwave": 39.855
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "dugtrio": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 93,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "slash",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "bodyslam",
+                53.763
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "substitute",
+                46.237
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|rockslide|slash": 53.763,
+            "earthquake|rockslide|slash|substitute": 46.237
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "eevee": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 139,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sandattack",
+                58.273
+            ],
+            [
+                "doubleedge",
+                76.978
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "reflect",
+                41.007
+            ],
+            [
+                "quickattack",
+                82.014
+            ],
+            [
+                "tailwhip",
+                41.727
+            ]
+        ],
+        "sets": {
+            "bodyslam|doubleedge|quickattack|sandattack": 33.094,
+            "bodyslam|doubleedge|quickattack|tailwhip": 25.899,
+            "bodyslam|doubleedge|reflect|sandattack": 11.511,
+            "bodyslam|doubleedge|reflect|tailwhip": 6.475,
+            "bodyslam|quickattack|reflect|sandattack": 13.669,
+            "bodyslam|quickattack|reflect|tailwhip": 9.353
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "ekans": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 62,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "glare",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|glare|rockslide": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "electabuzz": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 92,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "seismictoss",
+                76.087
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                23.913
+            ]
+        ],
+        "sets": {
+            "hyperbeam|psychic|thunderbolt|thunderwave": 23.913,
+            "psychic|seismictoss|thunderbolt|thunderwave": 76.087
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "electrode": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 106,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunder",
+                38.679
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "takedown",
+                18.868
+            ],
+            [
+                "hyperbeam",
+                42.453
+            ]
+        ],
+        "sets": {
+            "explosion|hyperbeam|thunderbolt|thunderwave": 42.453,
+            "explosion|takedown|thunderbolt|thunderwave": 18.868,
+            "explosion|thunder|thunderbolt|thunderwave": 38.679
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "exeggcute": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 70,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "stunspore",
+                100.0
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ]
+        ],
+        "sets": {
+            "explosion|psychic|sleeppowder|stunspore": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "exeggutor": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 85,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "megadrain",
+                17.647
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "doubleedge",
+                12.941
+            ],
+            [
+                "stunspore",
+                50.588
+            ],
+            [
+                "hyperbeam",
+                18.824
+            ]
+        ],
+        "sets": {
+            "doubleedge|explosion|psychic|sleeppowder": 12.941,
+            "explosion|hyperbeam|psychic|sleeppowder": 18.824,
+            "explosion|megadrain|psychic|sleeppowder": 17.647,
+            "explosion|psychic|sleeppowder|stunspore": 50.588
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "farfetchd": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 61,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "slash",
+                100.0
+            ],
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ]
+        ],
+        "sets": {
+            "agility|bodyslam|slash|swordsdance": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "fearow": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 59,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "drillpeck",
+                100.0
+            ]
+        ],
+        "sets": {
+            "agility|doubleedge|drillpeck|hyperbeam": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "flareon": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 90,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "quickattack",
+                100.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|fireblast|hyperbeam|quickattack": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "gastly": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 66,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "explosion",
+                60.606
+            ],
+            [
+                "hypnosis",
+                100.0
+            ],
+            [
+                "psychic",
+                68.182
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "megadrain",
+                34.848
+            ],
+            [
+                "nightshade",
+                36.364
+            ]
+        ],
+        "sets": {
+            "explosion|hypnosis|megadrain|thunderbolt": 10.606,
+            "explosion|hypnosis|nightshade|thunderbolt": 18.182,
+            "explosion|hypnosis|psychic|thunderbolt": 31.818,
+            "hypnosis|megadrain|nightshade|thunderbolt": 3.03,
+            "hypnosis|megadrain|psychic|thunderbolt": 21.212,
+            "hypnosis|nightshade|psychic|thunderbolt": 15.152
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "gengar": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 79,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "nightshade",
+                30.38
+            ],
+            [
+                "hypnosis",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "explosion",
+                70.886
+            ],
+            [
+                "psychic",
+                58.228
+            ],
+            [
+                "megadrain",
+                40.506
+            ]
+        ],
+        "sets": {
+            "explosion|hypnosis|megadrain|thunderbolt": 26.582,
+            "explosion|hypnosis|nightshade|thunderbolt": 12.658,
+            "explosion|hypnosis|psychic|thunderbolt": 31.646,
+            "hypnosis|megadrain|nightshade|thunderbolt": 2.532,
+            "hypnosis|megadrain|psychic|thunderbolt": 11.392,
+            "hypnosis|nightshade|psychic|thunderbolt": 15.19
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "geodude": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 51,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|explosion|rockslide": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "gloom": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 85,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "stunspore",
+                65.882
+            ],
+            [
+                "megadrain",
+                100.0
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "swordsdance",
+                34.118
+            ]
+        ],
+        "sets": {
+            "doubleedge|megadrain|sleeppowder|stunspore": 65.882,
+            "doubleedge|megadrain|sleeppowder|swordsdance": 34.118
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "golbat": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 53,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "megadrain",
+                100.0
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "confuseray",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ]
+        ],
+        "sets": {
+            "confuseray|doubleedge|hyperbeam|megadrain": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "goldeen": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 98,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ]
+        ],
+        "sets": {
+            "agility|blizzard|doubleedge|surf": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "golduck": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 104,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "amnesia",
+                100.0
+            ],
+            [
+                "rest",
+                46.154
+            ],
+            [
+                "hydropump",
+                18.269
+            ],
+            [
+                "bodyslam",
+                14.423
+            ],
+            [
+                "seismictoss",
+                21.154
+            ]
+        ],
+        "sets": {
+            "amnesia|blizzard|bodyslam|surf": 14.423,
+            "amnesia|blizzard|hydropump|surf": 18.269,
+            "amnesia|blizzard|rest|surf": 46.154,
+            "amnesia|blizzard|seismictoss|surf": 21.154
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "golem": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 59,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "explosion",
+                100.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|explosion|rockslide": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "graveler": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 64,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|explosion|rockslide": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "grimer": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 75,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "fireblast",
+                50.667
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "sludge",
+                76.0
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                41.333
+            ],
+            [
+                "megadrain",
+                32.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|explosion|fireblast|megadrain": 8.0,
+            "bodyslam|explosion|fireblast|sludge": 33.333,
+            "bodyslam|explosion|fireblast|thunderbolt": 9.333,
+            "bodyslam|explosion|megadrain|sludge": 17.333,
+            "bodyslam|explosion|megadrain|thunderbolt": 6.667,
+            "bodyslam|explosion|sludge|thunderbolt": 25.333
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "growlithe": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 93,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "reflect",
+                67.742
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "flamethrower",
+                68.817
+            ],
+            [
+                "agility",
+                63.441
+            ]
+        ],
+        "sets": {
+            "agility|bodyslam|fireblast|flamethrower": 32.258,
+            "agility|bodyslam|fireblast|reflect": 31.183,
+            "bodyslam|fireblast|flamethrower|reflect": 36.559
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "gyarados": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 84,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hydropump",
+                33.333
+            ],
+            [
+                "bodyslam",
+                88.095
+            ],
+            [
+                "hyperbeam",
+                66.667
+            ],
+            [
+                "blizzard",
+                80.952
+            ],
+            [
+                "thunderbolt",
+                64.286
+            ],
+            [
+                "surf",
+                66.667
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|hydropump|hyperbeam": 15.476,
+            "blizzard|bodyslam|hydropump|thunderbolt": 9.524,
+            "blizzard|bodyslam|hyperbeam|surf": 20.238,
+            "blizzard|bodyslam|surf|thunderbolt": 23.81,
+            "blizzard|hydropump|hyperbeam|thunderbolt": 3.571,
+            "blizzard|hyperbeam|surf|thunderbolt": 8.333,
+            "bodyslam|hydropump|hyperbeam|thunderbolt": 4.762,
+            "bodyslam|hyperbeam|surf|thunderbolt": 14.286
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "haunter": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 88,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hypnosis",
+                100.0
+            ],
+            [
+                "nightshade",
+                32.955
+            ],
+            [
+                "explosion",
+                64.773
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "megadrain",
+                28.409
+            ],
+            [
+                "psychic",
+                73.864
+            ]
+        ],
+        "sets": {
+            "explosion|hypnosis|megadrain|thunderbolt": 10.227,
+            "explosion|hypnosis|nightshade|thunderbolt": 9.091,
+            "explosion|hypnosis|psychic|thunderbolt": 45.455,
+            "hypnosis|megadrain|nightshade|thunderbolt": 6.818,
+            "hypnosis|megadrain|psychic|thunderbolt": 11.364,
+            "hypnosis|nightshade|psychic|thunderbolt": 17.045
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "hitmonchan": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 123,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "submission",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "seismictoss",
+                100.0
+            ],
+            [
+                "agility",
+                38.211
+            ],
+            [
+                "megakick",
+                21.951
+            ],
+            [
+                "counter",
+                39.837
+            ]
+        ],
+        "sets": {
+            "agility|bodyslam|seismictoss|submission": 38.211,
+            "bodyslam|counter|seismictoss|submission": 39.837,
+            "bodyslam|megakick|seismictoss|submission": 21.951
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "hitmonlee": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 83,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "highjumpkick",
+                100.0
+            ],
+            [
+                "megakick",
+                28.916
+            ],
+            [
+                "seismictoss",
+                100.0
+            ],
+            [
+                "counter",
+                31.325
+            ],
+            [
+                "meditate",
+                28.916
+            ],
+            [
+                "rollingkick",
+                10.843
+            ]
+        ],
+        "sets": {
+            "bodyslam|counter|highjumpkick|seismictoss": 31.325,
+            "bodyslam|highjumpkick|meditate|seismictoss": 28.916,
+            "bodyslam|highjumpkick|megakick|seismictoss": 28.916,
+            "bodyslam|highjumpkick|rollingkick|seismictoss": 10.843
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "horsea": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 94,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "smokescreen",
+                31.915
+            ],
+            [
+                "doubleedge",
+                35.106
+            ],
+            [
+                "hydropump",
+                32.979
+            ]
+        ],
+        "sets": {
+            "agility|blizzard|doubleedge|surf": 35.106,
+            "agility|blizzard|hydropump|surf": 32.979,
+            "agility|blizzard|smokescreen|surf": 31.915
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "hypno": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 138,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "hypnosis",
+                100.0
+            ],
+            [
+                "seismictoss",
+                29.71
+            ],
+            [
+                "rest",
+                35.507
+            ],
+            [
+                "counter",
+                18.116
+            ],
+            [
+                "reflect",
+                16.667
+            ]
+        ],
+        "sets": {
+            "counter|hypnosis|psychic|thunderwave": 18.116,
+            "hypnosis|psychic|reflect|thunderwave": 16.667,
+            "hypnosis|psychic|rest|thunderwave": 35.507,
+            "hypnosis|psychic|seismictoss|thunderwave": 29.71
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "ivysaur": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 69,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "razorleaf",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|razorleaf|sleeppowder|swordsdance": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "jigglypuff": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 109,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "seismictoss",
+                76.147
+            ],
+            [
+                "bodyslam",
+                81.651
+            ],
+            [
+                "blizzard",
+                73.394
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "counter",
+                29.358
+            ],
+            [
+                "sing",
+                39.45
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|counter|thunderwave": 6.422,
+            "blizzard|bodyslam|seismictoss|thunderwave": 31.193,
+            "blizzard|bodyslam|sing|thunderwave": 17.431,
+            "blizzard|counter|seismictoss|thunderwave": 11.009,
+            "blizzard|seismictoss|sing|thunderwave": 7.339,
+            "bodyslam|counter|seismictoss|thunderwave": 11.927,
+            "bodyslam|seismictoss|sing|thunderwave": 14.679
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "jolteon": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 79,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "doublekick",
+                25.316
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "agility",
+                26.582
+            ],
+            [
+                "pinmissile",
+                48.101
+            ]
+        ],
+        "sets": {
+            "agility|bodyslam|thunderbolt|thunderwave": 26.582,
+            "bodyslam|doublekick|thunderbolt|thunderwave": 25.316,
+            "bodyslam|pinmissile|thunderbolt|thunderwave": 48.101
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "jynx": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 108,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "counter",
+                33.333
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "lovelykiss",
+                100.0
+            ],
+            [
+                "substitute",
+                28.704
+            ],
+            [
+                "seismictoss",
+                18.519
+            ],
+            [
+                "bodyslam",
+                19.444
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|lovelykiss|psychic": 19.444,
+            "blizzard|counter|lovelykiss|psychic": 33.333,
+            "blizzard|lovelykiss|psychic|seismictoss": 18.519,
+            "blizzard|lovelykiss|psychic|substitute": 28.704
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "kabuto": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 67,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "slash",
+                100.0
+            ],
+            [
+                "hydropump",
+                35.821
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "surf",
+                64.179
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|hydropump|slash": 35.821,
+            "blizzard|bodyslam|slash|surf": 64.179
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "kabutops": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 55,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "slash",
+                54.545
+            ],
+            [
+                "bodyslam",
+                45.455
+            ]
+        ],
+        "sets": {
+            "bodyslam|hyperbeam|surf|swordsdance": 45.455,
+            "hyperbeam|slash|surf|swordsdance": 54.545
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "kadabra": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 127,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "reflect",
+                37.008
+            ],
+            [
+                "seismictoss",
+                43.307
+            ],
+            [
+                "counter",
+                19.685
+            ]
+        ],
+        "sets": {
+            "counter|psychic|recover|thunderwave": 19.685,
+            "psychic|recover|reflect|thunderwave": 37.008,
+            "psychic|recover|seismictoss|thunderwave": 43.307
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "kangaskhan": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 124,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "surf",
+                24.194
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "rockslide",
+                54.032
+            ],
+            [
+                "counter",
+                21.774
+            ]
+        ],
+        "sets": {
+            "bodyslam|counter|earthquake|hyperbeam": 21.774,
+            "bodyslam|earthquake|hyperbeam|rockslide": 54.032,
+            "bodyslam|earthquake|hyperbeam|surf": 24.194
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "kingler": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 82,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "crabhammer",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|crabhammer|hyperbeam|swordsdance": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "koffing": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 83,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "sludge",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ]
+        ],
+        "sets": {
+            "explosion|fireblast|sludge|thunderbolt": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "krabby": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 82,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "crabhammer",
+                100.0
+            ],
+            [
+                "blizzard",
+                68.293
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "stomp",
+                31.707
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|crabhammer|swordsdance": 68.293,
+            "bodyslam|crabhammer|stomp|swordsdance": 31.707
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "lapras": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 76,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sing",
+                51.316
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "rest",
+                57.895
+            ],
+            [
+                "bodyslam",
+                51.316
+            ],
+            [
+                "surf",
+                39.474
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|rest|thunderbolt": 23.684,
+            "blizzard|bodyslam|sing|thunderbolt": 14.474,
+            "blizzard|bodyslam|surf|thunderbolt": 13.158,
+            "blizzard|rest|sing|thunderbolt": 22.368,
+            "blizzard|rest|surf|thunderbolt": 11.842,
+            "blizzard|sing|surf|thunderbolt": 14.474
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "lickitung": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 119,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "earthquake",
+                76.471
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "blizzard",
+                23.529
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|hyperbeam|swordsdance": 23.529,
+            "bodyslam|earthquake|hyperbeam|swordsdance": 76.471
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "machamp": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 116,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "rockslide",
+                46.552
+            ],
+            [
+                "submission",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                32.759
+            ],
+            [
+                "counter",
+                20.69
+            ]
+        ],
+        "sets": {
+            "bodyslam|counter|earthquake|submission": 20.69,
+            "bodyslam|earthquake|hyperbeam|submission": 32.759,
+            "bodyslam|earthquake|rockslide|submission": 46.552
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "machoke": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 93,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "submission",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "counter",
+                32.258
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "rockslide",
+                67.742
+            ]
+        ],
+        "sets": {
+            "bodyslam|counter|earthquake|submission": 32.258,
+            "bodyslam|earthquake|rockslide|submission": 67.742
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "machop": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 117,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "submission",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "counter",
+                29.915
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "rockslide",
+                70.085
+            ]
+        ],
+        "sets": {
+            "bodyslam|counter|earthquake|submission": 29.915,
+            "bodyslam|earthquake|rockslide|submission": 70.085
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "magmar": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 94,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hyperbeam",
+                41.489
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "confuseray",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "seismictoss",
+                34.043
+            ],
+            [
+                "psychic",
+                24.468
+            ]
+        ],
+        "sets": {
+            "bodyslam|confuseray|fireblast|hyperbeam": 41.489,
+            "bodyslam|confuseray|fireblast|psychic": 24.468,
+            "bodyslam|confuseray|fireblast|seismictoss": 34.043
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "magnemite": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 92,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "doubleedge",
+                55.435
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "thunder",
+                100.0
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "rest",
+                21.739
+            ],
+            [
+                "mimic",
+                22.826
+            ]
+        ],
+        "sets": {
+            "doubleedge|thunder|thunderbolt|thunderwave": 55.435,
+            "mimic|thunder|thunderbolt|thunderwave": 22.826,
+            "rest|thunder|thunderbolt|thunderwave": 21.739
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "magneton": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 107,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "thunder",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "mimic",
+                15.888
+            ],
+            [
+                "doubleedge",
+                25.234
+            ],
+            [
+                "hyperbeam",
+                37.383
+            ],
+            [
+                "rest",
+                21.495
+            ]
+        ],
+        "sets": {
+            "doubleedge|thunder|thunderbolt|thunderwave": 25.234,
+            "hyperbeam|thunder|thunderbolt|thunderwave": 37.383,
+            "mimic|thunder|thunderbolt|thunderwave": 15.888,
+            "rest|thunder|thunderbolt|thunderwave": 21.495
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "mankey": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 111,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "submission",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "megakick",
+                34.234
+            ],
+            [
+                "counter",
+                34.234
+            ],
+            [
+                "lowkick",
+                31.532
+            ]
+        ],
+        "sets": {
+            "bodyslam|counter|rockslide|submission": 34.234,
+            "bodyslam|lowkick|rockslide|submission": 31.532,
+            "bodyslam|megakick|rockslide|submission": 34.234
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "marowak": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 87,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "seismictoss",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|earthquake|seismictoss": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "meowth": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 125,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "slash",
+                100.0
+            ],
+            [
+                "thunder",
+                52.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "bubblebeam",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                48.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|bubblebeam|slash|thunder": 52.0,
+            "bodyslam|bubblebeam|slash|thunderbolt": 48.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "mew": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 129,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "blizzard",
+                40.31
+            ],
+            [
+                "softboiled",
+                100.0
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "explosion",
+                30.233
+            ],
+            [
+                "thunderbolt",
+                12.403
+            ],
+            [
+                "earthquake",
+                17.054
+            ]
+        ],
+        "sets": {
+            "blizzard|psychic|softboiled|thunderwave": 40.31,
+            "earthquake|psychic|softboiled|thunderwave": 17.054,
+            "explosion|psychic|softboiled|thunderwave": 30.233,
+            "psychic|softboiled|thunderbolt|thunderwave": 12.403
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "mewtwo": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 119,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "amnesia",
+                100.0
+            ],
+            [
+                "blizzard",
+                21.008
+            ],
+            [
+                "thunderbolt",
+                34.454
+            ],
+            [
+                "thunderwave",
+                44.538
+            ]
+        ],
+        "sets": {
+            "amnesia|blizzard|psychic|recover": 21.008,
+            "amnesia|psychic|recover|thunderbolt": 34.454,
+            "amnesia|psychic|recover|thunderwave": 44.538
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "moltres": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 74,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "reflect",
+                16.216
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "doubleedge",
+                83.784
+            ]
+        ],
+        "sets": {
+            "agility|doubleedge|fireblast|hyperbeam": 83.784,
+            "agility|fireblast|hyperbeam|reflect": 16.216
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "mrmime": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 130,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "seismictoss",
+                100.0
+            ]
+        ],
+        "sets": {
+            "psychic|seismictoss|thunderbolt|thunderwave": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "muk": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 87,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "megadrain",
+                41.379
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "sludge",
+                66.667
+            ],
+            [
+                "fireblast",
+                41.379
+            ],
+            [
+                "hyperbeam",
+                27.586
+            ],
+            [
+                "thunderbolt",
+                22.989
+            ]
+        ],
+        "sets": {
+            "bodyslam|explosion|fireblast|hyperbeam": 2.299,
+            "bodyslam|explosion|fireblast|megadrain": 12.644,
+            "bodyslam|explosion|fireblast|sludge": 25.287,
+            "bodyslam|explosion|fireblast|thunderbolt": 1.149,
+            "bodyslam|explosion|hyperbeam|megadrain": 4.598,
+            "bodyslam|explosion|hyperbeam|sludge": 18.391,
+            "bodyslam|explosion|hyperbeam|thunderbolt": 2.299,
+            "bodyslam|explosion|megadrain|sludge": 13.793,
+            "bodyslam|explosion|megadrain|thunderbolt": 10.345,
+            "bodyslam|explosion|sludge|thunderbolt": 9.195
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "nidoking": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 62,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                67.742
+            ],
+            [
+                "thunderbolt",
+                59.677
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "rockslide",
+                40.323
+            ],
+            [
+                "substitute",
+                32.258
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|earthquake|rockslide": 27.419,
+            "blizzard|bodyslam|earthquake|thunderbolt": 40.323,
+            "blizzard|earthquake|rockslide|substitute": 12.903,
+            "blizzard|earthquake|substitute|thunderbolt": 19.355
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "nidoqueen": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 40,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "bodyslam",
+                62.5
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "substitute",
+                37.5
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|earthquake|thunderbolt": 62.5,
+            "blizzard|earthquake|substitute|thunderbolt": 37.5
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "nidoranf": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 68,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "doubleedge",
+                54.412
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "doublekick",
+                45.588
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|doubleedge|thunderbolt": 54.412,
+            "blizzard|bodyslam|doublekick|thunderbolt": 45.588
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "nidoranm": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 59,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "doublekick",
+                57.627
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "doubleedge",
+                42.373
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|doubleedge|thunderbolt": 42.373,
+            "blizzard|bodyslam|doublekick|thunderbolt": 57.627
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "nidorina": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 86,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "doublekick",
+                36.047
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "doubleedge",
+                38.372
+            ],
+            [
+                "bubblebeam",
+                25.581
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|bubblebeam|thunderbolt": 25.581,
+            "blizzard|bodyslam|doubleedge|thunderbolt": 38.372,
+            "blizzard|bodyslam|doublekick|thunderbolt": 36.047
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "nidorino": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 65,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "doublekick",
+                40.0
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "doubleedge",
+                38.462
+            ],
+            [
+                "bubblebeam",
+                21.538
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|bubblebeam|thunderbolt": 21.538,
+            "blizzard|bodyslam|doubleedge|thunderbolt": 38.462,
+            "blizzard|bodyslam|doublekick|thunderbolt": 40.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "ninetales": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 79,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "substitute",
+                41.772
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "confuseray",
+                100.0
+            ],
+            [
+                "flamethrower",
+                24.051
+            ],
+            [
+                "reflect",
+                17.722
+            ],
+            [
+                "hyperbeam",
+                16.456
+            ]
+        ],
+        "sets": {
+            "bodyslam|confuseray|fireblast|flamethrower": 24.051,
+            "bodyslam|confuseray|fireblast|hyperbeam": 16.456,
+            "bodyslam|confuseray|fireblast|reflect": 17.722,
+            "bodyslam|confuseray|fireblast|substitute": 41.772
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "oddish": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 71,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "swordsdance",
+                28.169
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "megadrain",
+                100.0
+            ],
+            [
+                "stunspore",
+                71.831
+            ]
+        ],
+        "sets": {
+            "doubleedge|megadrain|sleeppowder|stunspore": 71.831,
+            "doubleedge|megadrain|sleeppowder|swordsdance": 28.169
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "omanyte": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 66,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "surf",
+                65.152
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "hydropump",
+                34.848
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|hydropump|rest": 34.848,
+            "blizzard|bodyslam|rest|surf": 65.152
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "omastar": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 53,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hydropump",
+                52.83
+            ],
+            [
+                "rest",
+                75.472
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "bodyslam",
+                69.811
+            ],
+            [
+                "surf",
+                47.17
+            ],
+            [
+                "seismictoss",
+                54.717
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|hydropump|rest": 28.302,
+            "blizzard|bodyslam|hydropump|seismictoss": 9.434,
+            "blizzard|bodyslam|rest|surf": 16.981,
+            "blizzard|bodyslam|seismictoss|surf": 15.094,
+            "blizzard|hydropump|rest|seismictoss": 15.094,
+            "blizzard|rest|seismictoss|surf": 15.094
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "onix": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 52,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|explosion|rockslide": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "paras": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 74,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "spore",
+                100.0
+            ],
+            [
+                "megadrain",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "swordsdance",
+                32.432
+            ],
+            [
+                "stunspore",
+                67.568
+            ]
+        ],
+        "sets": {
+            "bodyslam|megadrain|spore|stunspore": 67.568,
+            "bodyslam|megadrain|spore|swordsdance": 32.432
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "parasect": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 97,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "spore",
+                100.0
+            ],
+            [
+                "megadrain",
+                100.0
+            ],
+            [
+                "stunspore",
+                51.546
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                11.34
+            ],
+            [
+                "swordsdance",
+                19.588
+            ],
+            [
+                "slash",
+                17.526
+            ]
+        ],
+        "sets": {
+            "bodyslam|hyperbeam|megadrain|spore": 11.34,
+            "bodyslam|megadrain|slash|spore": 17.526,
+            "bodyslam|megadrain|spore|stunspore": 51.546,
+            "bodyslam|megadrain|spore|swordsdance": 19.588
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "persian": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 112,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "slash",
+                100.0
+            ],
+            [
+                "bubblebeam",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                52.679
+            ],
+            [
+                "thunderbolt",
+                25.0
+            ],
+            [
+                "thunder",
+                22.321
+            ]
+        ],
+        "sets": {
+            "bodyslam|bubblebeam|hyperbeam|slash": 52.679,
+            "bodyslam|bubblebeam|slash|thunder": 22.321,
+            "bodyslam|bubblebeam|slash|thunderbolt": 25.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "pidgeot": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 54,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "skyattack",
+                20.37
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "mirrormove",
+                5.556
+            ],
+            [
+                "sandattack",
+                7.407
+            ],
+            [
+                "quickattack",
+                44.444
+            ],
+            [
+                "reflect",
+                7.407
+            ],
+            [
+                "mimic",
+                7.407
+            ],
+            [
+                "substitute",
+                7.407
+            ]
+        ],
+        "sets": {
+            "agility|doubleedge|hyperbeam|mimic": 7.407,
+            "agility|doubleedge|hyperbeam|mirrormove": 5.556,
+            "agility|doubleedge|hyperbeam|quickattack": 44.444,
+            "agility|doubleedge|hyperbeam|reflect": 7.407,
+            "agility|doubleedge|hyperbeam|sandattack": 7.407,
+            "agility|doubleedge|hyperbeam|skyattack": 20.37,
+            "agility|doubleedge|hyperbeam|substitute": 7.407
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "pidgeotto": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 62,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "quickattack",
+                77.419
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "skyattack",
+                72.581
+            ],
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "mirrormove",
+                8.065
+            ],
+            [
+                "sandattack",
+                19.355
+            ],
+            [
+                "mimic",
+                11.29
+            ],
+            [
+                "substitute",
+                11.29
+            ]
+        ],
+        "sets": {
+            "agility|doubleedge|mimic|quickattack": 4.839,
+            "agility|doubleedge|mimic|skyattack": 6.452,
+            "agility|doubleedge|mirrormove|quickattack": 3.226,
+            "agility|doubleedge|mirrormove|skyattack": 4.839,
+            "agility|doubleedge|quickattack|sandattack": 11.29,
+            "agility|doubleedge|quickattack|skyattack": 50.0,
+            "agility|doubleedge|quickattack|substitute": 8.065,
+            "agility|doubleedge|sandattack|skyattack": 8.065,
+            "agility|doubleedge|skyattack|substitute": 3.226
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "pidgey": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 77,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "quickattack",
+                75.325
+            ],
+            [
+                "skyattack",
+                83.117
+            ],
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "sandattack",
+                7.792
+            ],
+            [
+                "mimic",
+                12.987
+            ],
+            [
+                "substitute",
+                7.792
+            ],
+            [
+                "mirrormove",
+                12.987
+            ]
+        ],
+        "sets": {
+            "agility|doubleedge|mimic|quickattack": 3.896,
+            "agility|doubleedge|mimic|skyattack": 9.091,
+            "agility|doubleedge|mirrormove|quickattack": 5.195,
+            "agility|doubleedge|mirrormove|skyattack": 7.792,
+            "agility|doubleedge|quickattack|sandattack": 3.896,
+            "agility|doubleedge|quickattack|skyattack": 58.442,
+            "agility|doubleedge|quickattack|substitute": 3.896,
+            "agility|doubleedge|sandattack|skyattack": 3.896,
+            "agility|doubleedge|skyattack|substitute": 3.896
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "pikachu": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 93,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "seismictoss",
+                47.312
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "bodyslam",
+                16.129
+            ],
+            [
+                "thunder",
+                17.204
+            ],
+            [
+                "agility",
+                19.355
+            ]
+        ],
+        "sets": {
+            "agility|surf|thunderbolt|thunderwave": 19.355,
+            "bodyslam|surf|thunderbolt|thunderwave": 16.129,
+            "seismictoss|surf|thunderbolt|thunderwave": 47.312,
+            "surf|thunder|thunderbolt|thunderwave": 17.204
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "pinsir": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 117,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "submission",
+                76.923
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "bodyslam",
+                67.521
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "slash",
+                32.479
+            ],
+            [
+                "seismictoss",
+                23.077
+            ]
+        ],
+        "sets": {
+            "bodyslam|hyperbeam|seismictoss|swordsdance": 13.675,
+            "bodyslam|hyperbeam|submission|swordsdance": 53.846,
+            "hyperbeam|seismictoss|slash|swordsdance": 9.402,
+            "hyperbeam|slash|submission|swordsdance": 23.077
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "poliwag": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 96,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "amnesia",
+                100.0
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "hypnosis",
+                80.208
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "psychic",
+                19.792
+            ]
+        ],
+        "sets": {
+            "amnesia|blizzard|hypnosis|surf": 80.208,
+            "amnesia|blizzard|psychic|surf": 19.792
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "poliwhirl": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 89,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "hypnosis",
+                67.416
+            ],
+            [
+                "amnesia",
+                100.0
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "psychic",
+                12.36
+            ],
+            [
+                "counter",
+                20.225
+            ]
+        ],
+        "sets": {
+            "amnesia|blizzard|counter|surf": 20.225,
+            "amnesia|blizzard|hypnosis|surf": 67.416,
+            "amnesia|blizzard|psychic|surf": 12.36
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "poliwrath": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 77,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                88.312
+            ],
+            [
+                "psychic",
+                32.468
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "amnesia",
+                54.545
+            ],
+            [
+                "earthquake",
+                22.078
+            ],
+            [
+                "hypnosis",
+                67.532
+            ],
+            [
+                "bodyslam",
+                23.377
+            ],
+            [
+                "submission",
+                11.688
+            ]
+        ],
+        "sets": {
+            "amnesia|blizzard|hypnosis|surf": 35.065,
+            "amnesia|blizzard|psychic|surf": 19.481,
+            "blizzard|bodyslam|hypnosis|surf": 11.688,
+            "blizzard|bodyslam|psychic|surf": 2.597,
+            "blizzard|earthquake|hypnosis|surf": 7.792,
+            "blizzard|earthquake|psychic|surf": 3.896,
+            "blizzard|hypnosis|submission|surf": 5.195,
+            "blizzard|psychic|submission|surf": 2.597,
+            "bodyslam|earthquake|hypnosis|surf": 5.195,
+            "bodyslam|earthquake|psychic|surf": 2.597,
+            "bodyslam|hypnosis|submission|surf": 1.299,
+            "earthquake|hypnosis|submission|surf": 1.299,
+            "earthquake|psychic|submission|surf": 1.299
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "ponyta": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 100,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "substitute",
+                39.0
+            ],
+            [
+                "reflect",
+                44.0
+            ],
+            [
+                "stomp",
+                17.0
+            ]
+        ],
+        "sets": {
+            "agility|bodyslam|fireblast|reflect": 44.0,
+            "agility|bodyslam|fireblast|stomp": 17.0,
+            "agility|bodyslam|fireblast|substitute": 39.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "porygon": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 127,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "psychic",
+                20.472
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                28.346
+            ],
+            [
+                "doubleedge",
+                26.772
+            ],
+            [
+                "triattack",
+                24.409
+            ]
+        ],
+        "sets": {
+            "blizzard|doubleedge|recover|thunderwave": 26.772,
+            "blizzard|psychic|recover|thunderwave": 20.472,
+            "blizzard|recover|thunderbolt|thunderwave": 28.346,
+            "blizzard|recover|thunderwave|triattack": 24.409
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "primeape": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 102,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rockslide",
+                75.49
+            ],
+            [
+                "submission",
+                100.0
+            ],
+            [
+                "lowkick",
+                26.471
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                24.51
+            ],
+            [
+                "hyperbeam",
+                47.059
+            ],
+            [
+                "counter",
+                26.471
+            ]
+        ],
+        "sets": {
+            "bodyslam|counter|rockslide|submission": 19.608,
+            "bodyslam|counter|submission|thunderbolt": 6.863,
+            "bodyslam|hyperbeam|rockslide|submission": 39.216,
+            "bodyslam|hyperbeam|submission|thunderbolt": 7.843,
+            "bodyslam|lowkick|rockslide|submission": 16.667,
+            "bodyslam|lowkick|submission|thunderbolt": 9.804
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "psyduck": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 99,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hydropump",
+                14.141
+            ],
+            [
+                "amnesia",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "seismictoss",
+                46.465
+            ],
+            [
+                "bodyslam",
+                16.162
+            ],
+            [
+                "rest",
+                23.232
+            ]
+        ],
+        "sets": {
+            "amnesia|blizzard|bodyslam|surf": 16.162,
+            "amnesia|blizzard|hydropump|surf": 14.141,
+            "amnesia|blizzard|rest|surf": 23.232,
+            "amnesia|blizzard|seismictoss|surf": 46.465
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "raichu": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 89,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                34.831
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "thunder",
+                17.978
+            ],
+            [
+                "bodyslam",
+                15.73
+            ],
+            [
+                "agility",
+                13.483
+            ],
+            [
+                "seismictoss",
+                17.978
+            ]
+        ],
+        "sets": {
+            "agility|surf|thunderbolt|thunderwave": 13.483,
+            "bodyslam|surf|thunderbolt|thunderwave": 15.73,
+            "hyperbeam|surf|thunderbolt|thunderwave": 34.831,
+            "seismictoss|surf|thunderbolt|thunderwave": 17.978,
+            "surf|thunder|thunderbolt|thunderwave": 17.978
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "rapidash": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 85,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ]
+        ],
+        "sets": {
+            "agility|bodyslam|fireblast|hyperbeam": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "raticate": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 124,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "superfang",
+                100.0
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|hyperbeam|superfang": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "rattata": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 113,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "quickattack",
+                38.938
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "superfang",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "doubleedge",
+                15.044
+            ],
+            [
+                "thunderbolt",
+                46.018
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|doubleedge|superfang": 15.044,
+            "blizzard|bodyslam|quickattack|superfang": 38.938,
+            "blizzard|bodyslam|superfang|thunderbolt": 46.018
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "rhydon": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 70,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "substitute",
+                100.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|rockslide|substitute": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "rhyhorn": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 63,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "substitute",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|rockslide|substitute": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "sandshrew": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 94,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|rockslide|swordsdance": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "sandslash": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 74,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "swordsdance",
+                79.73
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "slash",
+                20.27
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|rockslide|slash": 20.27,
+            "bodyslam|earthquake|rockslide|swordsdance": 79.73
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "scyther": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 55,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "slash",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ]
+        ],
+        "sets": {
+            "agility|hyperbeam|slash|swordsdance": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "seadra": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 89,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                25.843
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "smokescreen",
+                30.337
+            ],
+            [
+                "hydropump",
+                25.843
+            ],
+            [
+                "doubleedge",
+                17.978
+            ]
+        ],
+        "sets": {
+            "agility|blizzard|doubleedge|surf": 17.978,
+            "agility|blizzard|hydropump|surf": 25.843,
+            "agility|blizzard|hyperbeam|surf": 25.843,
+            "agility|blizzard|smokescreen|surf": 30.337
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "seaking": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 71,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                74.648
+            ],
+            [
+                "doubleedge",
+                63.38
+            ],
+            [
+                "agility",
+                61.972
+            ]
+        ],
+        "sets": {
+            "agility|blizzard|doubleedge|surf": 25.352,
+            "agility|blizzard|hyperbeam|surf": 36.62,
+            "blizzard|doubleedge|hyperbeam|surf": 38.028
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "seel": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 81,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|rest|surf": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "shellder": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 76,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ]
+        ],
+        "sets": {
+            "blizzard|doubleedge|explosion|surf": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "slowbro": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 79,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                86.076
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "rest",
+                59.494
+            ],
+            [
+                "amnesia",
+                100.0
+            ],
+            [
+                "psychic",
+                31.646
+            ],
+            [
+                "blizzard",
+                22.785
+            ]
+        ],
+        "sets": {
+            "amnesia|blizzard|psychic|thunderwave": 13.924,
+            "amnesia|blizzard|surf|thunderwave": 8.861,
+            "amnesia|psychic|surf|thunderwave": 17.722,
+            "amnesia|rest|surf|thunderwave": 59.494
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "slowpoke": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 81,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "blizzard",
+                23.457
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "amnesia",
+                59.259
+            ],
+            [
+                "psychic",
+                17.284
+            ],
+            [
+                "rest",
+                59.259
+            ],
+            [
+                "earthquake",
+                40.741
+            ]
+        ],
+        "sets": {
+            "amnesia|blizzard|surf|thunderwave": 4.938,
+            "amnesia|psychic|surf|thunderwave": 7.407,
+            "amnesia|rest|surf|thunderwave": 46.914,
+            "blizzard|earthquake|surf|thunderwave": 18.519,
+            "earthquake|psychic|surf|thunderwave": 9.877,
+            "earthquake|rest|surf|thunderwave": 12.346
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "snorlax": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 125,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                76.8
+            ],
+            [
+                "hyperbeam",
+                50.4
+            ],
+            [
+                "selfdestruct",
+                76.8
+            ],
+            [
+                "earthquake",
+                50.4
+            ],
+            [
+                "blizzard",
+                49.6
+            ],
+            [
+                "rest",
+                23.2
+            ],
+            [
+                "amnesia",
+                49.6
+            ],
+            [
+                "thunderbolt",
+                23.2
+            ]
+        ],
+        "sets": {
+            "amnesia|blizzard|bodyslam|rest": 12.0,
+            "amnesia|blizzard|bodyslam|selfdestruct": 14.4,
+            "amnesia|blizzard|rest|thunderbolt": 11.2,
+            "amnesia|blizzard|selfdestruct|thunderbolt": 12.0,
+            "bodyslam|earthquake|hyperbeam|selfdestruct": 50.4
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "spearow": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 70,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "drillpeck",
+                100.0
+            ],
+            [
+                "mirrormove",
+                18.571
+            ],
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "substitute",
+                31.429
+            ],
+            [
+                "leer",
+                27.143
+            ],
+            [
+                "mimic",
+                22.857
+            ]
+        ],
+        "sets": {
+            "agility|doubleedge|drillpeck|leer": 27.143,
+            "agility|doubleedge|drillpeck|mimic": 22.857,
+            "agility|doubleedge|drillpeck|mirrormove": 18.571,
+            "agility|doubleedge|drillpeck|substitute": 31.429
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "squirtle": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 85,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "seismictoss",
+                100.0
+            ],
+            [
+                "hydropump",
+                36.471
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "counter",
+                48.235
+            ],
+            [
+                "surf",
+                63.529
+            ],
+            [
+                "bodyslam",
+                51.765
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|hydropump|seismictoss": 22.353,
+            "blizzard|bodyslam|seismictoss|surf": 29.412,
+            "blizzard|counter|hydropump|seismictoss": 14.118,
+            "blizzard|counter|seismictoss|surf": 34.118
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "starmie": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 92,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderwave",
+                66.304
+            ],
+            [
+                "surf",
+                46.739
+            ],
+            [
+                "thunderbolt",
+                48.913
+            ],
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "psychic",
+                56.522
+            ],
+            [
+                "blizzard",
+                54.348
+            ],
+            [
+                "hydropump",
+                27.174
+            ]
+        ],
+        "sets": {
+            "blizzard|hydropump|psychic|recover": 3.261,
+            "blizzard|hydropump|recover|thunderbolt": 4.348,
+            "blizzard|hydropump|recover|thunderwave": 6.522,
+            "blizzard|psychic|recover|surf": 5.435,
+            "blizzard|psychic|recover|thunderbolt": 5.435,
+            "blizzard|psychic|recover|thunderwave": 15.217,
+            "blizzard|recover|surf|thunderbolt": 7.609,
+            "blizzard|recover|surf|thunderwave": 6.522,
+            "hydropump|psychic|recover|thunderbolt": 4.348,
+            "hydropump|psychic|recover|thunderwave": 3.261,
+            "hydropump|recover|thunderbolt|thunderwave": 5.435,
+            "psychic|recover|surf|thunderbolt": 3.261,
+            "psychic|recover|surf|thunderwave": 10.87,
+            "psychic|recover|thunderbolt|thunderwave": 5.435,
+            "recover|surf|thunderbolt|thunderwave": 13.043
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "staryu": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 78,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "surf",
+                64.103
+            ],
+            [
+                "blizzard",
+                71.795
+            ],
+            [
+                "thunderwave",
+                66.667
+            ],
+            [
+                "thunderbolt",
+                61.538
+            ],
+            [
+                "hydropump",
+                35.897
+            ]
+        ],
+        "sets": {
+            "blizzard|hydropump|recover|thunderbolt": 14.103,
+            "blizzard|hydropump|recover|thunderwave": 11.538,
+            "blizzard|recover|surf|thunderbolt": 19.231,
+            "blizzard|recover|surf|thunderwave": 26.923,
+            "hydropump|recover|thunderbolt|thunderwave": 10.256,
+            "recover|surf|thunderbolt|thunderwave": 17.949
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "tangela": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 95,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "megadrain",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "stunspore",
+                54.737
+            ],
+            [
+                "swordsdance",
+                32.632
+            ],
+            [
+                "growth",
+                12.632
+            ]
+        ],
+        "sets": {
+            "bodyslam|growth|megadrain|sleeppowder": 12.632,
+            "bodyslam|megadrain|sleeppowder|stunspore": 54.737,
+            "bodyslam|megadrain|sleeppowder|swordsdance": 32.632
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "tauros": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 131,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "blizzard",
+                73.282
+            ],
+            [
+                "thunderbolt",
+                26.718
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|earthquake|hyperbeam": 73.282,
+            "bodyslam|earthquake|hyperbeam|thunderbolt": 26.718
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "tentacool": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 44,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "barrier",
+                25.0
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "megadrain",
+                100.0
+            ],
+            [
+                "hydropump",
+                75.0
+            ]
+        ],
+        "sets": {
+            "barrier|blizzard|megadrain|surf": 25.0,
+            "blizzard|hydropump|megadrain|surf": 75.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "tentacruel": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 56,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "hydropump",
+                35.714
+            ],
+            [
+                "hyperbeam",
+                100.0
+            ],
+            [
+                "surf",
+                64.286
+            ]
+        ],
+        "sets": {
+            "blizzard|hydropump|hyperbeam|swordsdance": 35.714,
+            "blizzard|hyperbeam|surf|swordsdance": 64.286
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "vaporeon": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 86,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "mimic",
+                16.279
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "bodyslam",
+                54.651
+            ],
+            [
+                "acidarmor",
+                12.791
+            ],
+            [
+                "hydropump",
+                16.279
+            ]
+        ],
+        "sets": {
+            "acidarmor|blizzard|rest|surf": 12.791,
+            "blizzard|bodyslam|rest|surf": 54.651,
+            "blizzard|hydropump|rest|surf": 16.279,
+            "blizzard|mimic|rest|surf": 16.279
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "venomoth": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 89,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "megadrain",
+                52.809
+            ],
+            [
+                "stunspore",
+                100.0
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "doubleedge",
+                47.191
+            ]
+        ],
+        "sets": {
+            "doubleedge|psychic|sleeppowder|stunspore": 47.191,
+            "megadrain|psychic|sleeppowder|stunspore": 52.809
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "venonat": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 95,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "megadrain",
+                55.789
+            ],
+            [
+                "stunspore",
+                100.0
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "doubleedge",
+                44.211
+            ]
+        ],
+        "sets": {
+            "doubleedge|psychic|sleeppowder|stunspore": 44.211,
+            "megadrain|psychic|sleeppowder|stunspore": 55.789
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "venusaur": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 80,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "swordsdance",
+                70.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "razorleaf",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                30.0
+            ]
+        ],
+        "sets": {
+            "bodyslam|hyperbeam|razorleaf|sleeppowder": 30.0,
+            "bodyslam|razorleaf|sleeppowder|swordsdance": 70.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "victreebel": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 75,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "razorleaf",
+                100.0
+            ],
+            [
+                "hyperbeam",
+                20.0
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "stunspore",
+                49.333
+            ],
+            [
+                "swordsdance",
+                30.667
+            ]
+        ],
+        "sets": {
+            "bodyslam|hyperbeam|razorleaf|sleeppowder": 20.0,
+            "bodyslam|razorleaf|sleeppowder|stunspore": 49.333,
+            "bodyslam|razorleaf|sleeppowder|swordsdance": 30.667
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "vileplume": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 69,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "stunspore",
+                72.464
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "megadrain",
+                100.0
+            ],
+            [
+                "swordsdance",
+                27.536
+            ]
+        ],
+        "sets": {
+            "bodyslam|megadrain|sleeppowder|stunspore": 72.464,
+            "bodyslam|megadrain|sleeppowder|swordsdance": 27.536
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "voltorb": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 80,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "takedown",
+                57.5
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "thunder",
+                42.5
+            ]
+        ],
+        "sets": {
+            "explosion|takedown|thunderbolt|thunderwave": 57.5,
+            "explosion|thunder|thunderbolt|thunderwave": 42.5
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "vulpix": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 78,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "flamethrower",
+                43.59
+            ],
+            [
+                "confuseray",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "substitute",
+                26.923
+            ],
+            [
+                "quickattack",
+                11.538
+            ],
+            [
+                "reflect",
+                17.949
+            ]
+        ],
+        "sets": {
+            "bodyslam|confuseray|fireblast|flamethrower": 43.59,
+            "bodyslam|confuseray|fireblast|quickattack": 11.538,
+            "bodyslam|confuseray|fireblast|reflect": 17.949,
+            "bodyslam|confuseray|fireblast|substitute": 26.923
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "wartortle": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 74,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "seismictoss",
+                40.541
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "hydropump",
+                37.838
+            ],
+            [
+                "surf",
+                62.162
+            ],
+            [
+                "counter",
+                25.676
+            ],
+            [
+                "rest",
+                33.784
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|counter|hydropump": 10.811,
+            "blizzard|bodyslam|counter|surf": 14.865,
+            "blizzard|bodyslam|hydropump|rest": 8.108,
+            "blizzard|bodyslam|hydropump|seismictoss": 18.919,
+            "blizzard|bodyslam|rest|surf": 25.676,
+            "blizzard|bodyslam|seismictoss|surf": 21.622
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "weepinbell": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 69,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "stunspore",
+                66.667
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "razorleaf",
+                100.0
+            ],
+            [
+                "swordsdance",
+                33.333
+            ]
+        ],
+        "sets": {
+            "doubleedge|razorleaf|sleeppowder|stunspore": 66.667,
+            "doubleedge|razorleaf|sleeppowder|swordsdance": 33.333
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "weezing": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 87,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "sludge",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "fireblast",
+                100.0
+            ]
+        ],
+        "sets": {
+            "explosion|fireblast|sludge|thunderbolt": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "wigglytuff": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 123,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hyperbeam",
+                31.707
+            ],
+            [
+                "blizzard",
+                100.0
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "counter",
+                28.455
+            ],
+            [
+                "sing",
+                39.837
+            ]
+        ],
+        "sets": {
+            "blizzard|bodyslam|counter|thunderwave": 28.455,
+            "blizzard|bodyslam|hyperbeam|thunderwave": 31.707,
+            "blizzard|bodyslam|sing|thunderwave": 39.837
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "zapdos": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 100,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "thunderwave",
+                100.0
+            ],
+            [
+                "drillpeck",
+                100.0
+            ],
+            [
+                "agility",
+                100.0
+            ]
+        ],
+        "sets": {
+            "agility|drillpeck|thunderbolt|thunderwave": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "zubat": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 63,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "confuseray",
+                100.0
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "megadrain",
+                100.0
+            ],
+            [
+                "substitute",
+                69.841
+            ],
+            [
+                "wingattack",
+                30.159
+            ]
+        ],
+        "sets": {
+            "confuseray|doubleedge|megadrain|substitute": 69.841,
+            "confuseray|doubleedge|megadrain|wingattack": 30.159
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    }
+}

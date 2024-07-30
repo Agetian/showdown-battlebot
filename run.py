@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import asyncio
 import json
 import logging
@@ -66,7 +68,8 @@ async def showdown():
     while True:
         if ShowdownConfig.log_to_file:
             ShowdownConfig.log_handler.do_rollover(datetime.now().strftime("%Y-%m-%dT%H:%M:%S.log"))
-        team = load_team(ShowdownConfig.team)
+        is_random_battle = any(mode in ShowdownConfig.team for mode in ["random", "bssfactory", "battlefactory", "challengecup", "computergeneratedteams"])
+        team = load_team(ShowdownConfig.team) if not is_random_battle else 'null'
         if ShowdownConfig.bot_mode == constants.CHALLENGE_USER:
             await ps_websocket_client.challenge_user(
                 ShowdownConfig.user_to_challenge,
@@ -91,10 +94,12 @@ async def showdown():
             losses += 1
 
         logger.info("W: {}\tL: {}".format(wins, losses))
+        await ps_websocket_client.send_message('lobby', [f'My stats are W:{wins}, L:{losses}'])
+
         check_dictionaries_are_unmodified(original_pokedex, original_move_json)
 
         battles_run += 1
-        if battles_run >= ShowdownConfig.run_count:
+        if ShowdownConfig.run_count > 0 and battles_run >= ShowdownConfig.run_count:
             break
 
 

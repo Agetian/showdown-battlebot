@@ -6,7 +6,9 @@ from data import all_move_json
 
 from . import instruction_generator
 from .damage_calculator import _calculate_damage
-from .objects import TransposeInstruction
+
+from .instruction_generator import get_pre_move_instructions
+from .objects import MoveChoice
 from .special_effects.abilities.modify_attack_against import ability_modify_attack_against
 from .special_effects.abilities.modify_attack_being_used import ability_modify_attack_being_used
 from .special_effects.items.modify_attack_against import item_modify_attack_against
@@ -17,15 +19,13 @@ from .switch_out_moves import switch_out_move_triggered
 from .switch_out_moves import get_best_switch_pokemon
 
 
-def lookup_move(move_name):
-    if move_name.startswith(constants.SWITCH_STRING + " "):
-        split_move = move_name.split(" ")
-        assert len(split_move) == 2, "Invalid switch string: {}".format(split_move)
+def lookup_move(move_choice: MoveChoice):
+    if move_choice.is_switch:
         return {
-            constants.SWITCH_STRING: split_move[1]
+            constants.SWITCH_STRING: move_choice.id
         }
 
-    return all_move_json[move_name.lower()]
+    return all_move_json[move_choice.id.lower()]
 
 
 def get_effective_speed(state, side):
@@ -210,7 +210,15 @@ def cannot_use_move(attacking_pokemon, attacking_move):
     return constants.TAUNT in attacking_pokemon.volatile_status and attacking_move[constants.CATEGORY] not in constants.DAMAGING_CATEGORIES
 
 
-def get_state_instructions_from_move(mutator, attacking_move, defending_move, attacker, defender, first_move, instructions):
+def get_state_instructions_from_move(
+    mutator,
+    attacking_move,
+    defending_move,
+    attacker,
+    defender,
+    first_move,
+    instructions
+):
     instructions.frozen = False
 
     if constants.SWITCH_STRING in attacking_move:
@@ -229,7 +237,7 @@ def get_state_instructions_from_move(mutator, attacking_move, defending_move, at
     active_weather = mutator.state.weather
 
     if cannot_use_move(attacking_pokemon, attacking_move):
-        attacking_move = lookup_move(constants.DO_NOTHING_MOVE)
+        attacking_move = lookup_move(MoveChoice(constants.DO_NOTHING_MOVE))
 
     conditions = {
         constants.REFLECT: defending_side.side_conditions[constants.REFLECT],
@@ -459,22 +467,22 @@ def remove_duplicate_instructions(list_of_instructions):
     return new_instructions
 
 
-def end_of_turn_triggered(user_move, opponent_move):
-    if user_move.startswith(constants.SWITCH_STRING + ' ') and opponent_move == constants.DO_NOTHING_MOVE:
+def end_of_turn_triggered(user_move: MoveChoice, opponent_move: MoveChoice):
+    if user_move.is_switch and opponent_move.id == constants.DO_NOTHING_MOVE:
         return False
-    elif opponent_move.startswith(constants.SWITCH_STRING + ' ') and user_move == constants.DO_NOTHING_MOVE:
+    elif opponent_move.is_switch and user_move.id == constants.DO_NOTHING_MOVE:
         return False
 
     return True
 
 
-def get_all_state_instructions(mutator, user_move_string, opponent_move_string):
-    user_move = lookup_move(user_move_string)
-    opponent_move = lookup_move(opponent_move_string)
+def get_all_state_instructions(mutator, user_move_choice: MoveChoice, opponent_move_choice: MoveChoice):
+    user_move = lookup_move(user_move_choice)
+    opponent_move = lookup_move(opponent_move_choice)
 
     bot_moves_first = user_moves_first(mutator.state, user_move, opponent_move)
 
-    instructions = TransposeInstruction(1.0, [], False)
+    instructions = get_pre_move_instructions(mutator, user_move_choice, opponent_move_choice)
 
     all_instructions = []
     if bot_moves_first:
@@ -486,7 +494,7 @@ def get_all_state_instructions(mutator, user_move_string, opponent_move_string):
         for instruction in instructions:
             all_instructions += get_state_instructions_from_move(mutator, user_move, opponent_move, constants.USER, constants.OPPONENT, False, instruction)
 
-    if end_of_turn_triggered(user_move_string, opponent_move_string):
+    if end_of_turn_triggered(user_move_choice, opponent_move_choice):
         temp_instructions = []
         for instruction_set in all_instructions:
             temp_instructions += instruction_generator.get_end_of_turn_instructions(mutator, instruction_set, user_move, opponent_move, bot_moves_first)

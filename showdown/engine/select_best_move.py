@@ -1,13 +1,22 @@
 import math
 from collections import defaultdict
+from copy import deepcopy
 
 import constants
 
 from .evaluate import evaluate
 from .find_state_instructions import get_all_state_instructions
+from .find_state_instructions import get_effective_speed
+from .damage_calculator import get_move, is_immune
 
 
 WON_BATTLE = 100
+
+
+import random
+from config import ShowdownConfig
+gen = ShowdownConfig.get_generation()
+search_depth = ShowdownConfig.search_depth
 
 
 def remove_guaranteed_opponent_moves(score_lookup):
@@ -64,7 +73,88 @@ def move_item_to_front_of_list(l, item):
     return [l[i] for i in all_indicies]
 
 
-def get_payoff_matrix(mutator, user_options, opponent_options, depth=2, prune=True):
+def modify_score_conditionally(score, depth, mutator, user_move, state_scores):
+        # Buff Sleep Talk in sleep, reduce the weight for Spikes if at max layers, etc.
+        if (user_move.id == "sleeptalk" or user_move.id == "snore") and mutator.state.user.active.status == constants.SLEEP and mutator.state.user.side_conditions[constants.SLEEP_COUNT] < 3:
+            highest_nonswitch_score = 0
+            for state_score_id in state_scores.keys():
+                user_move_1 = state_score_id[0]
+                if (not user_move_1.is_switch) and state_scores[state_score_id] > highest_nonswitch_score:
+                    highest_nonswitch_score = state_scores[state_score_id]
+            score = highest_nonswitch_score + 10 # try to weigh Sleep Talk above other moves but not above meaningful switches
+        elif user_move.id == constants.SPIKES:
+            max_layers = 3 if gen >= 3 else 1 # Gen 1-2 had only one layer of Spikes
+            if mutator.state.opponent.side_conditions[constants.SPIKES] >= max_layers:
+                score = -1000 # not worth throwing extra Spikes
+        elif user_move.id == constants.TOXIC_SPIKES:
+            if mutator.state.opponent.side_conditions[constants.TOXIC_SPIKES] >= 2:
+                score = -1000 # not worth throwing extra Toxic Spikes
+        elif user_move.id == constants.STEALTH_ROCK:
+            if mutator.state.opponent.side_conditions[constants.STEALTH_ROCK] >= 1:
+                score = -1000 # not worth throwing extra Stealth Rock
+        
+        # Reduce the score for Trick Room if already at Trick Room and deduced speed is lower than opponent's
+        opponent_effective_speed = get_effective_speed(mutator.state, mutator.state.opponent)
+        bot_effective_speed = get_effective_speed(mutator.state, mutator.state.user)
+        outspeed = opponent_effective_speed > bot_effective_speed if mutator.state.trick_room \
+            else bot_effective_speed > opponent_effective_speed
+        if user_move.id == constants.TRICK_ROOM:
+            if outspeed:
+                score -= 1000 # no need to switch the Trick Room status since we outspeed the opponent
+            else:
+                highest_nonswitch_score = 0
+                for state_score_id in state_scores.keys():
+                    user_move_1 = state_score_id[0]
+                    if (not user_move_1.is_switch) and state_scores[state_score_id] > highest_nonswitch_score:
+                        highest_nonswitch_score = state_scores[state_score_id]
+                score = highest_nonswitch_score + 100 # FIXME: fixed value doesn't work very well here?
+
+        # Reduce the score for Counter and Mirror Coat if the opponent used a move of the incorrect type before
+        last_opp_move = get_move(mutator.state.opponent.last_used_move.move)
+        if last_opp_move:
+            if user_move.id == 'counter' and last_opp_move[constants.CATEGORY] != constants.PHYSICAL:
+                score -= 300
+            elif user_move.id == 'mirrorcoat' and last_opp_move[constants.CATEGORY] != constants.SPECIAL:
+                score -= 300
+
+        # Metronome: randomly play this move above others except the switch ones
+        #if user_move.id == 'metronome' and random.choice([True, False]):
+        #    highest_nonswitch_score = 0
+        #    for state_score_id in state_scores.keys():
+        #        user_move_1 = state_score_id[0]
+        #        if (not user_move_1.is_switch) and state_scores[state_score_id] > highest_nonswitch_score:
+        #            highest_nonswitch_score = state_scores[state_score_id]
+        #    score = highest_nonswitch_score + 10
+
+        considered_move = get_move(user_move.id)
+        if considered_move:
+            # FIXME: Additionally debuff moves that the target would be immune to (e.g. Electric vs. Ground)
+            if is_immune(considered_move["type"], mutator.state.opponent.active.types):
+                score -= 1000
+            # FIXME: Debuff Substitute when at <25% hp
+            if considered_move["id"] == constants.SUBSTITUTE and mutator.state.user.active.hp <= mutator.state.user.active.maxhp / 4:
+                score -= 1000
+            # FIXME: Reflectable moves vs. Magic Bounce and Magic Coat
+            if hasattr(considered_move, constants.REFLECTABLE) and ((mutator.state.opponent.active.ability == "magicbounce") or ("magiccoat" in mutator.state.opponent.volatile_status)):
+                score -= 1000
+            # FIXME: Buff/debuff Baton Pass depending on the presence of boosts
+            # TODO: Actually implement the state modification in instruction_generator to properly account for the game state
+            #if considered_move["id"] == 'batonpass' and len(mutator.state.user.reserve) > 0:
+            #    if len(mutator.state.user.reserve) == 0:
+            #        score -= 1000
+            #    else:
+            #        score += 30 * (mutator.state.user.active.attack_boost + mutator.state.user.active.defense_boost + \
+            #                       mutator.state.user.active.special_attack_boost + mutator.state.user.active.special_defense_boost + mutator.state.user.active.speed_boost)
+
+        # FIXME: Debuff a switch in case another conscious switch was just made. Helps avoid repeated switches.
+        if user_move.is_switch and mutator.state.user.last_used_move.move.startswith("switch") and mutator.state.user.last_used_move.turn > 0:
+            if not(mutator.state.opponent.last_used_move.move.startswith("switch")):
+                score -= 300
+
+        return score
+
+
+def get_payoff_matrix(mutator, user_options, opponent_options, depth=search_depth if search_depth > 0 else 2, prune=True):
     """
     :param mutator: a StateMutator object representing the state of the battle
     :param user_options: options for the bot
@@ -118,17 +208,21 @@ def get_payoff_matrix(mutator, user_options, opponent_options, depth=2, prune=Tr
                     score += safest[1] * this_percentage
                     mutator.reverse(instructions.instructions)
 
+            # make certain fixed modifications based on conditions (e.g. Trick Room, counters, etc.)
+            score = modify_score_conditionally(score, depth, mutator, user_move, state_scores)
+
             state_scores[(user_move, opponent_move)] = score
 
             if score < worst_score_for_this_row:
                 worst_score_for_this_row = score
 
-            if prune and score < best_score:
-                skip = True
+            if ShowdownConfig.prune_search_tree:
+                if prune and score < best_score:
+                    skip = True
 
-                # MOST of the time in pokemon, an opponent's move that causes a prune will cause a prune elsewhere
-                # move this item to the front of the list to prune faster
-                opponent_options = move_item_to_front_of_list(opponent_options, opponent_move)
+                    # MOST of the time in pokemon, an opponent's move that causes a prune will cause a prune elsewhere
+                    # move this item to the front of the list to prune faster
+                    opponent_options = move_item_to_front_of_list(opponent_options, opponent_move)
 
         if worst_score_for_this_row > best_score:
             best_score = worst_score_for_this_row

@@ -1,8 +1,11 @@
 import math
 import constants
+import json
 
 from data import all_move_json
 
+from config import ShowdownConfig
+ShowdownConfig.configure()
 
 natures = {
     'lonely': {
@@ -164,44 +167,68 @@ def common_pkmn_stat_calc(stat: int, iv: int, ev: int, level: int):
 
 def calculate_stats(base_stats, level, ivs=(31,) * 6, evs=(85,) * 6, nature='serious'):
     new_stats = dict()
+    _base_stats = json.loads(json.dumps(base_stats)) # We need a copy to ensure the Pokedex is unmodified
+
+    # Scalemons, 350 Cup support
+    mods = ShowdownConfig.expected_mods.lower()
+    if "scalemons" in mods:
+        from math import floor
+        bst = _base_stats[constants.HITPOINTS] + _base_stats[constants.ATTACK] + _base_stats[constants.SPECIAL_ATTACK] + \
+            _base_stats[constants.DEFENSE] + _base_stats[constants.SPECIAL_DEFENSE] + _base_stats[constants.SPEED]
+        _base_stats[constants.ATTACK] = int(floor(_base_stats[constants.ATTACK] * (600 - _base_stats[constants.HITPOINTS]) / (bst - _base_stats[constants.HITPOINTS])))
+        _base_stats[constants.SPECIAL_ATTACK] = int(floor(_base_stats[constants.SPECIAL_ATTACK] * (600 - _base_stats[constants.HITPOINTS]) / (bst - _base_stats[constants.HITPOINTS])))
+        _base_stats[constants.DEFENSE] = int(floor(_base_stats[constants.DEFENSE] * (600 - _base_stats[constants.HITPOINTS]) / (bst - _base_stats[constants.HITPOINTS])))
+        _base_stats[constants.SPECIAL_DEFENSE] = int(floor(_base_stats[constants.SPECIAL_DEFENSE] * (600 - _base_stats[constants.HITPOINTS]) / (bst - _base_stats[constants.HITPOINTS])))
+        _base_stats[constants.SPEED] = int(floor(_base_stats[constants.SPEED] * (600 - _base_stats[constants.HITPOINTS]) / (bst - _base_stats[constants.HITPOINTS])))
+    elif "350 cup" in mods:
+        from math import floor
+        bst = _base_stats[constants.HITPOINTS] + _base_stats[constants.ATTACK] + _base_stats[constants.SPECIAL_ATTACK] + \
+            _base_stats[constants.DEFENSE] + _base_stats[constants.SPECIAL_DEFENSE] + _base_stats[constants.SPEED]
+        if bst <= 350:
+            _base_stats[constants.HITPOINTS] *= 2 # TODO: Shedinja handled?
+            _base_stats[constants.ATTACK] *= 2
+            _base_stats[constants.SPECIAL_ATTACK] *= 2
+            _base_stats[constants.DEFENSE] *= 2
+            _base_stats[constants.SPECIAL_DEFENSE] *= 2
+            _base_stats[constants.SPEED] *= 2
 
     new_stats[constants.HITPOINTS] = common_pkmn_stat_calc(
-        base_stats[constants.HITPOINTS],
+        _base_stats[constants.HITPOINTS],
         ivs[0],
         evs[0],
         level
     ) + level + 10
 
     new_stats[constants.ATTACK] = common_pkmn_stat_calc(
-        base_stats[constants.ATTACK],
+        _base_stats[constants.ATTACK],
         ivs[1],
         evs[1],
         level
     ) + 5
 
     new_stats[constants.DEFENSE] = common_pkmn_stat_calc(
-        base_stats[constants.DEFENSE],
+        _base_stats[constants.DEFENSE],
         ivs[2],
         evs[2],
         level
     ) + 5
 
     new_stats[constants.SPECIAL_ATTACK] = common_pkmn_stat_calc(
-        base_stats[constants.SPECIAL_ATTACK],
+        _base_stats[constants.SPECIAL_ATTACK],
         ivs[3],
         evs[3],
         level
     ) + 5
 
     new_stats[constants.SPECIAL_DEFENSE] = common_pkmn_stat_calc(
-        base_stats[constants.SPECIAL_DEFENSE],
+        _base_stats[constants.SPECIAL_DEFENSE],
         ivs[4],
         evs[4],
         level
     ) + 5
 
     new_stats[constants.SPEED] = common_pkmn_stat_calc(
-        base_stats[constants.SPEED],
+        _base_stats[constants.SPEED],
         ivs[5],
         evs[5],
         level

@@ -66,6 +66,7 @@ MUTATOR_TOGGLE_TRICKROOM = "toggle_trickroom"
 MUTATOR_CHANGE_TYPE = "change_type"
 MUTATOR_CHANGE_ITEM = "change_item"
 MUTATOR_CHANGE_STATS = "change_stats"
+MUTATOR_TERASTALLIZE = "terastallize"
 
 
 DAMAGE = 'damage'
@@ -116,6 +117,8 @@ WEIGHT = "weightkg"
 NATURE = "nature"
 EVS = "evs"
 TERASTALLIZED = "terastallized"
+TERA_TYPE = "tera_type"
+PS_TERA_TYPE = "teraType"
 
 SIDE = "side"
 POKEMON = "pokemon"
@@ -132,6 +135,9 @@ IDENT = "ident"
 MEGA_EVOLVE_GENERATIONS = [
     "gen6",
     "gen7"
+]
+TERASTALLIZE_GENERATIONS = [
+    "gen9",
 ]
 CAN_MEGA_EVO = "canMegaEvo"
 CAN_ULTRA_BURST = "canUltraBurst"
@@ -364,12 +370,26 @@ PARALYZED = "par"
 POISON = "psn"
 TOXIC = "tox"
 TOXIC_COUNT = "toxic_count"
+SLEEP_COUNT = "sleep_count"
 NON_VOLATILE_STATUSES = {SLEEP, BURN, FROZEN, PARALYZED, POISON, TOXIC}
 
 # chances to break out of non-volatile statuses
 WAKE_UP_PERCENT = 0.33
 THAW_PERCENT = 0.20
 FULLY_PARALYZED_PERCENT = 0.25
+
+# Generation-based non-volatile status % tweaks
+# NOTE: Might want to set the wake-up percent for gen 1/2 to something higher to avoid the AI overextending with Sleep Talk?
+from config import ShowdownConfig
+gen = ShowdownConfig.get_generation()
+if gen == 1:
+    THAW_PERCENT = 0 # FIXME: Never thaws by itself. Is this correct?
+    WAKE_UP_PERCENT = 0.142
+elif gen == 2:
+    THAW_PERCENT = 10
+    WAKE_UP_PERCENT = 0.166
+elif gen == 3 or gen == 4:
+    WAKE_UP_PERCENT = 0.20
 
 THAW_IF_USES = {'scald', 'flamewheel', 'sacredfire', 'flareblitz', 'fusionflare', 'steameruption', 'scorchingsands'}
 THAW_IF_HIT_BY = {'scald', 'steameruption', 'scorchingsands'}

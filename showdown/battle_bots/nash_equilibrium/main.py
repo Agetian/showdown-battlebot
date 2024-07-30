@@ -14,12 +14,15 @@ from showdown.engine.objects import StateMutator
 from showdown.engine.select_best_move import pick_safest
 from showdown.engine.select_best_move import get_payoff_matrix
 
-from ..safest.main import pick_safest_move_from_battles
+from ..safest.main import pick_safest_move_from_battles, pick_safest_move_using_dynamic_search_depth
 from ..helpers import format_decision
 
 
 logger = logging.getLogger(__name__)
 
+from config import ShowdownConfig
+ShowdownConfig.configure()
+search_depth = ShowdownConfig.search_depth
 
 NFG_FORMAT_BASE = """NFG 1 R ""
 { "Player 1" "Player 2" } { %s %s }
@@ -177,7 +180,10 @@ class BattleBot(Battle):
         if len(battles) > 7:
             logger.debug("Not enough is known about the opponent's active pokemon - falling back to safest decision making")
             battles = self.prepare_battles(join_moves_together=True)
-            decision = pick_safest_move_from_battles(battles)
+            if search_depth > 0:
+                decision = pick_safest_move_from_battles(battles)
+            else:
+                decision = pick_safest_move_using_dynamic_search_depth(battles)
         else:
             list_of_payoffs = list()
             for b in battles:

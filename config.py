@@ -1,5 +1,7 @@
 import logging
 import os
+import random
+import re
 import sys
 from logging.handlers import RotatingFileHandler
 from typing import Union
@@ -67,15 +69,29 @@ class _ShowdownConfig:
     log_level: str
     log_to_file: bool
     log_handler: Union[CustomRotatingFileHandler, logging.StreamHandler]
+    battle_timer: bool
+    expected_mods: str
+    expected_mods_derived: str
+    local_insecure_login: bool
+    avatar: str
+    search_depth: int
+    prune_search_tree: bool
+    dynsearch_opts_for_max: int
+    dynsearch_battle_threshold: int
 
     def configure(self):
         self.battle_bot_module = env("BATTLE_BOT")
         self.websocket_uri = env("WEBSOCKET_URI")
-        self.username = env("PS_USERNAME")
+        if not hasattr(self, "username"): # avoid overwriting an existing username on a subsequent call to configure
+            self.username = env("PS_USERNAME")
         self.password = env("PS_PASSWORD")
         self.bot_mode = env("BOT_MODE")
         self.pokemon_mode = env("POKEMON_MODE")
 
+        self.search_depth = env.int("STATE_SEARCH_DEPTH", 2)
+        self.prune_search_tree = env.bool("STATE_SEARCH_PRUNE_TREE", True)
+        self.dynsearch_opts_for_max = env.int("DYNAMIC_SEARCH_OPTS_FOR_MAX", 20)
+        self.dynsearch_battle_threshold = env.int("DYNAMIC_SEARCH_BATTLE_THRESHOLD", 1)
         self.run_count = env.int("RUN_COUNT", 1)
         self.team = env("TEAM_NAME", None)
         self.user_to_challenge = env("USER_TO_CHALLENGE", None)
@@ -87,6 +103,42 @@ class _ShowdownConfig:
         self.log_level = env("LOG_LEVEL", "DEBUG")
         self.log_to_file = env.bool("LOG_TO_FILE", False)
 
+        self.battle_timer = env.bool("BATTLE_TIMER", True)
+
+        self.expected_mods = env("EXPECTED_MODS", "")
+        if "@@@" in self.pokemon_mode:
+            self.expected_mods += f" @@@{self.pokemon_mode.split('@@@')[1]}"
+        if not hasattr(self, "expected_mods_derived"):
+            self.expected_mods_derived = ""
+        else:
+            self.expected_mods += self.expected_mods_derived
+
+        self.local_insecure_login = env.bool("LOCAL_INSECURE_LOGIN", False)
+        if not hasattr(self, "preferred_avatar"):
+            self.preferred_avatar = env("PREFERRED_AVATAR", "")
+
+        # Use bot identities in case '@' was specified for the username,
+        # uses the file 'bot-identities' from the working path, 
+        # which is a list of identities in the format: name[=avatar]
+        # (only works on a local server with insecure no-auth login)
+        if self.username == '@':
+            if self.local_insecure_login:
+                try:
+                    with open('bot-identities', 'r') as ident_file:
+                        identity = random.choice(ident_file.readlines())
+                        if identity.strip() == '':
+                            self.username = 'MariBot'
+                        else:
+                            if '=' in identity:
+                                self.username = identity.split('=')[0].strip()
+                                self.preferred_avatar = identity.split('=')[1].strip()
+                            else:
+                                self.username = identity.strip()
+                except:
+                    self.username = 'MariBot'
+            else:
+                self.username = 'MariBot'
+
         self.validate_config()
 
     def validate_config(self):
@@ -96,6 +148,17 @@ class _ShowdownConfig:
             assert self.user_to_challenge is not None, (
                 "If bot_mode is `CHALLENGE_USER, you must declare USER_TO_CHALLENGE"
             )
+    
+    # TODO: Ideally, refactor this so that it's set up once and accessible everywhere where needed
+    # (see also battle.generation which serves a similar purpose but is rather limited in where it's accessible)
+    def get_generation(self):
+        gen = 9 # Should default to the latest generation
+        if not hasattr(self, "pokemon_mode"):
+            self.configure()
+        format_gen = re.findall(r"^gen(\d+)", ShowdownConfig.pokemon_mode)
+        if len(format_gen) > 0:
+            gen = int(format_gen[0])
+        return gen
 
 
 ShowdownConfig = _ShowdownConfig()

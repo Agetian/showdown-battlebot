@@ -1,0 +1,317 @@
+{
+	"aeroblast": {
+		"inherit": true,
+		"critRatio": 3
+	},
+	"beatup": {
+		"inherit": true
+	},
+	"bellydrum": {
+		"inherit": true
+	},
+	"bide": {
+		"inherit": true,
+		"condition": {
+			"duration": 3
+		}
+	},
+	"counter": {
+		"inherit": true,
+		"condition": {},
+		"priority": -1
+	},
+	"crabhammer": {
+		"inherit": true,
+		"critRatio": 3
+	},
+	"crosschop": {
+		"inherit": true,
+		"critRatio": 3
+	},
+	"curse": {
+		"inherit": true
+	},
+	"detect": {
+		"inherit": true,
+		"priority": 2
+	},
+	"dig": {
+		"inherit": true
+	},
+	"doubleedge": {
+		"inherit": true,
+		"recoil": [25, 100]
+	},
+	"encore": {
+		"inherit": true
+	},
+	"endure": {
+		"inherit": true,
+		"priority": 2
+	},
+	"explosion": {
+		"inherit": true,
+		"noSketch": true
+	},
+	"flail": {
+		"inherit": true,
+		"noDamageVariance": true,
+		"willCrit": false
+	},
+	"fly": {
+		"inherit": true,
+		"condition": {
+			"duration": 2
+		}
+	},
+	"focusenergy": {
+		"inherit": true
+	},
+	"foresight": {
+		"inherit": true
+	},
+	"frustration": {
+		"inherit": true
+	},
+	"healbell": {
+		"inherit": true
+	},
+	"highjumpkick": {
+		"inherit": true
+	},
+	"jumpkick": {
+		"inherit": true
+	},
+	"karatechop": {
+		"inherit": true,
+		"critRatio": 3
+	},
+	"leechseed": {
+		"inherit": true
+	},
+	"lightscreen": {
+		"inherit": true,
+		"condition": {
+			"duration": 5
+		}
+	},
+	"lockon": {
+		"inherit": true
+	},
+	"lowkick": {
+		"inherit": true,
+		"accuracy": 90,
+		"basePower": 50,
+		"secondary": {
+			"chance": 30,
+			"volatileStatus": "flinch"
+		}
+	},
+	"meanlook": {
+		"inherit": true,
+		"flags": {"reflectable": 1, "mirror": 1, "metronome": 1}
+	},
+	"metronome": {
+		"inherit": true,
+		"flags": {"failencore": 1},
+		"noSketch": true
+	},
+	"mimic": {
+		"inherit": true,
+		"accuracy": 100,
+		"noSketch": true,
+		"flags": {"protect": 1, "bypasssub": 1, "allyanim": 1, "failencore": 1, "noassist": 1}
+	},
+	"mindreader": {
+		"inherit": true
+	},
+	"mirrorcoat": {
+		"inherit": true,
+		"condition": {},
+		"priority": -1
+	},
+	"mirrormove": {
+		"inherit": true,
+		"flags": {"metronome": 1, "failencore": 1},
+		"noSketch": true
+	},
+	"mist": {
+		"num": 54,
+		"accuracy": true,
+		"basePower": 0,
+		"category": "Status",
+		"name": "Mist",
+		"pp": 30,
+		"priority": 0,
+		"flags": {"metronome": 1},
+		"volatileStatus": "mist",
+		"secondary": null,
+		"target": "self",
+		"type": "ice"
+	},
+	"moonlight": {
+		"inherit": true
+	},
+	"morningsun": {
+		"inherit": true
+	},
+	"nightmare": {
+		"inherit": true,
+		"condition": {
+			"noCopy": true,
+			"onAfterMoveSelfPriority": 1
+		}
+	},
+	"outrage": {
+		"inherit": true
+	},
+	"painsplit": {
+		"inherit": true,
+		"accuracy": 100
+	},
+	"perishsong": {
+		"inherit": true,
+		"condition": {
+			"duration": 4,
+			"onResidualOrder": 4
+		}
+	},
+	"petaldance": {
+		"inherit": true
+	},
+	"poisongas": {
+		"inherit": true,
+		"ignoreImmunity": false
+	},
+	"poisonpowder": {
+		"inherit": true,
+		"ignoreImmunity": false
+	},
+	"protect": {
+		"inherit": true,
+		"priority": 2
+	},
+	"psywave": {
+		"inherit": true
+	},
+	"pursuit": {
+		"inherit": true,
+		"condition": {
+			"duration": 1
+		}
+	},
+	"razorleaf": {
+		"inherit": true,
+		"critRatio": 3
+	},
+	"razorwind": {
+		"inherit": true,
+		"accuracy": 75,
+		"critRatio": 3
+	},
+	"reflect": {
+		"inherit": true,
+		"condition": {
+			"duration": 5
+		}
+	},
+	"rest": {
+		"inherit": true,
+		"secondary": null
+	},
+	"return": {
+		"inherit": true
+	},
+	"reversal": {
+		"inherit": true,
+		"noDamageVariance": true,
+		"willCrit": false
+	},
+	"roar": {
+		"inherit": true,
+		"priority": -1
+	},
+	"safeguard": {
+		"inherit": true,
+		"condition": {
+			"duration": 5,
+			"onSideResidualOrder": 8
+		}
+	},
+	"selfdestruct": {
+		"inherit": true,
+		"noSketch": true
+	},
+	"sketch": {
+		"inherit": true,
+		"flags": {"bypasssub": 1, "failencore": 1, "noassist": 1}
+	},
+	"skullbash": {
+		"inherit": true
+	},
+	"skyattack": {
+		"inherit": true,
+		"critRatio": 1,
+		"secondary": null
+	},
+	"slash": {
+		"inherit": true,
+		"critRatio": 3
+	},
+	"sleeptalk": {
+		"inherit": true,
+		"flags": {"failencore": 1, "nosleeptalk": 1},
+		"noSketch": true
+	},
+	"solarbeam": {
+		"inherit": true
+	},
+	"spiderweb": {
+		"inherit": true,
+		"flags": {"reflectable": 1, "mirror": 1, "metronome": 1}
+	},
+	"spikes": {
+		"inherit": true
+	},
+	"substitute": {
+		"inherit": true
+	},
+	"swagger": {
+		"inherit": true
+	},
+	"synthesis": {
+		"inherit": true
+	},
+	"thief": {
+		"inherit": true,
+		"secondary": {
+			"chance": 100
+		}
+	},
+	"thrash": {
+		"inherit": true
+	},
+	"toxic": {
+		"inherit": true,
+		"ignoreImmunity": false
+	},
+	"transform": {
+		"inherit": true,
+		"noSketch": true
+	},
+	"triattack": {
+		"inherit": true,
+		"secondary": {
+			"chance": 20
+		}
+	},
+	"triplekick": {
+		"inherit": true,
+		"multiaccuracy": false,
+		"multihit": [1, 3]
+	},
+	"whirlwind": {
+		"inherit": true,
+		"priority": -1
+	}
+}

@@ -4,6 +4,7 @@ import constants
 import logging
 
 from .damage_calculator import type_effectiveness_modifier
+from .objects import MoveChoice, TransposeInstruction
 from .special_effects.abilities.on_switch_in import ability_on_switch_in
 from .special_effects.items.on_switch_in import item_on_switch_in
 from .special_effects.items.end_of_turn import item_end_of_turn
@@ -52,8 +53,34 @@ accuracy_multiplier_lookup = {
     6: 9/3
 }
 
+# Type chart modification based on format gen
+from config import ShowdownConfig
+gen = ShowdownConfig.get_generation()
 
+def get_pre_move_instructions(mutator, user_move_choice: MoveChoice, opponent_move_choice: MoveChoice):
+    instruction = TransposeInstruction(1.0, [], False)
 
+    if user_move_choice.terastallize:
+        instruction.instructions.append(
+            (
+                constants.MUTATOR_TERASTALLIZE,
+                constants.USER,
+                mutator.state.user.active.tera_type,
+                mutator.state.user.active.types,
+            )
+        )
+
+    if opponent_move_choice.terastallize:
+        instruction.instructions.append(
+            (
+                constants.MUTATOR_TERASTALLIZE,
+                constants.OPPONENT,
+                mutator.state.opponent.active.tera_type,
+                mutator.state.opponent.active.types,
+            )
+        )
+
+    return instruction
 
 
 def get_instructions_from_move_special_effect(mutator, attacking_side, attacking_pokemon, defending_pokemon, move_name, instructions):
@@ -122,6 +149,7 @@ def get_instructions_from_switch(mutator, attacker, switch_pokemon_name, instruc
 
     attacking_side = get_side_from_state(mutator.state, attacker)
     defending_side = get_side_from_state(mutator.state, opposite_side[attacker])
+
     mutator.apply(instructions.instructions)
     instruction_additions = remove_volatile_status_and_boosts_instructions(attacking_side, attacker)
     mutator.apply(instruction_additions)
@@ -570,7 +598,7 @@ def get_instructions_from_side_conditions(mutator, attacker_string, side_string,
 
     else:
         if condition == constants.SPIKES:
-            max_layers = 3
+            max_layers = 3 if gen >= 3 else 1 # Gen 1-2 had only one layer of Spikes
         elif condition == constants.TOXIC_SPIKES:
             max_layers = 2
         elif condition == constants.AURORA_VEIL:
@@ -1216,6 +1244,34 @@ def get_instructions_from_boost_reset_moves(mutator, attacking_move, attacking_s
         new_instructions += remove_volatile_status_and_boosts_instructions(attacking_side, attacking_side_string)
     if attacking_move[constants.TARGET] in constants.MOVE_TARGET_OPPONENT:
         new_instructions += remove_volatile_status_and_boosts_instructions(defending_side, defending_side_string)
+
+    # TODO: gen 1 haze - it has more effects than listed here, more updates may be needed
+    if gen == 1 and attacking_move[constants.ID] == 'haze':
+        # remove any non-volatile status
+        if attacking_side.active.status != None:
+            remove_atk_status_instruction = (
+                constants.MUTATOR_REMOVE_STATUS,
+                attacking_side_string,
+                attacking_side.active.status
+            )
+            new_instructions.append(remove_atk_status_instruction)
+        if defending_side.active.status != None:
+            remove_def_status_instruction = (
+                constants.MUTATOR_REMOVE_STATUS,
+                defending_side_string,
+                defending_side.active.status
+            )
+            new_instructions.append(remove_def_status_instruction)
+        # remove reflect and light screen
+        if attacking_side.side_conditions[constants.REFLECT]:
+            new_instructions.append((constants.MUTATOR_SIDE_END, attacking_side_string, constants.REFLECT, attacking_side.side_conditions[constants.REFLECT]))
+        if attacking_side.side_conditions[constants.LIGHT_SCREEN]:
+            new_instructions.append((constants.MUTATOR_SIDE_END, attacking_side_string, constants.LIGHT_SCREEN, attacking_side.side_conditions[constants.LIGHT_SCREEN]))
+        if defending_side.side_conditions[constants.REFLECT]:
+            new_instructions.append((constants.MUTATOR_SIDE_END, defending_side_string, constants.REFLECT, defending_side.side_conditions[constants.REFLECT]))
+        if defending_side.side_conditions[constants.LIGHT_SCREEN]:
+            new_instructions.append((constants.MUTATOR_SIDE_END, defending_side_string, constants.LIGHT_SCREEN, defending_side.side_conditions[constants.LIGHT_SCREEN]))
+
     mutator.reverse(instruction.instructions)
 
     for new_instruction in new_instructions:

@@ -1,0 +1,8041 @@
+{
+    "aerodactyl": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 97,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "curse",
+                100.0
+            ],
+            [
+                "whirlwind",
+                38.144
+            ],
+            [
+                "hiddenpowerrock",
+                74.227
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "rest",
+                36.082
+            ],
+            [
+                "hiddenpowerflying",
+                25.773
+            ],
+            [
+                "ancientpower",
+                25.773
+            ]
+        ],
+        "sets": {
+            "ancientpower|curse|earthquake|hiddenpowerflying": 25.773,
+            "curse|earthquake|hiddenpowerrock|rest": 36.082,
+            "curse|earthquake|hiddenpowerrock|whirlwind": 38.144
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "aipom": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 110,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "curse",
+                100.0
+            ],
+            [
+                "return102",
+                100.0
+            ],
+            [
+                "batonpass",
+                100.0
+            ],
+            [
+                "agility",
+                100.0
+            ]
+        ],
+        "sets": {
+            "agility|batonpass|curse|return102": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "alakazam": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 115,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "firepunch",
+                76.522
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "icepunch",
+                25.217
+            ],
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "thunderpunch",
+                29.565
+            ],
+            [
+                "hiddenpowerdark",
+                15.652
+            ],
+            [
+                "encore",
+                33.913
+            ],
+            [
+                "thunderwave",
+                19.13
+            ]
+        ],
+        "sets": {
+            "encore|firepunch|psychic|recover": 22.609,
+            "encore|icepunch|psychic|recover": 4.348,
+            "encore|psychic|recover|thunderpunch": 6.957,
+            "firepunch|hiddenpowerdark|psychic|recover": 15.652,
+            "firepunch|icepunch|psychic|recover": 8.696,
+            "firepunch|psychic|recover|thunderpunch": 10.435,
+            "firepunch|psychic|recover|thunderwave": 19.13,
+            "icepunch|psychic|recover|thunderpunch": 12.174
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "ampharos": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 136,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunder",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "firepunch",
+                49.265
+            ],
+            [
+                "hiddenpowerice",
+                50.735
+            ]
+        ],
+        "sets": {
+            "firepunch|rest|sleeptalk|thunder": 49.265,
+            "hiddenpowerice|rest|sleeptalk|thunder": 50.735
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "arbok": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 116,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "haze",
+                29.31
+            ],
+            [
+                "glare",
+                50.0
+            ],
+            [
+                "sludgebomb",
+                100.0
+            ],
+            [
+                "earthquake",
+                76.724
+            ],
+            [
+                "sleeptalk",
+                50.0
+            ],
+            [
+                "curse",
+                43.966
+            ],
+            [
+                "rest",
+                50.0
+            ]
+        ],
+        "sets": {
+            "curse|earthquake|glare|sludgebomb": 20.69,
+            "curse|rest|sleeptalk|sludgebomb": 23.276,
+            "earthquake|glare|haze|sludgebomb": 29.31,
+            "earthquake|rest|sleeptalk|sludgebomb": 26.724
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "arcanine": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 117,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "fireblast",
+                45.299
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "crunch",
+                35.043
+            ],
+            [
+                "hiddenpowergrass",
+                36.752
+            ],
+            [
+                "flamethrower",
+                54.701
+            ],
+            [
+                "doubleedge",
+                28.205
+            ]
+        ],
+        "sets": {
+            "crunch|fireblast|rest|sleeptalk": 17.094,
+            "crunch|flamethrower|rest|sleeptalk": 17.949,
+            "doubleedge|fireblast|rest|sleeptalk": 10.256,
+            "doubleedge|flamethrower|rest|sleeptalk": 17.949,
+            "fireblast|hiddenpowergrass|rest|sleeptalk": 17.949,
+            "flamethrower|hiddenpowergrass|rest|sleeptalk": 18.803
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "ariados": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 122,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "curse",
+                27.049
+            ],
+            [
+                "batonpass",
+                100.0
+            ],
+            [
+                "sludgebomb",
+                100.0
+            ],
+            [
+                "spiderweb",
+                28.689
+            ],
+            [
+                "growth",
+                44.262
+            ]
+        ],
+        "sets": {
+            "agility|batonpass|curse|sludgebomb": 27.049,
+            "agility|batonpass|growth|sludgebomb": 44.262,
+            "agility|batonpass|sludgebomb|spiderweb": 28.689
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "articuno": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 111,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "toxic",
+                46.847
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "icebeam",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "hiddenpowerelectric",
+                53.153
+            ]
+        ],
+        "sets": {
+            "hiddenpowerelectric|icebeam|rest|sleeptalk": 53.153,
+            "icebeam|rest|sleeptalk|toxic": 46.847
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "azumarill": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 119,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "doubleedge",
+                31.933
+            ],
+            [
+                "sleeptalk",
+                67.227
+            ],
+            [
+                "curse",
+                31.933
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "perishsong",
+                32.773
+            ],
+            [
+                "whirlpool",
+                32.773
+            ],
+            [
+                "surf",
+                68.067
+            ],
+            [
+                "lightscreen",
+                17.647
+            ],
+            [
+                "toxic",
+                5.882
+            ],
+            [
+                "icebeam",
+                11.765
+            ]
+        ],
+        "sets": {
+            "curse|doubleedge|rest|sleeptalk": 31.933,
+            "icebeam|rest|sleeptalk|surf": 11.765,
+            "lightscreen|rest|sleeptalk|surf": 17.647,
+            "perishsong|rest|surf|whirlpool": 32.773,
+            "rest|sleeptalk|surf|toxic": 5.882
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "beedrill": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 107,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerground",
+                100.0
+            ],
+            [
+                "sludgebomb",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "substitute",
+                41.121
+            ],
+            [
+                "agility",
+                58.879
+            ]
+        ],
+        "sets": {
+            "agility|hiddenpowerground|sludgebomb|swordsdance": 58.879,
+            "hiddenpowerground|sludgebomb|substitute|swordsdance": 41.121
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "bellossom": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 129,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeppowder",
+                28.682
+            ],
+            [
+                "stunspore",
+                48.837
+            ],
+            [
+                "razorleaf",
+                48.062
+            ],
+            [
+                "moonlight",
+                100.0
+            ],
+            [
+                "swordsdance",
+                51.938
+            ],
+            [
+                "return102",
+                51.938
+            ],
+            [
+                "hiddenpowerground",
+                24.031
+            ],
+            [
+                "hiddenpowerfire",
+                20.155
+            ],
+            [
+                "leechseed",
+                26.357
+            ]
+        ],
+        "sets": {
+            "hiddenpowerfire|leechseed|moonlight|razorleaf": 7.752,
+            "hiddenpowerfire|moonlight|razorleaf|sleeppowder": 9.302,
+            "hiddenpowerfire|moonlight|razorleaf|stunspore": 3.101,
+            "hiddenpowerground|moonlight|return102|swordsdance": 24.031,
+            "leechseed|moonlight|razorleaf|sleeppowder": 10.078,
+            "leechseed|moonlight|razorleaf|stunspore": 8.527,
+            "moonlight|razorleaf|sleeppowder|stunspore": 9.302,
+            "moonlight|return102|stunspore|swordsdance": 27.907
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "blastoise": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 118,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "toxic",
+                29.661
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "rapidspin",
+                16.102
+            ],
+            [
+                "roar",
+                20.339
+            ],
+            [
+                "icebeam",
+                54.237
+            ],
+            [
+                "sleeptalk",
+                53.39
+            ],
+            [
+                "zapcannon",
+                26.271
+            ]
+        ],
+        "sets": {
+            "icebeam|rapidspin|rest|surf": 5.085,
+            "icebeam|rest|roar|surf": 7.627,
+            "icebeam|rest|sleeptalk|surf": 27.119,
+            "icebeam|rest|surf|toxic": 14.407,
+            "rapidspin|rest|roar|surf": 4.237,
+            "rapidspin|rest|surf|toxic": 6.78,
+            "rest|roar|surf|toxic": 8.475,
+            "rest|sleeptalk|surf|zapcannon": 26.271
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "blissey": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 117,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderwave",
+                12.821
+            ],
+            [
+                "flamethrower",
+                14.53
+            ],
+            [
+                "present",
+                100.0
+            ],
+            [
+                "softboiled",
+                100.0
+            ],
+            [
+                "toxic",
+                24.786
+            ],
+            [
+                "icebeam",
+                12.821
+            ],
+            [
+                "lightscreen",
+                16.239
+            ],
+            [
+                "counter",
+                11.966
+            ],
+            [
+                "thunder",
+                46.154
+            ],
+            [
+                "healbell",
+                60.684
+            ]
+        ],
+        "sets": {
+            "counter|flamethrower|present|softboiled": 1.709,
+            "counter|healbell|present|softboiled": 0.855,
+            "counter|icebeam|present|softboiled": 1.709,
+            "counter|lightscreen|present|softboiled": 1.709,
+            "counter|present|softboiled|thunderwave": 1.709,
+            "counter|present|softboiled|toxic": 4.274,
+            "flamethrower|healbell|present|softboiled": 3.419,
+            "flamethrower|icebeam|present|softboiled": 0.855,
+            "flamethrower|lightscreen|present|softboiled": 0.855,
+            "flamethrower|present|softboiled|thunderwave": 2.564,
+            "flamethrower|present|softboiled|toxic": 5.128,
+            "healbell|icebeam|present|softboiled": 0.855,
+            "healbell|lightscreen|present|softboiled": 3.419,
+            "healbell|present|softboiled|thunder": 46.154,
+            "healbell|present|softboiled|thunderwave": 2.564,
+            "healbell|present|softboiled|toxic": 3.419,
+            "icebeam|lightscreen|present|softboiled": 0.855,
+            "icebeam|present|softboiled|thunderwave": 3.419,
+            "icebeam|present|softboiled|toxic": 5.128,
+            "lightscreen|present|softboiled|thunderwave": 2.564,
+            "lightscreen|present|softboiled|toxic": 6.838
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "butterfree": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 91,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "stunspore",
+                72.527
+            ],
+            [
+                "sleeppowder",
+                100.0
+            ],
+            [
+                "hiddenpowerbug",
+                39.56
+            ],
+            [
+                "substitute",
+                60.44
+            ],
+            [
+                "nightmare",
+                27.473
+            ]
+        ],
+        "sets": {
+            "hiddenpowerbug|psychic|sleeppowder|stunspore": 39.56,
+            "nightmare|psychic|sleeppowder|substitute": 27.473,
+            "psychic|sleeppowder|stunspore|substitute": 32.967
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "celebi": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 124,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "psychic",
+                62.097
+            ],
+            [
+                "healbell",
+                54.032
+            ],
+            [
+                "leechseed",
+                21.774
+            ],
+            [
+                "hiddenpowergrass",
+                28.226
+            ],
+            [
+                "toxic",
+                20.161
+            ],
+            [
+                "curse",
+                37.903
+            ],
+            [
+                "return102",
+                37.903
+            ],
+            [
+                "batonpass",
+                37.903
+            ]
+        ],
+        "sets": {
+            "batonpass|curse|recover|return102": 37.903,
+            "healbell|hiddenpowergrass|psychic|recover": 28.226,
+            "healbell|leechseed|psychic|recover": 13.71,
+            "healbell|psychic|recover|toxic": 12.097,
+            "leechseed|psychic|recover|toxic": 8.065
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "charizard": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 89,
+        "items": [
+            [
+                "leftovers",
+                74.157
+            ],
+            [
+                "miracleberry",
+                25.843
+            ]
+        ],
+        "moves": [
+            [
+                "swordsdance",
+                47.191
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "bellydrum",
+                52.809
+            ]
+        ],
+        "sets": {
+            "bellydrum|earthquake|fireblast|rockslide": 52.809,
+            "earthquake|fireblast|rockslide|swordsdance": 47.191
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "clefable": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 102,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "moonlight",
+                100.0
+            ],
+            [
+                "return102",
+                49.02
+            ],
+            [
+                "curse",
+                32.353
+            ],
+            [
+                "thunderwave",
+                38.235
+            ],
+            [
+                "bellydrum",
+                34.314
+            ],
+            [
+                "bodyslam",
+                50.98
+            ],
+            [
+                "hiddenpowerground",
+                28.431
+            ],
+            [
+                "fireblast",
+                17.647
+            ],
+            [
+                "encore",
+                33.333
+            ],
+            [
+                "flamethrower",
+                15.686
+            ]
+        ],
+        "sets": {
+            "bellydrum|bodyslam|hiddenpowerground|moonlight": 17.647,
+            "bellydrum|hiddenpowerground|moonlight|return102": 10.784,
+            "bellydrum|moonlight|return102|thunderwave": 5.882,
+            "bodyslam|encore|fireblast|moonlight": 17.647,
+            "bodyslam|encore|flamethrower|moonlight": 15.686,
+            "curse|moonlight|return102|thunderwave": 32.353
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "cloyster": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 116,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "spikes",
+                93.966
+            ],
+            [
+                "icebeam",
+                69.828
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "surf",
+                68.966
+            ],
+            [
+                "rapidspin",
+                37.931
+            ],
+            [
+                "toxic",
+                29.31
+            ]
+        ],
+        "sets": {
+            "explosion|icebeam|rapidspin|spikes": 12.931,
+            "explosion|icebeam|rapidspin|surf": 1.724,
+            "explosion|icebeam|rapidspin|toxic": 2.586,
+            "explosion|icebeam|spikes|surf": 37.069,
+            "explosion|icebeam|spikes|toxic": 15.517,
+            "explosion|rapidspin|spikes|surf": 18.966,
+            "explosion|rapidspin|surf|toxic": 1.724,
+            "explosion|spikes|surf|toxic": 9.483
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "corsola": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 91,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "curse",
+                28.571
+            ],
+            [
+                "sandstorm",
+                32.967
+            ],
+            [
+                "toxic",
+                38.462
+            ]
+        ],
+        "sets": {
+            "curse|recover|rockslide|surf": 28.571,
+            "recover|rockslide|sandstorm|surf": 32.967,
+            "recover|rockslide|surf|toxic": 38.462
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "crobat": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 103,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "wingattack",
+                58.252
+            ],
+            [
+                "toxic",
+                88.35
+            ],
+            [
+                "haze",
+                86.408
+            ],
+            [
+                "protect",
+                58.252
+            ],
+            [
+                "rest",
+                41.748
+            ],
+            [
+                "hiddenpowerground",
+                25.243
+            ],
+            [
+                "return102",
+                41.748
+            ]
+        ],
+        "sets": {
+            "haze|hiddenpowerground|rest|return102": 11.65,
+            "haze|protect|toxic|wingattack": 58.252,
+            "haze|rest|return102|toxic": 16.505,
+            "hiddenpowerground|rest|return102|toxic": 13.592
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "delibird": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 102,
+        "items": [
+            [
+                "unknown_item",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thief",
+                100.0
+            ],
+            [
+                "toxic",
+                33.333
+            ],
+            [
+                "icebeam",
+                100.0
+            ],
+            [
+                "spikes",
+                93.137
+            ],
+            [
+                "rapidspin",
+                35.294
+            ],
+            [
+                "hiddenpowerflying",
+                38.235
+            ]
+        ],
+        "sets": {
+            "hiddenpowerflying|icebeam|rapidspin|thief": 0.98,
+            "hiddenpowerflying|icebeam|spikes|thief": 33.333,
+            "hiddenpowerflying|icebeam|thief|toxic": 3.922,
+            "icebeam|rapidspin|spikes|thief": 32.353,
+            "icebeam|rapidspin|thief|toxic": 1.961,
+            "icebeam|spikes|thief|toxic": 27.451
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "dewgong": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 99,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "icebeam",
+                100.0
+            ],
+            [
+                "protect",
+                48.485
+            ],
+            [
+                "encore",
+                48.485
+            ],
+            [
+                "toxic",
+                48.485
+            ],
+            [
+                "surf",
+                51.515
+            ],
+            [
+                "sleeptalk",
+                51.515
+            ],
+            [
+                "rest",
+                51.515
+            ]
+        ],
+        "sets": {
+            "encore|icebeam|protect|toxic": 48.485,
+            "icebeam|rest|sleeptalk|surf": 51.515
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "dodrio": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 96,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "substitute",
+                42.708
+            ],
+            [
+                "drillpeck",
+                68.75
+            ],
+            [
+                "hiddenpowerground",
+                73.958
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "rest",
+                57.292
+            ],
+            [
+                "sleeptalk",
+                57.292
+            ]
+        ],
+        "sets": {
+            "doubleedge|drillpeck|hiddenpowerground|substitute": 42.708,
+            "doubleedge|drillpeck|rest|sleeptalk": 26.042,
+            "doubleedge|hiddenpowerground|rest|sleeptalk": 31.25
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "donphan": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 128,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerrock",
+                78.125
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "roar",
+                44.531
+            ],
+            [
+                "curse",
+                66.406
+            ],
+            [
+                "rest",
+                55.469
+            ],
+            [
+                "sleeptalk",
+                55.469
+            ]
+        ],
+        "sets": {
+            "curse|earthquake|hiddenpowerrock|roar": 44.531,
+            "curse|earthquake|rest|sleeptalk": 21.875,
+            "earthquake|hiddenpowerrock|rest|sleeptalk": 33.594
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "dragonite": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 110,
+        "items": [
+            [
+                "leftovers",
+                71.818
+            ],
+            [
+                "mintberry",
+                28.182
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                59.091
+            ],
+            [
+                "icebeam",
+                60.0
+            ],
+            [
+                "sleeptalk",
+                30.909
+            ],
+            [
+                "thunder",
+                89.091
+            ],
+            [
+                "surf",
+                30.909
+            ],
+            [
+                "hiddenpowerflying",
+                69.091
+            ],
+            [
+                "dynamicpunch",
+                29.091
+            ],
+            [
+                "haze",
+                31.818
+            ]
+        ],
+        "sets": {
+            "dynamicpunch|hiddenpowerflying|icebeam|thunder": 29.091,
+            "haze|hiddenpowerflying|rest|surf": 10.909,
+            "haze|hiddenpowerflying|rest|thunder": 9.091,
+            "haze|hiddenpowerflying|surf|thunder": 11.818,
+            "hiddenpowerflying|rest|surf|thunder": 8.182,
+            "icebeam|rest|sleeptalk|thunder": 30.909
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "dugtrio": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 121,
+        "items": [
+            [
+                "leftovers",
+                28.099
+            ],
+            [
+                "unknown_item",
+                71.901
+            ]
+        ],
+        "moves": [
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "substitute",
+                57.025
+            ],
+            [
+                "sludgebomb",
+                71.074
+            ],
+            [
+                "thief",
+                71.901
+            ]
+        ],
+        "sets": {
+            "earthquake|rockslide|sludgebomb|substitute": 28.099,
+            "earthquake|rockslide|sludgebomb|thief": 42.975,
+            "earthquake|rockslide|substitute|thief": 28.926
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "dunsparce": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 119,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerground",
+                32.773
+            ],
+            [
+                "curse",
+                60.504
+            ],
+            [
+                "glare",
+                32.773
+            ],
+            [
+                "return102",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                67.227
+            ],
+            [
+                "thunder",
+                18.487
+            ],
+            [
+                "rest",
+                67.227
+            ],
+            [
+                "flamethrower",
+                21.008
+            ]
+        ],
+        "sets": {
+            "curse|glare|hiddenpowerground|return102": 32.773,
+            "curse|rest|return102|sleeptalk": 27.731,
+            "flamethrower|rest|return102|sleeptalk": 21.008,
+            "rest|return102|sleeptalk|thunder": 18.487
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "electabuzz": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 140,
+        "items": [
+            [
+                "leftovers",
+                82.857
+            ],
+            [
+                "unknown_item",
+                17.143
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                52.143
+            ],
+            [
+                "icepunch",
+                100.0
+            ],
+            [
+                "thunder",
+                75.714
+            ],
+            [
+                "sleeptalk",
+                52.143
+            ],
+            [
+                "crosschop",
+                47.857
+            ],
+            [
+                "thief",
+                17.143
+            ],
+            [
+                "thunderbolt",
+                24.286
+            ],
+            [
+                "pursuit",
+                30.714
+            ]
+        ],
+        "sets": {
+            "crosschop|icepunch|pursuit|thunder": 13.571,
+            "crosschop|icepunch|pursuit|thunderbolt": 17.143,
+            "crosschop|icepunch|thief|thunder": 10.0,
+            "crosschop|icepunch|thief|thunderbolt": 7.143,
+            "icepunch|rest|sleeptalk|thunder": 52.143
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "electrode": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 119,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "lightscreen",
+                18.487
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "hiddenpowerice",
+                100.0
+            ],
+            [
+                "thunderbolt",
+                80.672
+            ],
+            [
+                "reflect",
+                24.37
+            ],
+            [
+                "thunderwave",
+                57.143
+            ],
+            [
+                "thunder",
+                19.328
+            ]
+        ],
+        "sets": {
+            "explosion|hiddenpowerice|lightscreen|thunder": 9.244,
+            "explosion|hiddenpowerice|lightscreen|thunderbolt": 9.244,
+            "explosion|hiddenpowerice|reflect|thunder": 10.084,
+            "explosion|hiddenpowerice|reflect|thunderbolt": 14.286,
+            "explosion|hiddenpowerice|thunderbolt|thunderwave": 57.143
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "entei": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 134,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                53.731
+            ],
+            [
+                "sleeptalk",
+                53.731
+            ],
+            [
+                "fireblast",
+                68.657
+            ],
+            [
+                "hiddenpowergrass",
+                28.358
+            ],
+            [
+                "return102",
+                25.373
+            ],
+            [
+                "solarbeam",
+                46.269
+            ],
+            [
+                "hiddenpowerground",
+                21.642
+            ],
+            [
+                "sunnyday",
+                46.269
+            ],
+            [
+                "hiddenpowerrock",
+                24.627
+            ],
+            [
+                "flamethrower",
+                31.343
+            ]
+        ],
+        "sets": {
+            "fireblast|hiddenpowergrass|rest|sleeptalk": 11.194,
+            "fireblast|hiddenpowerground|solarbeam|sunnyday": 21.642,
+            "fireblast|hiddenpowerrock|solarbeam|sunnyday": 24.627,
+            "fireblast|rest|return102|sleeptalk": 11.194,
+            "flamethrower|hiddenpowergrass|rest|sleeptalk": 17.164,
+            "flamethrower|rest|return102|sleeptalk": 14.179
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "espeon": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 148,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "hiddenpowerfire",
+                71.622
+            ],
+            [
+                "growth",
+                100.0
+            ],
+            [
+                "batonpass",
+                56.757
+            ],
+            [
+                "morningsun",
+                47.973
+            ],
+            [
+                "substitute",
+                23.649
+            ]
+        ],
+        "sets": {
+            "batonpass|growth|hiddenpowerfire|psychic": 28.378,
+            "batonpass|growth|morningsun|psychic": 28.378,
+            "growth|hiddenpowerfire|morningsun|psychic": 19.595,
+            "growth|hiddenpowerfire|psychic|substitute": 23.649
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "exeggutor": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 139,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowergrass",
+                46.763
+            ],
+            [
+                "explosion",
+                71.223
+            ],
+            [
+                "sleeppowder",
+                31.655
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "gigadrain",
+                39.568
+            ],
+            [
+                "hiddenpowerfire",
+                53.237
+            ],
+            [
+                "stunspore",
+                28.777
+            ],
+            [
+                "synthesis",
+                28.777
+            ]
+        ],
+        "sets": {
+            "explosion|gigadrain|hiddenpowerfire|psychic": 39.568,
+            "explosion|hiddenpowerfire|psychic|sleeppowder": 13.669,
+            "explosion|hiddenpowergrass|psychic|sleeppowder": 17.986,
+            "hiddenpowergrass|psychic|stunspore|synthesis": 28.777
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "farfetchd": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 108,
+        "items": [
+            [
+                "stick",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "batonpass",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "return102",
+                100.0
+            ],
+            [
+                "agility",
+                100.0
+            ]
+        ],
+        "sets": {
+            "agility|batonpass|return102|swordsdance": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "fearow": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 97,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "substitute",
+                46.392
+            ],
+            [
+                "hiddenpowerground",
+                74.227
+            ],
+            [
+                "drillpeck",
+                72.165
+            ],
+            [
+                "rest",
+                53.608
+            ],
+            [
+                "sleeptalk",
+                53.608
+            ]
+        ],
+        "sets": {
+            "doubleedge|drillpeck|hiddenpowerground|substitute": 46.392,
+            "doubleedge|drillpeck|rest|sleeptalk": 25.773,
+            "doubleedge|hiddenpowerground|rest|sleeptalk": 27.835
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "feraligatr": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 100,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "icebeam",
+                37.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "hiddenpowerelectric",
+                33.0
+            ],
+            [
+                "earthquake",
+                30.0
+            ]
+        ],
+        "sets": {
+            "earthquake|rest|sleeptalk|surf": 30.0,
+            "hiddenpowerelectric|rest|sleeptalk|surf": 33.0,
+            "icebeam|rest|sleeptalk|surf": 37.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "flareon": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 134,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "batonpass",
+                45.522
+            ],
+            [
+                "growth",
+                45.522
+            ],
+            [
+                "fireblast",
+                74.627
+            ],
+            [
+                "hiddenpowergrass",
+                45.522
+            ],
+            [
+                "doubleedge",
+                54.478
+            ],
+            [
+                "sleeptalk",
+                54.478
+            ],
+            [
+                "flamethrower",
+                25.373
+            ],
+            [
+                "rest",
+                54.478
+            ]
+        ],
+        "sets": {
+            "batonpass|fireblast|growth|hiddenpowergrass": 45.522,
+            "doubleedge|fireblast|rest|sleeptalk": 29.104,
+            "doubleedge|flamethrower|rest|sleeptalk": 25.373
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "forretress": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 143,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "doubleedge",
+                56.643
+            ],
+            [
+                "toxic",
+                58.741
+            ],
+            [
+                "spikes",
+                90.21
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "rapidspin",
+                51.049
+            ],
+            [
+                "hiddenpowersteel",
+                23.077
+            ],
+            [
+                "hiddenpowerbug",
+                20.28
+            ]
+        ],
+        "sets": {
+            "doubleedge|explosion|rapidspin|spikes": 23.776,
+            "doubleedge|explosion|rapidspin|toxic": 4.196,
+            "doubleedge|explosion|spikes|toxic": 28.671,
+            "explosion|hiddenpowerbug|rapidspin|spikes": 6.993,
+            "explosion|hiddenpowerbug|rapidspin|toxic": 3.497,
+            "explosion|hiddenpowerbug|spikes|toxic": 9.79,
+            "explosion|hiddenpowersteel|rapidspin|spikes": 10.49,
+            "explosion|hiddenpowersteel|rapidspin|toxic": 2.098,
+            "explosion|hiddenpowersteel|spikes|toxic": 10.49
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "furret": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 117,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "doubleedge",
+                66.667
+            ],
+            [
+                "curse",
+                64.957
+            ],
+            [
+                "rest",
+                66.667
+            ],
+            [
+                "sleeptalk",
+                66.667
+            ],
+            [
+                "irontail",
+                49.573
+            ],
+            [
+                "surf",
+                18.803
+            ],
+            [
+                "quickattack",
+                33.333
+            ],
+            [
+                "return102",
+                33.333
+            ]
+        ],
+        "sets": {
+            "curse|doubleedge|rest|sleeptalk": 31.624,
+            "curse|irontail|quickattack|return102": 33.333,
+            "doubleedge|irontail|rest|sleeptalk": 16.239,
+            "doubleedge|rest|sleeptalk|surf": 18.803
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "gengar": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 119,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "icepunch",
+                100.0
+            ],
+            [
+                "explosion",
+                47.059
+            ],
+            [
+                "psychic",
+                33.613
+            ],
+            [
+                "destinybond",
+                52.941
+            ],
+            [
+                "firepunch",
+                36.134
+            ],
+            [
+                "hypnosis",
+                30.252
+            ]
+        ],
+        "sets": {
+            "destinybond|firepunch|icepunch|thunderbolt": 20.168,
+            "destinybond|hypnosis|icepunch|thunderbolt": 15.126,
+            "destinybond|icepunch|psychic|thunderbolt": 17.647,
+            "explosion|firepunch|icepunch|thunderbolt": 15.966,
+            "explosion|hypnosis|icepunch|thunderbolt": 15.126,
+            "explosion|icepunch|psychic|thunderbolt": 15.966
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "girafarig": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 118,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "earthquake",
+                21.186
+            ],
+            [
+                "return102",
+                31.356
+            ],
+            [
+                "thunder",
+                58.475
+            ],
+            [
+                "batonpass",
+                68.644
+            ],
+            [
+                "agility",
+                68.644
+            ],
+            [
+                "rest",
+                10.169
+            ],
+            [
+                "sleeptalk",
+                10.169
+            ],
+            [
+                "amnesia",
+                31.356
+            ]
+        ],
+        "sets": {
+            "agility|amnesia|batonpass|psychic": 31.356,
+            "agility|batonpass|psychic|thunder": 37.288,
+            "earthquake|psychic|return102|thunder": 21.186,
+            "psychic|rest|return102|sleeptalk": 10.169
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "gligar": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 110,
+        "items": [
+            [
+                "unknown_item",
+                52.727
+            ],
+            [
+                "leftovers",
+                47.273
+            ]
+        ],
+        "moves": [
+            [
+                "toxic",
+                20.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "hiddenpowerflying",
+                100.0
+            ],
+            [
+                "thief",
+                52.727
+            ],
+            [
+                "sleeptalk",
+                47.273
+            ],
+            [
+                "rest",
+                47.273
+            ],
+            [
+                "counter",
+                32.727
+            ]
+        ],
+        "sets": {
+            "counter|earthquake|hiddenpowerflying|thief": 32.727,
+            "earthquake|hiddenpowerflying|rest|sleeptalk": 47.273,
+            "earthquake|hiddenpowerflying|thief|toxic": 20.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "golduck": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 118,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                49.153
+            ],
+            [
+                "rest",
+                49.153
+            ],
+            [
+                "surf",
+                49.153
+            ],
+            [
+                "crosschop",
+                55.932
+            ],
+            [
+                "icebeam",
+                57.627
+            ],
+            [
+                "hydropump",
+                50.847
+            ],
+            [
+                "hypnosis",
+                34.746
+            ],
+            [
+                "hiddenpowerelectric",
+                53.39
+            ]
+        ],
+        "sets": {
+            "crosschop|hiddenpowerelectric|hydropump|hypnosis": 6.78,
+            "crosschop|hiddenpowerelectric|hydropump|icebeam": 16.102,
+            "crosschop|hydropump|hypnosis|icebeam": 12.712,
+            "crosschop|rest|sleeptalk|surf": 20.339,
+            "hiddenpowerelectric|hydropump|hypnosis|icebeam": 15.254,
+            "hiddenpowerelectric|rest|sleeptalk|surf": 15.254,
+            "icebeam|rest|sleeptalk|surf": 13.559
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "golem": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 97,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "curse",
+                27.835
+            ],
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "roar",
+                36.082
+            ],
+            [
+                "rapidspin",
+                36.082
+            ]
+        ],
+        "sets": {
+            "curse|earthquake|explosion|rockslide": 27.835,
+            "earthquake|explosion|rapidspin|rockslide": 36.082,
+            "earthquake|explosion|roar|rockslide": 36.082
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "granbull": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 125,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "return102",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                64.8
+            ],
+            [
+                "healbell",
+                16.0
+            ],
+            [
+                "rest",
+                64.8
+            ],
+            [
+                "curse",
+                63.2
+            ],
+            [
+                "hiddenpowerground",
+                56.0
+            ],
+            [
+                "lovelykiss",
+                35.2
+            ]
+        ],
+        "sets": {
+            "curse|hiddenpowerground|lovelykiss|return102": 35.2,
+            "curse|rest|return102|sleeptalk": 28.0,
+            "healbell|rest|return102|sleeptalk": 16.0,
+            "hiddenpowerground|rest|return102|sleeptalk": 20.8
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "gyarados": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 104,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerflying",
+                69.231
+            ],
+            [
+                "sleeptalk",
+                68.269
+            ],
+            [
+                "curse",
+                28.846
+            ],
+            [
+                "rest",
+                68.269
+            ],
+            [
+                "hydropump",
+                52.885
+            ],
+            [
+                "thunder",
+                31.731
+            ],
+            [
+                "doubleedge",
+                38.462
+            ],
+            [
+                "surf",
+                18.269
+            ],
+            [
+                "roar",
+                24.038
+            ]
+        ],
+        "sets": {
+            "curse|hiddenpowerflying|rest|sleeptalk": 28.846,
+            "doubleedge|hiddenpowerflying|hydropump|thunder": 7.692,
+            "doubleedge|hydropump|rest|sleeptalk": 13.462,
+            "doubleedge|hydropump|roar|thunder": 10.577,
+            "doubleedge|rest|sleeptalk|surf": 6.731,
+            "hiddenpowerflying|hydropump|rest|sleeptalk": 7.692,
+            "hiddenpowerflying|hydropump|roar|thunder": 13.462,
+            "hiddenpowerflying|rest|sleeptalk|surf": 11.538
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "heracross": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 137,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "curse",
+                72.993
+            ],
+            [
+                "megahorn",
+                100.0
+            ],
+            [
+                "earthquake",
+                71.533
+            ],
+            [
+                "hiddenpowerrock",
+                44.526
+            ],
+            [
+                "sleeptalk",
+                55.474
+            ],
+            [
+                "rest",
+                55.474
+            ]
+        ],
+        "sets": {
+            "curse|earthquake|hiddenpowerrock|megahorn": 44.526,
+            "curse|megahorn|rest|sleeptalk": 28.467,
+            "earthquake|megahorn|rest|sleeptalk": 27.007
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "hitmonchan": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 126,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "highjumpkick",
+                100.0
+            ],
+            [
+                "machpunch",
+                30.952
+            ],
+            [
+                "hiddenpowerghost",
+                15.873
+            ],
+            [
+                "curse",
+                67.46
+            ],
+            [
+                "bodyslam",
+                11.905
+            ],
+            [
+                "sleeptalk",
+                69.048
+            ],
+            [
+                "rest",
+                69.048
+            ],
+            [
+                "hiddenpowerrock",
+                35.714
+            ]
+        ],
+        "sets": {
+            "bodyslam|highjumpkick|rest|sleeptalk": 11.905,
+            "curse|hiddenpowerghost|highjumpkick|machpunch": 15.873,
+            "curse|hiddenpowerrock|highjumpkick|machpunch": 15.079,
+            "curse|highjumpkick|rest|sleeptalk": 36.508,
+            "hiddenpowerrock|highjumpkick|rest|sleeptalk": 20.635
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "hitmonlee": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 140,
+        "items": [
+            [
+                "leftovers",
+                86.429
+            ],
+            [
+                "mintberry",
+                13.571
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                49.286
+            ],
+            [
+                "bodyslam",
+                21.429
+            ],
+            [
+                "highjumpkick",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                35.714
+            ],
+            [
+                "hiddenpowerrock",
+                45.714
+            ],
+            [
+                "meditate",
+                64.286
+            ],
+            [
+                "substitute",
+                14.286
+            ],
+            [
+                "hiddenpowerghost",
+                32.857
+            ],
+            [
+                "doubleedge",
+                36.429
+            ]
+        ],
+        "sets": {
+            "bodyslam|highjumpkick|rest|sleeptalk": 21.429,
+            "doubleedge|hiddenpowerghost|highjumpkick|meditate": 17.143,
+            "doubleedge|hiddenpowerrock|highjumpkick|meditate": 19.286,
+            "hiddenpowerghost|highjumpkick|meditate|rest": 7.857,
+            "hiddenpowerghost|highjumpkick|meditate|substitute": 7.857,
+            "hiddenpowerrock|highjumpkick|meditate|rest": 5.714,
+            "hiddenpowerrock|highjumpkick|meditate|substitute": 6.429,
+            "hiddenpowerrock|highjumpkick|rest|sleeptalk": 14.286
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "hitmontop": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 128,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "curse",
+                72.656
+            ],
+            [
+                "highjumpkick",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                75.781
+            ],
+            [
+                "rest",
+                75.781
+            ],
+            [
+                "machpunch",
+                24.219
+            ],
+            [
+                "hiddenpowerghost",
+                28.906
+            ],
+            [
+                "hiddenpowerrock",
+                22.656
+            ]
+        ],
+        "sets": {
+            "curse|hiddenpowerghost|highjumpkick|machpunch": 14.844,
+            "curse|hiddenpowerrock|highjumpkick|machpunch": 9.375,
+            "curse|highjumpkick|rest|sleeptalk": 48.438,
+            "hiddenpowerghost|highjumpkick|rest|sleeptalk": 14.062,
+            "hiddenpowerrock|highjumpkick|rest|sleeptalk": 13.281
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "hooh": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 102,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "hiddenpowerflying",
+                50.0
+            ],
+            [
+                "curse",
+                50.0
+            ],
+            [
+                "thunder",
+                50.0
+            ],
+            [
+                "sacredfire",
+                50.0
+            ]
+        ],
+        "sets": {
+            "curse|earthquake|hiddenpowerflying|recover": 50.0,
+            "earthquake|recover|sacredfire|thunder": 50.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "houndoom": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 113,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                35.398
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "crunch",
+                84.956
+            ],
+            [
+                "sleeptalk",
+                35.398
+            ],
+            [
+                "pursuit",
+                42.478
+            ],
+            [
+                "sunnyday",
+                37.168
+            ],
+            [
+                "solarbeam",
+                37.168
+            ],
+            [
+                "counter",
+                27.434
+            ]
+        ],
+        "sets": {
+            "counter|crunch|fireblast|pursuit": 27.434,
+            "crunch|fireblast|rest|sleeptalk": 35.398,
+            "crunch|fireblast|solarbeam|sunnyday": 22.124,
+            "fireblast|pursuit|solarbeam|sunnyday": 15.044
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "hypno": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 105,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                72.381
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "curse",
+                66.667
+            ],
+            [
+                "return102",
+                19.048
+            ],
+            [
+                "sleeptalk",
+                60.952
+            ],
+            [
+                "seismictoss",
+                20.0
+            ],
+            [
+                "doubleedge",
+                27.619
+            ],
+            [
+                "bodyslam",
+                20.0
+            ],
+            [
+                "thunderwave",
+                13.333
+            ]
+        ],
+        "sets": {
+            "bodyslam|curse|psychic|rest": 20.0,
+            "curse|doubleedge|rest|sleeptalk": 27.619,
+            "curse|psychic|rest|return102": 19.048,
+            "psychic|rest|seismictoss|sleeptalk": 20.0,
+            "psychic|rest|sleeptalk|thunderwave": 13.333
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "jolteon": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 139,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerice",
+                69.784
+            ],
+            [
+                "substitute",
+                64.748
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "growth",
+                100.0
+            ],
+            [
+                "batonpass",
+                65.468
+            ]
+        ],
+        "sets": {
+            "batonpass|growth|hiddenpowerice|thunderbolt": 35.252,
+            "batonpass|growth|substitute|thunderbolt": 30.216,
+            "growth|hiddenpowerice|substitute|thunderbolt": 34.532
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "jumpluff": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 84,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "synthesis",
+                47.619
+            ],
+            [
+                "encore",
+                100.0
+            ],
+            [
+                "stunspore",
+                100.0
+            ],
+            [
+                "hiddenpowerflying",
+                100.0
+            ],
+            [
+                "leechseed",
+                52.381
+            ]
+        ],
+        "sets": {
+            "encore|hiddenpowerflying|leechseed|stunspore": 52.381,
+            "encore|hiddenpowerflying|stunspore|synthesis": 47.619
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "jynx": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 108,
+        "items": [
+            [
+                "leftovers",
+                66.667
+            ],
+            [
+                "unknown_item",
+                33.333
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "lovelykiss",
+                100.0
+            ],
+            [
+                "nightmare",
+                33.333
+            ],
+            [
+                "icebeam",
+                100.0
+            ],
+            [
+                "substitute",
+                33.333
+            ],
+            [
+                "thief",
+                33.333
+            ]
+        ],
+        "sets": {
+            "icebeam|lovelykiss|nightmare|psychic": 33.333,
+            "icebeam|lovelykiss|psychic|substitute": 33.333,
+            "icebeam|lovelykiss|psychic|thief": 33.333
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "kabutops": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 94,
+        "items": [
+            [
+                "mintberry",
+                24.468
+            ],
+            [
+                "leftovers",
+                75.532
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                24.468
+            ],
+            [
+                "hiddenpowerground",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "ancientpower",
+                60.638
+            ],
+            [
+                "substitute",
+                22.34
+            ],
+            [
+                "return102",
+                39.362
+            ],
+            [
+                "hydropump",
+                39.362
+            ],
+            [
+                "protect",
+                13.83
+            ]
+        ],
+        "sets": {
+            "ancientpower|hiddenpowerground|protect|swordsdance": 13.83,
+            "ancientpower|hiddenpowerground|rest|swordsdance": 24.468,
+            "ancientpower|hiddenpowerground|substitute|swordsdance": 22.34,
+            "hiddenpowerground|hydropump|return102|swordsdance": 39.362
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "kangaskhan": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 130,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "doubleedge",
+                43.846
+            ],
+            [
+                "earthquake",
+                70.0
+            ],
+            [
+                "rest",
+                63.846
+            ],
+            [
+                "sleeptalk",
+                63.846
+            ],
+            [
+                "roar",
+                36.154
+            ],
+            [
+                "curse",
+                66.154
+            ],
+            [
+                "bodyslam",
+                23.846
+            ],
+            [
+                "return102",
+                32.308
+            ]
+        ],
+        "sets": {
+            "bodyslam|curse|earthquake|roar": 14.615,
+            "bodyslam|curse|rest|sleeptalk": 9.231,
+            "curse|doubleedge|rest|sleeptalk": 10.0,
+            "curse|earthquake|return102|roar": 21.538,
+            "curse|rest|return102|sleeptalk": 10.769,
+            "doubleedge|earthquake|rest|sleeptalk": 33.846
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "kingdra": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 121,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "dragonbreath",
+                50.413
+            ],
+            [
+                "icebeam",
+                49.587
+            ]
+        ],
+        "sets": {
+            "dragonbreath|rest|sleeptalk|surf": 50.413,
+            "icebeam|rest|sleeptalk|surf": 49.587
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "kingler": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 111,
+        "items": [
+            [
+                "leftovers",
+                86.486
+            ],
+            [
+                "mintberry",
+                13.514
+            ]
+        ],
+        "moves": [
+            [
+                "return102",
+                68.468
+            ],
+            [
+                "surf",
+                32.432
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "substitute",
+                19.82
+            ],
+            [
+                "rest",
+                45.045
+            ],
+            [
+                "sleeptalk",
+                31.532
+            ],
+            [
+                "doubleedge",
+                31.532
+            ],
+            [
+                "hiddenpowerground",
+                42.342
+            ],
+            [
+                "protect",
+                28.829
+            ]
+        ],
+        "sets": {
+            "doubleedge|rest|sleeptalk|swordsdance": 31.532,
+            "hiddenpowerground|protect|return102|swordsdance": 15.315,
+            "hiddenpowerground|rest|return102|swordsdance": 13.514,
+            "hiddenpowerground|return102|substitute|swordsdance": 7.207,
+            "hiddenpowerground|return102|surf|swordsdance": 6.306,
+            "protect|return102|surf|swordsdance": 13.514,
+            "return102|substitute|surf|swordsdance": 12.613
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "lanturn": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 124,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunder",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ]
+        ],
+        "sets": {
+            "rest|sleeptalk|surf|thunder": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "lapras": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 113,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunder",
+                63.717
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "surf",
+                71.681
+            ],
+            [
+                "icebeam",
+                64.602
+            ]
+        ],
+        "sets": {
+            "icebeam|rest|sleeptalk|surf": 36.283,
+            "icebeam|rest|sleeptalk|thunder": 28.319,
+            "rest|sleeptalk|surf|thunder": 35.398
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "ledian": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 83,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "agility",
+                100.0
+            ],
+            [
+                "lightscreen",
+                100.0
+            ],
+            [
+                "batonpass",
+                100.0
+            ],
+            [
+                "barrier",
+                100.0
+            ]
+        ],
+        "sets": {
+            "agility|barrier|batonpass|lightscreen": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "lickitung": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 105,
+        "items": [
+            [
+                "leftovers",
+                81.905
+            ],
+            [
+                "mintberry",
+                18.095
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                87.619
+            ],
+            [
+                "curse",
+                15.238
+            ],
+            [
+                "sleeptalk",
+                69.524
+            ],
+            [
+                "doubleedge",
+                60.952
+            ],
+            [
+                "swordsdance",
+                44.762
+            ],
+            [
+                "earthquake",
+                45.714
+            ],
+            [
+                "return102",
+                39.048
+            ],
+            [
+                "protect",
+                12.381
+            ],
+            [
+                "thunder",
+                24.762
+            ]
+        ],
+        "sets": {
+            "curse|doubleedge|rest|sleeptalk": 9.524,
+            "curse|rest|return102|sleeptalk": 5.714,
+            "doubleedge|earthquake|rest|sleeptalk": 15.238,
+            "doubleedge|rest|sleeptalk|swordsdance": 11.429,
+            "doubleedge|rest|sleeptalk|thunder": 24.762,
+            "earthquake|protect|return102|swordsdance": 12.381,
+            "earthquake|rest|return102|swordsdance": 18.095,
+            "rest|return102|sleeptalk|swordsdance": 2.857
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "lugia": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 98,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerflying",
+                39.796
+            ],
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "curse",
+                70.408
+            ],
+            [
+                "whirlwind",
+                69.388
+            ],
+            [
+                "aeroblast",
+                30.612
+            ],
+            [
+                "earthquake",
+                30.612
+            ],
+            [
+                "thunder",
+                29.592
+            ],
+            [
+                "psychic",
+                29.592
+            ]
+        ],
+        "sets": {
+            "aeroblast|curse|earthquake|recover": 30.612,
+            "curse|hiddenpowerflying|recover|whirlwind": 39.796,
+            "psychic|recover|thunder|whirlwind": 29.592
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "machamp": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 141,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                51.773
+            ],
+            [
+                "sleeptalk",
+                51.773
+            ],
+            [
+                "crosschop",
+                100.0
+            ],
+            [
+                "rockslide",
+                70.213
+            ],
+            [
+                "curse",
+                78.014
+            ],
+            [
+                "earthquake",
+                26.241
+            ],
+            [
+                "hiddenpowerbug",
+                21.986
+            ]
+        ],
+        "sets": {
+            "crosschop|curse|earthquake|rockslide": 26.241,
+            "crosschop|curse|hiddenpowerbug|rockslide": 21.986,
+            "crosschop|curse|rest|sleeptalk": 29.787,
+            "crosschop|rest|rockslide|sleeptalk": 21.986
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "magcargo": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 109,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "curse",
+                47.706
+            ],
+            [
+                "rockslide",
+                72.477
+            ],
+            [
+                "hiddenpowergrass",
+                27.523
+            ],
+            [
+                "fireblast",
+                24.771
+            ],
+            [
+                "flamethrower",
+                27.523
+            ]
+        ],
+        "sets": {
+            "curse|rest|rockslide|sleeptalk": 47.706,
+            "fireblast|hiddenpowergrass|rest|sleeptalk": 11.927,
+            "fireblast|rest|rockslide|sleeptalk": 12.844,
+            "flamethrower|hiddenpowergrass|rest|sleeptalk": 15.596,
+            "flamethrower|rest|rockslide|sleeptalk": 11.927
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "magmar": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 104,
+        "items": [
+            [
+                "unknown_item",
+                32.692
+            ],
+            [
+                "leftovers",
+                67.308
+            ]
+        ],
+        "moves": [
+            [
+                "crosschop",
+                51.923
+            ],
+            [
+                "thief",
+                32.692
+            ],
+            [
+                "thunderpunch",
+                100.0
+            ],
+            [
+                "fireblast",
+                100.0
+            ],
+            [
+                "hiddenpowerground",
+                61.538
+            ],
+            [
+                "sunnyday",
+                53.846
+            ]
+        ],
+        "sets": {
+            "crosschop|fireblast|hiddenpowerground|thunderpunch": 13.462,
+            "crosschop|fireblast|sunnyday|thunderpunch": 26.923,
+            "crosschop|fireblast|thief|thunderpunch": 11.538,
+            "fireblast|hiddenpowerground|sunnyday|thunderpunch": 26.923,
+            "fireblast|hiddenpowerground|thief|thunderpunch": 21.154
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "magneton": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 122,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "hiddenpowerice",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "thunder",
+                100.0
+            ]
+        ],
+        "sets": {
+            "hiddenpowerice|rest|sleeptalk|thunder": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "mantine": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 82,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerelectric",
+                52.439
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "icebeam",
+                47.561
+            ]
+        ],
+        "sets": {
+            "hiddenpowerelectric|rest|sleeptalk|surf": 52.439,
+            "icebeam|rest|sleeptalk|surf": 47.561
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "marowak": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 129,
+        "items": [
+            [
+                "thickclub",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "hiddenpowerbug",
+                100.0
+            ]
+        ],
+        "sets": {
+            "earthquake|hiddenpowerbug|rockslide|swordsdance": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "meganium": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 138,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerrock",
+                29.71
+            ],
+            [
+                "earthquake",
+                90.58
+            ],
+            [
+                "synthesis",
+                100.0
+            ],
+            [
+                "swordsdance",
+                65.217
+            ],
+            [
+                "razorleaf",
+                34.783
+            ],
+            [
+                "lightscreen",
+                10.145
+            ],
+            [
+                "leechseed",
+                13.043
+            ],
+            [
+                "bodyslam",
+                35.507
+            ],
+            [
+                "hiddenpowerfire",
+                21.014
+            ]
+        ],
+        "sets": {
+            "bodyslam|earthquake|swordsdance|synthesis": 35.507,
+            "earthquake|hiddenpowerfire|razorleaf|synthesis": 11.594,
+            "earthquake|hiddenpowerrock|swordsdance|synthesis": 29.71,
+            "earthquake|leechseed|razorleaf|synthesis": 8.696,
+            "earthquake|lightscreen|razorleaf|synthesis": 5.072,
+            "hiddenpowerfire|leechseed|razorleaf|synthesis": 4.348,
+            "hiddenpowerfire|lightscreen|razorleaf|synthesis": 5.072
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "mew": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 130,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "explosion",
+                49.231
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "softboiled",
+                50.769
+            ]
+        ],
+        "sets": {
+            "earthquake|explosion|rockslide|swordsdance": 49.231,
+            "earthquake|rockslide|softboiled|swordsdance": 50.769
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "mewtwo": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 139,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunder",
+                61.151
+            ],
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "flamethrower",
+                69.784
+            ],
+            [
+                "barrier",
+                39.568
+            ],
+            [
+                "icebeam",
+                29.496
+            ]
+        ],
+        "sets": {
+            "barrier|flamethrower|psychic|recover": 20.144,
+            "barrier|psychic|recover|thunder": 19.424,
+            "flamethrower|icebeam|psychic|recover": 18.705,
+            "flamethrower|psychic|recover|thunder": 30.935,
+            "icebeam|psychic|recover|thunder": 10.791
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "miltank": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 98,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "curse",
+                100.0
+            ],
+            [
+                "milkdrink",
+                100.0
+            ],
+            [
+                "bodyslam",
+                100.0
+            ],
+            [
+                "healbell",
+                58.163
+            ],
+            [
+                "earthquake",
+                41.837
+            ]
+        ],
+        "sets": {
+            "bodyslam|curse|earthquake|milkdrink": 41.837,
+            "bodyslam|curse|healbell|milkdrink": 58.163
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "misdreavus": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 146,
+        "items": [
+            [
+                "leftovers",
+                54.795
+            ],
+            [
+                "unknown_item",
+                45.205
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                42.466
+            ],
+            [
+                "shadowball",
+                31.507
+            ],
+            [
+                "painsplit",
+                45.89
+            ],
+            [
+                "thunder",
+                100.0
+            ],
+            [
+                "hypnosis",
+                42.466
+            ],
+            [
+                "perishsong",
+                35.616
+            ],
+            [
+                "protect",
+                21.233
+            ],
+            [
+                "meanlook",
+                35.616
+            ],
+            [
+                "thief",
+                45.205
+            ]
+        ],
+        "sets": {
+            "hypnosis|painsplit|shadowball|thunder": 9.589,
+            "hypnosis|psychic|thief|thunder": 32.877,
+            "meanlook|painsplit|perishsong|thunder": 14.384,
+            "meanlook|perishsong|protect|thunder": 21.233,
+            "painsplit|psychic|shadowball|thunder": 9.589,
+            "painsplit|shadowball|thief|thunder": 12.329
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "moltres": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 93,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "sunnyday",
+                48.387
+            ],
+            [
+                "flamethrower",
+                48.387
+            ],
+            [
+                "fireblast",
+                51.613
+            ],
+            [
+                "hiddenpowergrass",
+                51.613
+            ]
+        ],
+        "sets": {
+            "fireblast|hiddenpowergrass|rest|sleeptalk": 25.806,
+            "fireblast|rest|sleeptalk|sunnyday": 25.806,
+            "flamethrower|hiddenpowergrass|rest|sleeptalk": 25.806,
+            "flamethrower|rest|sleeptalk|sunnyday": 22.581
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "mrmime": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 134,
+        "items": [
+            [
+                "leftovers",
+                80.597
+            ],
+            [
+                "unknown_item",
+                19.403
+            ]
+        ],
+        "moves": [
+            [
+                "thunder",
+                73.881
+            ],
+            [
+                "batonpass",
+                31.343
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "barrier",
+                31.343
+            ],
+            [
+                "firepunch",
+                35.821
+            ],
+            [
+                "encore",
+                20.896
+            ],
+            [
+                "thief",
+                19.403
+            ],
+            [
+                "hypnosis",
+                18.657
+            ],
+            [
+                "rest",
+                34.328
+            ],
+            [
+                "sleeptalk",
+                34.328
+            ]
+        ],
+        "sets": {
+            "barrier|batonpass|psychic|thunder": 31.343,
+            "encore|firepunch|hypnosis|psychic": 3.731,
+            "encore|firepunch|psychic|thief": 2.985,
+            "encore|firepunch|psychic|thunder": 2.985,
+            "encore|hypnosis|psychic|thunder": 4.478,
+            "encore|psychic|thief|thunder": 6.716,
+            "firepunch|hypnosis|psychic|thief": 2.985,
+            "firepunch|hypnosis|psychic|thunder": 3.731,
+            "firepunch|psychic|rest|sleeptalk": 16.418,
+            "firepunch|psychic|thief|thunder": 2.985,
+            "hypnosis|psychic|thief|thunder": 3.731,
+            "psychic|rest|sleeptalk|thunder": 17.91
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "muk": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 109,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "explosion",
+                100.0
+            ],
+            [
+                "curse",
+                52.294
+            ],
+            [
+                "sludgebomb",
+                100.0
+            ],
+            [
+                "hiddenpowerground",
+                100.0
+            ],
+            [
+                "fireblast",
+                47.706
+            ]
+        ],
+        "sets": {
+            "curse|explosion|hiddenpowerground|sludgebomb": 52.294,
+            "explosion|fireblast|hiddenpowerground|sludgebomb": 47.706
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "murkrow": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 101,
+        "items": [
+            [
+                "unknown_item",
+                56.436
+            ],
+            [
+                "leftovers",
+                43.564
+            ]
+        ],
+        "moves": [
+            [
+                "drillpeck",
+                100.0
+            ],
+            [
+                "haze",
+                26.733
+            ],
+            [
+                "hiddenpowerdark",
+                100.0
+            ],
+            [
+                "thief",
+                56.436
+            ],
+            [
+                "toxic",
+                73.267
+            ],
+            [
+                "pursuit",
+                43.564
+            ]
+        ],
+        "sets": {
+            "drillpeck|haze|hiddenpowerdark|thief": 26.733,
+            "drillpeck|hiddenpowerdark|pursuit|toxic": 43.564,
+            "drillpeck|hiddenpowerdark|thief|toxic": 29.703
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "nidoking": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 119,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "morningsun",
+                56.303
+            ],
+            [
+                "fireblast",
+                25.21
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "icebeam",
+                100.0
+            ],
+            [
+                "lovelykiss",
+                43.697
+            ],
+            [
+                "thunder",
+                74.79
+            ]
+        ],
+        "sets": {
+            "earthquake|fireblast|icebeam|morningsun": 25.21,
+            "earthquake|icebeam|lovelykiss|thunder": 43.697,
+            "earthquake|icebeam|morningsun|thunder": 31.092
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "nidoqueen": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 114,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "lovelykiss",
+                56.14
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "thunder",
+                76.316
+            ],
+            [
+                "icebeam",
+                100.0
+            ],
+            [
+                "moonlight",
+                43.86
+            ],
+            [
+                "fireblast",
+                23.684
+            ]
+        ],
+        "sets": {
+            "earthquake|fireblast|icebeam|moonlight": 23.684,
+            "earthquake|icebeam|lovelykiss|thunder": 56.14,
+            "earthquake|icebeam|moonlight|thunder": 20.175
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "ninetales": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 124,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "flamethrower",
+                47.581
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "sunnyday",
+                37.097
+            ],
+            [
+                "toxic",
+                35.484
+            ],
+            [
+                "fireblast",
+                52.419
+            ],
+            [
+                "hiddenpowergrass",
+                27.419
+            ]
+        ],
+        "sets": {
+            "fireblast|hiddenpowergrass|rest|sleeptalk": 16.129,
+            "fireblast|rest|sleeptalk|sunnyday": 20.161,
+            "fireblast|rest|sleeptalk|toxic": 16.129,
+            "flamethrower|hiddenpowergrass|rest|sleeptalk": 11.29,
+            "flamethrower|rest|sleeptalk|sunnyday": 16.935,
+            "flamethrower|rest|sleeptalk|toxic": 19.355
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "noctowl": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 103,
+        "items": [
+            [
+                "leftovers",
+                65.049
+            ],
+            [
+                "unknown_item",
+                34.951
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                65.049
+            ],
+            [
+                "toxic",
+                55.34
+            ],
+            [
+                "rest",
+                65.049
+            ],
+            [
+                "nightshade",
+                33.981
+            ],
+            [
+                "curse",
+                31.068
+            ],
+            [
+                "return102",
+                66.019
+            ],
+            [
+                "hypnosis",
+                23.301
+            ],
+            [
+                "thief",
+                34.951
+            ],
+            [
+                "whirlwind",
+                25.243
+            ]
+        ],
+        "sets": {
+            "curse|rest|return102|sleeptalk": 31.068,
+            "hypnosis|return102|thief|toxic": 9.709,
+            "hypnosis|return102|thief|whirlwind": 13.592,
+            "nightshade|rest|sleeptalk|toxic": 33.981,
+            "return102|thief|toxic|whirlwind": 11.65
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "octillery": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 107,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "flamethrower",
+                30.841
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "hiddenpowerelectric",
+                33.645
+            ],
+            [
+                "icebeam",
+                35.514
+            ]
+        ],
+        "sets": {
+            "flamethrower|rest|sleeptalk|surf": 30.841,
+            "hiddenpowerelectric|rest|sleeptalk|surf": 33.645,
+            "icebeam|rest|sleeptalk|surf": 35.514
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "omastar": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 80,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "sandstorm",
+                26.25
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "hiddenpowerelectric",
+                33.75
+            ],
+            [
+                "icebeam",
+                40.0
+            ]
+        ],
+        "sets": {
+            "hiddenpowerelectric|rest|sleeptalk|surf": 33.75,
+            "icebeam|rest|sleeptalk|surf": 40.0,
+            "rest|sandstorm|sleeptalk|surf": 26.25
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "parasect": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 114,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "swordsdance",
+                67.544
+            ],
+            [
+                "hiddenpowerbug",
+                71.053
+            ],
+            [
+                "synthesis",
+                71.053
+            ],
+            [
+                "spore",
+                100.0
+            ],
+            [
+                "gigadrain",
+                19.298
+            ],
+            [
+                "bodyslam",
+                24.561
+            ],
+            [
+                "hiddenpowerground",
+                28.947
+            ],
+            [
+                "return102",
+                17.544
+            ]
+        ],
+        "sets": {
+            "bodyslam|hiddenpowerbug|spore|synthesis": 13.158,
+            "bodyslam|hiddenpowerground|spore|swordsdance": 11.404,
+            "gigadrain|hiddenpowerbug|spore|synthesis": 19.298,
+            "hiddenpowerbug|spore|swordsdance|synthesis": 38.596,
+            "hiddenpowerground|return102|spore|swordsdance": 17.544
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "persian": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 117,
+        "items": [
+            [
+                "unknown_item",
+                33.333
+            ],
+            [
+                "leftovers",
+                66.667
+            ]
+        ],
+        "moves": [
+            [
+                "thunder",
+                29.915
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "hypnosis",
+                33.333
+            ],
+            [
+                "thief",
+                33.333
+            ],
+            [
+                "rest",
+                66.667
+            ],
+            [
+                "sleeptalk",
+                66.667
+            ],
+            [
+                "irontail",
+                35.897
+            ],
+            [
+                "curse",
+                34.188
+            ]
+        ],
+        "sets": {
+            "curse|doubleedge|rest|sleeptalk": 34.188,
+            "doubleedge|hypnosis|irontail|thief": 16.239,
+            "doubleedge|hypnosis|thief|thunder": 17.094,
+            "doubleedge|irontail|rest|sleeptalk": 19.658,
+            "doubleedge|rest|sleeptalk|thunder": 12.821
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "pidgeot": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 85,
+        "items": [
+            [
+                "unknown_item",
+                31.765
+            ],
+            [
+                "leftovers",
+                68.235
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerground",
+                35.294
+            ],
+            [
+                "toxic",
+                31.765
+            ],
+            [
+                "thief",
+                31.765
+            ],
+            [
+                "return102",
+                31.765
+            ],
+            [
+                "hiddenpowerwater",
+                25.882
+            ],
+            [
+                "curse",
+                38.824
+            ],
+            [
+                "rest",
+                68.235
+            ],
+            [
+                "sleeptalk",
+                68.235
+            ],
+            [
+                "doubleedge",
+                68.235
+            ]
+        ],
+        "sets": {
+            "curse|doubleedge|rest|sleeptalk": 38.824,
+            "doubleedge|hiddenpowerground|rest|sleeptalk": 14.118,
+            "doubleedge|hiddenpowerwater|rest|sleeptalk": 15.294,
+            "hiddenpowerground|return102|thief|toxic": 21.176,
+            "hiddenpowerwater|return102|thief|toxic": 10.588
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "pikachu": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 121,
+        "items": [
+            [
+                "lightball",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "hiddenpowerice",
+                73.554
+            ],
+            [
+                "thunder",
+                44.628
+            ],
+            [
+                "thunderbolt",
+                100.0
+            ],
+            [
+                "hiddenpowerfire",
+                26.446
+            ],
+            [
+                "encore",
+                30.579
+            ],
+            [
+                "substitute",
+                24.793
+            ]
+        ],
+        "sets": {
+            "encore|hiddenpowerfire|surf|thunderbolt": 14.876,
+            "encore|hiddenpowerice|surf|thunderbolt": 15.702,
+            "hiddenpowerfire|substitute|surf|thunderbolt": 11.57,
+            "hiddenpowerice|substitute|surf|thunderbolt": 13.223,
+            "hiddenpowerice|surf|thunder|thunderbolt": 44.628
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "piloswine": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 126,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "icebeam",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ]
+        ],
+        "sets": {
+            "earthquake|icebeam|rest|sleeptalk": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "pinsir": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 110,
+        "items": [
+            [
+                "leftovers",
+                60.0
+            ],
+            [
+                "mintberry",
+                40.0
+            ]
+        ],
+        "moves": [
+            [
+                "return102",
+                100.0
+            ],
+            [
+                "hiddenpowerground",
+                100.0
+            ],
+            [
+                "substitute",
+                28.182
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "protect",
+                31.818
+            ],
+            [
+                "rest",
+                40.0
+            ]
+        ],
+        "sets": {
+            "hiddenpowerground|protect|return102|swordsdance": 31.818,
+            "hiddenpowerground|rest|return102|swordsdance": 40.0,
+            "hiddenpowerground|return102|substitute|swordsdance": 28.182
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "politoed": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 114,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "growth",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ]
+        ],
+        "sets": {
+            "growth|rest|sleeptalk|surf": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "poliwhirl": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 110,
+        "items": [
+            [
+                "miracleberry",
+                45.455
+            ],
+            [
+                "leftovers",
+                54.545
+            ]
+        ],
+        "moves": [
+            [
+                "lovelykiss",
+                100.0
+            ],
+            [
+                "bellydrum",
+                100.0
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "return102",
+                45.455
+            ],
+            [
+                "hiddenpowerrock",
+                54.545
+            ]
+        ],
+        "sets": {
+            "bellydrum|earthquake|hiddenpowerrock|lovelykiss": 54.545,
+            "bellydrum|earthquake|lovelykiss|return102": 45.455
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "poliwrath": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 106,
+        "items": [
+            [
+                "miracleberry",
+                33.962
+            ],
+            [
+                "leftovers",
+                66.038
+            ]
+        ],
+        "moves": [
+            [
+                "lovelykiss",
+                68.868
+            ],
+            [
+                "bellydrum",
+                68.868
+            ],
+            [
+                "return102",
+                16.981
+            ],
+            [
+                "earthquake",
+                76.415
+            ],
+            [
+                "sleeptalk",
+                31.132
+            ],
+            [
+                "surf",
+                31.132
+            ],
+            [
+                "growth",
+                14.151
+            ],
+            [
+                "rest",
+                31.132
+            ],
+            [
+                "bodyslam",
+                14.151
+            ],
+            [
+                "hiddenpowerrock",
+                37.736
+            ],
+            [
+                "submission",
+                9.434
+            ]
+        ],
+        "sets": {
+            "bellydrum|bodyslam|earthquake|lovelykiss": 14.151,
+            "bellydrum|earthquake|hiddenpowerrock|lovelykiss": 37.736,
+            "bellydrum|earthquake|lovelykiss|return102": 16.981,
+            "earthquake|rest|sleeptalk|surf": 7.547,
+            "growth|rest|sleeptalk|surf": 14.151,
+            "rest|sleeptalk|submission|surf": 9.434
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "porygon2": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 122,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "icebeam",
+                85.246
+            ],
+            [
+                "thunderwave",
+                68.852
+            ],
+            [
+                "thunderbolt",
+                38.525
+            ],
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "doubleedge",
+                61.475
+            ],
+            [
+                "curse",
+                30.328
+            ],
+            [
+                "thunder",
+                15.574
+            ]
+        ],
+        "sets": {
+            "curse|doubleedge|icebeam|recover": 15.574,
+            "curse|doubleedge|recover|thunderwave": 14.754,
+            "doubleedge|icebeam|recover|thunder": 15.574,
+            "doubleedge|icebeam|recover|thunderwave": 15.574,
+            "icebeam|recover|thunderbolt|thunderwave": 38.525
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "primeape": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 121,
+        "items": [
+            [
+                "leftovers",
+                56.198
+            ],
+            [
+                "blackbelt",
+                33.884
+            ],
+            [
+                "mintberry",
+                9.917
+            ]
+        ],
+        "moves": [
+            [
+                "meditate",
+                100.0
+            ],
+            [
+                "rockslide",
+                73.554
+            ],
+            [
+                "crosschop",
+                66.116
+            ],
+            [
+                "substitute",
+                48.76
+            ],
+            [
+                "reversal",
+                33.884
+            ],
+            [
+                "hiddenpowerghost",
+                47.934
+            ],
+            [
+                "doubleedge",
+                19.835
+            ],
+            [
+                "rest",
+                9.917
+            ]
+        ],
+        "sets": {
+            "crosschop|doubleedge|hiddenpowerghost|meditate": 11.57,
+            "crosschop|doubleedge|meditate|rockslide": 8.264,
+            "crosschop|hiddenpowerghost|meditate|rest": 4.959,
+            "crosschop|hiddenpowerghost|meditate|rockslide": 21.488,
+            "crosschop|hiddenpowerghost|meditate|substitute": 9.917,
+            "crosschop|meditate|rest|rockslide": 4.959,
+            "crosschop|meditate|rockslide|substitute": 4.959,
+            "meditate|reversal|rockslide|substitute": 33.884
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "quagsire": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 104,
+        "items": [
+            [
+                "leftovers",
+                65.385
+            ],
+            [
+                "mintberry",
+                34.615
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                65.385
+            ],
+            [
+                "surf",
+                33.654
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "icebeam",
+                31.731
+            ],
+            [
+                "bellydrum",
+                34.615
+            ],
+            [
+                "hiddenpowerrock",
+                34.615
+            ]
+        ],
+        "sets": {
+            "bellydrum|earthquake|hiddenpowerrock|rest": 34.615,
+            "earthquake|icebeam|rest|sleeptalk": 31.731,
+            "earthquake|rest|sleeptalk|surf": 33.654
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "qwilfish": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 109,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerground",
+                37.615
+            ],
+            [
+                "hydropump",
+                100.0
+            ],
+            [
+                "sludgebomb",
+                100.0
+            ],
+            [
+                "curse",
+                26.606
+            ],
+            [
+                "spikes",
+                92.661
+            ],
+            [
+                "haze",
+                43.119
+            ]
+        ],
+        "sets": {
+            "curse|hiddenpowerground|hydropump|sludgebomb": 2.752,
+            "curse|hydropump|sludgebomb|spikes": 23.853,
+            "haze|hiddenpowerground|hydropump|sludgebomb": 4.587,
+            "haze|hydropump|sludgebomb|spikes": 38.532,
+            "hiddenpowerground|hydropump|sludgebomb|spikes": 30.275
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "raichu": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 129,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "thunder",
+                100.0
+            ],
+            [
+                "hiddenpowerice",
+                50.388
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "surf",
+                49.612
+            ]
+        ],
+        "sets": {
+            "hiddenpowerice|rest|sleeptalk|thunder": 50.388,
+            "rest|sleeptalk|surf|thunder": 49.612
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "raikou": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 122,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerice",
+                51.639
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "thunder",
+                100.0
+            ],
+            [
+                "crunch",
+                48.361
+            ]
+        ],
+        "sets": {
+            "crunch|rest|sleeptalk|thunder": 48.361,
+            "hiddenpowerice|rest|sleeptalk|thunder": 51.639
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "rapidash": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 107,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "doubleedge",
+                68.224
+            ],
+            [
+                "rest",
+                53.271
+            ],
+            [
+                "flamethrower",
+                22.43
+            ],
+            [
+                "sleeptalk",
+                53.271
+            ],
+            [
+                "fireblast",
+                77.57
+            ],
+            [
+                "hypnosis",
+                32.71
+            ],
+            [
+                "sunnyday",
+                60.748
+            ],
+            [
+                "hiddenpowergrass",
+                31.776
+            ]
+        ],
+        "sets": {
+            "doubleedge|fireblast|hiddenpowergrass|hypnosis": 10.28,
+            "doubleedge|fireblast|hiddenpowergrass|sunnyday": 14.019,
+            "doubleedge|fireblast|hypnosis|sunnyday": 14.953,
+            "doubleedge|fireblast|rest|sleeptalk": 15.888,
+            "doubleedge|flamethrower|rest|sleeptalk": 13.084,
+            "fireblast|hiddenpowergrass|hypnosis|sunnyday": 7.477,
+            "fireblast|rest|sleeptalk|sunnyday": 14.953,
+            "flamethrower|rest|sleeptalk|sunnyday": 9.346
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "raticate": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 130,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "doubleedge",
+                49.231
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "superfang",
+                53.077
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "return102",
+                50.769
+            ],
+            [
+                "irontail",
+                46.923
+            ]
+        ],
+        "sets": {
+            "doubleedge|irontail|rest|sleeptalk": 21.538,
+            "doubleedge|rest|sleeptalk|superfang": 27.692,
+            "irontail|rest|return102|sleeptalk": 25.385,
+            "rest|return102|sleeptalk|superfang": 25.385
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "rhydon": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 99,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "curse",
+                81.818
+            ],
+            [
+                "earthquake",
+                64.646
+            ],
+            [
+                "roar",
+                16.162
+            ],
+            [
+                "rockslide",
+                69.697
+            ],
+            [
+                "rest",
+                83.838
+            ],
+            [
+                "sleeptalk",
+                83.838
+            ]
+        ],
+        "sets": {
+            "curse|earthquake|rest|sleeptalk": 30.303,
+            "curse|earthquake|roar|rockslide": 16.162,
+            "curse|rest|rockslide|sleeptalk": 35.354,
+            "earthquake|rest|rockslide|sleeptalk": 18.182
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "sandslash": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 133,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "swordsdance",
+                77.444
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "substitute",
+                25.564
+            ],
+            [
+                "rockslide",
+                69.925
+            ],
+            [
+                "sleeptalk",
+                52.632
+            ],
+            [
+                "rest",
+                52.632
+            ],
+            [
+                "hiddenpowerbug",
+                21.805
+            ]
+        ],
+        "sets": {
+            "earthquake|hiddenpowerbug|rockslide|swordsdance": 21.805,
+            "earthquake|rest|rockslide|sleeptalk": 22.556,
+            "earthquake|rest|sleeptalk|swordsdance": 30.075,
+            "earthquake|rockslide|substitute|swordsdance": 25.564
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "scizor": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 110,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "curse",
+                20.909
+            ],
+            [
+                "sleeptalk",
+                32.727
+            ],
+            [
+                "doubleedge",
+                32.727
+            ],
+            [
+                "rest",
+                32.727
+            ],
+            [
+                "swordsdance",
+                79.091
+            ],
+            [
+                "agility",
+                67.273
+            ],
+            [
+                "hiddenpowersteel",
+                27.273
+            ],
+            [
+                "batonpass",
+                37.273
+            ],
+            [
+                "return102",
+                30.0
+            ],
+            [
+                "hiddenpowerground",
+                30.0
+            ],
+            [
+                "hiddenpowerbug",
+                10.0
+            ]
+        ],
+        "sets": {
+            "agility|batonpass|hiddenpowerbug|swordsdance": 10.0,
+            "agility|batonpass|hiddenpowersteel|swordsdance": 27.273,
+            "agility|hiddenpowerground|return102|swordsdance": 30.0,
+            "curse|doubleedge|rest|sleeptalk": 20.909,
+            "doubleedge|rest|sleeptalk|swordsdance": 11.818
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "scyther": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 113,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerground",
+                100.0
+            ],
+            [
+                "batonpass",
+                100.0
+            ],
+            [
+                "doubleedge",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ]
+        ],
+        "sets": {
+            "batonpass|doubleedge|hiddenpowerground|swordsdance": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "seaking": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 107,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "return102",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ],
+            [
+                "hydropump",
+                40.187
+            ],
+            [
+                "agility",
+                52.336
+            ],
+            [
+                "hiddenpowerground",
+                59.813
+            ],
+            [
+                "substitute",
+                47.664
+            ]
+        ],
+        "sets": {
+            "agility|hiddenpowerground|return102|swordsdance": 36.449,
+            "agility|hydropump|return102|swordsdance": 15.888,
+            "hiddenpowerground|return102|substitute|swordsdance": 23.364,
+            "hydropump|return102|substitute|swordsdance": 24.299
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "shuckle": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 126,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "toxic",
+                100.0
+            ],
+            [
+                "rollout",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "defensecurl",
+                100.0
+            ]
+        ],
+        "sets": {
+            "defensecurl|rest|rollout|toxic": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "skarmory": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 124,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                46.774
+            ],
+            [
+                "toxic",
+                22.581
+            ],
+            [
+                "drillpeck",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "curse",
+                77.419
+            ],
+            [
+                "whirlwind",
+                53.226
+            ]
+        ],
+        "sets": {
+            "curse|drillpeck|rest|sleeptalk": 24.194,
+            "curse|drillpeck|rest|whirlwind": 53.226,
+            "drillpeck|rest|sleeptalk|toxic": 22.581
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "slowbro": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 89,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ]
+        ],
+        "sets": {
+            "psychic|rest|sleeptalk|surf": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "slowking": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 126,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ]
+        ],
+        "sets": {
+            "psychic|rest|sleeptalk|surf": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "smeargle": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 124,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "swordsdance",
+                25.0
+            ],
+            [
+                "spore",
+                100.0
+            ],
+            [
+                "batonpass",
+                100.0
+            ],
+            [
+                "spiderweb",
+                33.871
+            ],
+            [
+                "spikes",
+                95.968
+            ],
+            [
+                "agility",
+                45.161
+            ]
+        ],
+        "sets": {
+            "agility|batonpass|spiderweb|spore": 0.806,
+            "agility|batonpass|spikes|spore": 44.355,
+            "batonpass|spiderweb|spikes|spore": 29.839,
+            "batonpass|spiderweb|spore|swordsdance": 3.226,
+            "batonpass|spikes|spore|swordsdance": 21.774
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "sneasel": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 109,
+        "items": [
+            [
+                "leftovers",
+                66.055
+            ],
+            [
+                "unknown_item",
+                33.945
+            ]
+        ],
+        "moves": [
+            [
+                "icebeam",
+                32.11
+            ],
+            [
+                "moonlight",
+                100.0
+            ],
+            [
+                "return102",
+                100.0
+            ],
+            [
+                "dynamicpunch",
+                66.055
+            ],
+            [
+                "toxic",
+                33.945
+            ],
+            [
+                "hiddenpowerground",
+                33.945
+            ],
+            [
+                "thief",
+                33.945
+            ]
+        ],
+        "sets": {
+            "dynamicpunch|icebeam|moonlight|return102": 32.11,
+            "dynamicpunch|moonlight|return102|thief": 33.945,
+            "hiddenpowerground|moonlight|return102|toxic": 33.945
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "snorlax": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 128,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "lovelykiss",
+                17.969
+            ],
+            [
+                "earthquake",
+                82.031
+            ],
+            [
+                "return102",
+                25.781
+            ],
+            [
+                "selfdestruct",
+                20.312
+            ],
+            [
+                "curse",
+                71.875
+            ],
+            [
+                "bodyslam",
+                25.0
+            ],
+            [
+                "doubleedge",
+                49.219
+            ],
+            [
+                "rest",
+                71.094
+            ],
+            [
+                "sleeptalk",
+                36.719
+            ]
+        ],
+        "sets": {
+            "bodyslam|curse|earthquake|lovelykiss": 6.25,
+            "bodyslam|curse|earthquake|rest": 11.719,
+            "bodyslam|curse|earthquake|selfdestruct": 3.906,
+            "bodyslam|earthquake|lovelykiss|selfdestruct": 3.125,
+            "curse|doubleedge|earthquake|rest": 12.5,
+            "curse|doubleedge|rest|sleeptalk": 17.969,
+            "curse|earthquake|lovelykiss|return102": 2.344,
+            "curse|earthquake|rest|return102": 10.156,
+            "curse|earthquake|return102|selfdestruct": 7.031,
+            "doubleedge|earthquake|rest|sleeptalk": 18.75,
+            "earthquake|lovelykiss|return102|selfdestruct": 6.25
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "stantler": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 134,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "return102",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "earthquake",
+                45.522
+            ],
+            [
+                "curse",
+                54.478
+            ]
+        ],
+        "sets": {
+            "curse|rest|return102|sleeptalk": 54.478,
+            "earthquake|rest|return102|sleeptalk": 45.522
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "starmie": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 108,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "psychic",
+                85.185
+            ],
+            [
+                "rapidspin",
+                12.037
+            ],
+            [
+                "recover",
+                100.0
+            ],
+            [
+                "thunderwave",
+                21.296
+            ],
+            [
+                "icebeam",
+                26.852
+            ],
+            [
+                "thunder",
+                37.037
+            ],
+            [
+                "thunderbolt",
+                17.593
+            ]
+        ],
+        "sets": {
+            "icebeam|psychic|recover|surf": 12.037,
+            "icebeam|recover|surf|thunder": 14.815,
+            "psychic|rapidspin|recover|surf": 12.037,
+            "psychic|recover|surf|thunder": 22.222,
+            "psychic|recover|surf|thunderbolt": 17.593,
+            "psychic|recover|surf|thunderwave": 21.296
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "steelix": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 136,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "irontail",
+                71.324
+            ],
+            [
+                "curse",
+                96.324
+            ],
+            [
+                "rest",
+                55.147
+            ],
+            [
+                "earthquake",
+                100.0
+            ],
+            [
+                "roar",
+                31.618
+            ],
+            [
+                "explosion",
+                29.412
+            ],
+            [
+                "sleeptalk",
+                16.176
+            ]
+        ],
+        "sets": {
+            "curse|earthquake|explosion|irontail": 13.235,
+            "curse|earthquake|explosion|roar": 16.176,
+            "curse|earthquake|irontail|rest": 38.971,
+            "curse|earthquake|irontail|roar": 15.441,
+            "curse|earthquake|rest|sleeptalk": 12.5,
+            "earthquake|irontail|rest|sleeptalk": 3.676
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "sudowoodo": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 118,
+        "items": [
+            [
+                "leftovers",
+                64.407
+            ],
+            [
+                "unknown_item",
+                35.593
+            ]
+        ],
+        "moves": [
+            [
+                "curse",
+                64.407
+            ],
+            [
+                "earthquake",
+                68.644
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "selfdestruct",
+                68.644
+            ],
+            [
+                "sleeptalk",
+                31.356
+            ],
+            [
+                "rest",
+                31.356
+            ],
+            [
+                "thief",
+                35.593
+            ]
+        ],
+        "sets": {
+            "curse|earthquake|rockslide|selfdestruct": 33.051,
+            "curse|rest|rockslide|sleeptalk": 31.356,
+            "earthquake|rockslide|selfdestruct|thief": 35.593
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "suicune": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 111,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "icebeam",
+                62.162
+            ],
+            [
+                "roar",
+                36.036
+            ],
+            [
+                "sleeptalk",
+                49.55
+            ],
+            [
+                "toxic",
+                52.252
+            ]
+        ],
+        "sets": {
+            "icebeam|rest|roar|surf": 20.721,
+            "icebeam|rest|sleeptalk|surf": 27.027,
+            "icebeam|rest|surf|toxic": 14.414,
+            "rest|roar|surf|toxic": 15.315,
+            "rest|sleeptalk|surf|toxic": 22.523
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "sunflora": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 148,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "synthesis",
+                100.0
+            ],
+            [
+                "hiddenpowerice",
+                47.973
+            ],
+            [
+                "razorleaf",
+                100.0
+            ],
+            [
+                "growth",
+                100.0
+            ],
+            [
+                "hiddenpowerfire",
+                52.027
+            ]
+        ],
+        "sets": {
+            "growth|hiddenpowerfire|razorleaf|synthesis": 52.027,
+            "growth|hiddenpowerice|razorleaf|synthesis": 47.973
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "tangela": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 105,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "synthesis",
+                57.143
+            ],
+            [
+                "hiddenpowerfire",
+                62.857
+            ],
+            [
+                "growth",
+                100.0
+            ],
+            [
+                "gigadrain",
+                100.0
+            ],
+            [
+                "sleeppowder",
+                42.857
+            ],
+            [
+                "hiddenpowerice",
+                37.143
+            ]
+        ],
+        "sets": {
+            "gigadrain|growth|hiddenpowerfire|sleeppowder": 24.762,
+            "gigadrain|growth|hiddenpowerfire|synthesis": 38.095,
+            "gigadrain|growth|hiddenpowerice|sleeppowder": 18.095,
+            "gigadrain|growth|hiddenpowerice|synthesis": 19.048
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "tauros": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 134,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "curse",
+                54.478
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "return102",
+                55.224
+            ],
+            [
+                "earthquake",
+                45.522
+            ],
+            [
+                "doubleedge",
+                44.776
+            ]
+        ],
+        "sets": {
+            "curse|doubleedge|rest|sleeptalk": 22.388,
+            "curse|rest|return102|sleeptalk": 32.09,
+            "doubleedge|earthquake|rest|sleeptalk": 22.388,
+            "earthquake|rest|return102|sleeptalk": 23.134
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "tentacruel": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 116,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hydropump",
+                100.0
+            ],
+            [
+                "sludgebomb",
+                100.0
+            ],
+            [
+                "substitute",
+                100.0
+            ],
+            [
+                "swordsdance",
+                100.0
+            ]
+        ],
+        "sets": {
+            "hydropump|sludgebomb|substitute|swordsdance": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "togetic": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 83,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "fireblast",
+                67.47
+            ],
+            [
+                "solarbeam",
+                53.012
+            ],
+            [
+                "sunnyday",
+                53.012
+            ],
+            [
+                "zapcannon",
+                32.53
+            ],
+            [
+                "sleeptalk",
+                46.988
+            ],
+            [
+                "doubleedge",
+                46.988
+            ],
+            [
+                "curse",
+                18.072
+            ],
+            [
+                "rest",
+                46.988
+            ],
+            [
+                "encore",
+                20.482
+            ],
+            [
+                "charm",
+                14.458
+            ]
+        ],
+        "sets": {
+            "charm|doubleedge|rest|sleeptalk": 14.458,
+            "curse|doubleedge|rest|sleeptalk": 18.072,
+            "doubleedge|fireblast|rest|sleeptalk": 14.458,
+            "encore|fireblast|solarbeam|sunnyday": 20.482,
+            "fireblast|solarbeam|sunnyday|zapcannon": 32.53
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "typhlosion": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 130,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "earthquake",
+                70.0
+            ],
+            [
+                "sleeptalk",
+                55.385
+            ],
+            [
+                "fireblast",
+                75.385
+            ],
+            [
+                "rest",
+                55.385
+            ],
+            [
+                "sunnyday",
+                44.615
+            ],
+            [
+                "thunderpunch",
+                74.615
+            ],
+            [
+                "flamethrower",
+                24.615
+            ]
+        ],
+        "sets": {
+            "earthquake|fireblast|rest|sleeptalk": 14.615,
+            "earthquake|fireblast|sunnyday|thunderpunch": 44.615,
+            "earthquake|flamethrower|rest|sleeptalk": 10.769,
+            "fireblast|rest|sleeptalk|thunderpunch": 16.154,
+            "flamethrower|rest|sleeptalk|thunderpunch": 13.846
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "tyranitar": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 124,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "earthquake",
+                39.516
+            ],
+            [
+                "rockslide",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                37.903
+            ],
+            [
+                "rest",
+                63.71
+            ],
+            [
+                "crunch",
+                15.323
+            ],
+            [
+                "fireblast",
+                20.161
+            ],
+            [
+                "pursuit",
+                16.129
+            ],
+            [
+                "icebeam",
+                21.774
+            ],
+            [
+                "curse",
+                45.161
+            ],
+            [
+                "thunderbolt",
+                14.516
+            ],
+            [
+                "roar",
+                25.806
+            ]
+        ],
+        "sets": {
+            "crunch|earthquake|fireblast|rockslide": 3.226,
+            "crunch|earthquake|icebeam|rockslide": 1.613,
+            "crunch|earthquake|pursuit|rockslide": 2.419,
+            "crunch|earthquake|rockslide|thunderbolt": 0.806,
+            "crunch|fireblast|icebeam|rockslide": 1.613,
+            "crunch|fireblast|rockslide|thunderbolt": 2.419,
+            "crunch|icebeam|pursuit|rockslide": 1.613,
+            "crunch|icebeam|rockslide|thunderbolt": 0.806,
+            "crunch|pursuit|rockslide|thunderbolt": 0.806,
+            "curse|rest|roar|rockslide": 25.806,
+            "curse|rest|rockslide|sleeptalk": 19.355,
+            "earthquake|fireblast|icebeam|rockslide": 4.032,
+            "earthquake|fireblast|pursuit|rockslide": 0.806,
+            "earthquake|fireblast|rockslide|thunderbolt": 1.613,
+            "earthquake|icebeam|pursuit|rockslide": 4.032,
+            "earthquake|icebeam|rockslide|thunderbolt": 0.806,
+            "earthquake|pursuit|rockslide|thunderbolt": 1.613,
+            "earthquake|rest|rockslide|sleeptalk": 18.548,
+            "fireblast|icebeam|pursuit|rockslide": 2.419,
+            "fireblast|icebeam|rockslide|thunderbolt": 3.226,
+            "fireblast|pursuit|rockslide|thunderbolt": 0.806,
+            "icebeam|pursuit|rockslide|thunderbolt": 1.613
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "umbreon": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 124,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "batonpass",
+                100.0
+            ],
+            [
+                "growth",
+                59.677
+            ],
+            [
+                "meanlook",
+                66.129
+            ],
+            [
+                "moonlight",
+                100.0
+            ],
+            [
+                "sandattack",
+                40.323
+            ],
+            [
+                "hiddenpowerdark",
+                33.871
+            ]
+        ],
+        "sets": {
+            "batonpass|growth|hiddenpowerdark|moonlight": 33.871,
+            "batonpass|growth|meanlook|moonlight": 25.806,
+            "batonpass|meanlook|moonlight|sandattack": 40.323
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "ursaring": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 116,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "return102",
+                100.0
+            ],
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "earthquake",
+                49.138
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "curse",
+                50.862
+            ]
+        ],
+        "sets": {
+            "curse|rest|return102|sleeptalk": 50.862,
+            "earthquake|rest|return102|sleeptalk": 49.138
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "vaporeon": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 123,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "surf",
+                100.0
+            ],
+            [
+                "growth",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ]
+        ],
+        "sets": {
+            "growth|rest|sleeptalk|surf": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "venomoth": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 115,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "batonpass",
+                66.957
+            ],
+            [
+                "curse",
+                66.957
+            ],
+            [
+                "stunspore",
+                40.87
+            ],
+            [
+                "sludgebomb",
+                100.0
+            ],
+            [
+                "sleeppowder",
+                58.261
+            ],
+            [
+                "psychic",
+                33.043
+            ],
+            [
+                "hiddenpowerfire",
+                17.391
+            ],
+            [
+                "gigadrain",
+                16.522
+            ]
+        ],
+        "sets": {
+            "batonpass|curse|sleeppowder|sludgebomb": 37.391,
+            "batonpass|curse|sludgebomb|stunspore": 29.565,
+            "gigadrain|hiddenpowerfire|psychic|sludgebomb": 4.348,
+            "gigadrain|psychic|sleeppowder|sludgebomb": 9.565,
+            "gigadrain|psychic|sludgebomb|stunspore": 2.609,
+            "hiddenpowerfire|psychic|sleeppowder|sludgebomb": 7.826,
+            "hiddenpowerfire|psychic|sludgebomb|stunspore": 5.217,
+            "psychic|sleeppowder|sludgebomb|stunspore": 3.478
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "venusaur": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 125,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "hiddenpowerfire",
+                60.8
+            ],
+            [
+                "growth",
+                100.0
+            ],
+            [
+                "razorleaf",
+                100.0
+            ],
+            [
+                "synthesis",
+                51.2
+            ],
+            [
+                "sleeppowder",
+                48.8
+            ],
+            [
+                "hiddenpowerice",
+                39.2
+            ]
+        ],
+        "sets": {
+            "growth|hiddenpowerfire|razorleaf|sleeppowder": 29.6,
+            "growth|hiddenpowerfire|razorleaf|synthesis": 31.2,
+            "growth|hiddenpowerice|razorleaf|sleeppowder": 19.2,
+            "growth|hiddenpowerice|razorleaf|synthesis": 20.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "victreebel": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 125,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "synthesis",
+                64.8
+            ],
+            [
+                "sludgebomb",
+                100.0
+            ],
+            [
+                "sleeppowder",
+                60.0
+            ],
+            [
+                "hiddenpowerground",
+                82.4
+            ],
+            [
+                "swordsdance",
+                52.0
+            ],
+            [
+                "razorleaf",
+                40.8
+            ]
+        ],
+        "sets": {
+            "hiddenpowerground|razorleaf|sleeppowder|sludgebomb": 9.6,
+            "hiddenpowerground|razorleaf|sludgebomb|synthesis": 13.6,
+            "hiddenpowerground|sleeppowder|sludgebomb|swordsdance": 25.6,
+            "hiddenpowerground|sleeppowder|sludgebomb|synthesis": 7.2,
+            "hiddenpowerground|sludgebomb|swordsdance|synthesis": 26.4,
+            "razorleaf|sleeppowder|sludgebomb|synthesis": 17.6
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "vileplume": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 103,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "moonlight",
+                87.379
+            ],
+            [
+                "razorleaf",
+                40.777
+            ],
+            [
+                "sludgebomb",
+                100.0
+            ],
+            [
+                "stunspore",
+                44.66
+            ],
+            [
+                "curse",
+                26.214
+            ],
+            [
+                "hiddenpowerground",
+                33.01
+            ],
+            [
+                "swordsdance",
+                33.01
+            ],
+            [
+                "sleeppowder",
+                34.951
+            ]
+        ],
+        "sets": {
+            "curse|moonlight|sludgebomb|stunspore": 26.214,
+            "hiddenpowerground|moonlight|sludgebomb|swordsdance": 20.388,
+            "hiddenpowerground|sleeppowder|sludgebomb|swordsdance": 12.621,
+            "moonlight|razorleaf|sleeppowder|sludgebomb": 22.33,
+            "moonlight|razorleaf|sludgebomb|stunspore": 18.447
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "weezing": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 124,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "haze",
+                8.871
+            ],
+            [
+                "sludgebomb",
+                100.0
+            ],
+            [
+                "thunder",
+                100.0
+            ],
+            [
+                "painsplit",
+                31.452
+            ],
+            [
+                "hiddenpowerwater",
+                48.387
+            ],
+            [
+                "explosion",
+                68.548
+            ],
+            [
+                "fireblast",
+                42.742
+            ]
+        ],
+        "sets": {
+            "explosion|fireblast|sludgebomb|thunder": 33.065,
+            "explosion|hiddenpowerwater|sludgebomb|thunder": 35.484,
+            "fireblast|painsplit|sludgebomb|thunder": 9.677,
+            "haze|painsplit|sludgebomb|thunder": 8.871,
+            "hiddenpowerwater|painsplit|sludgebomb|thunder": 12.903
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "wigglytuff": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 119,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "charm",
+                33.613
+            ],
+            [
+                "bodyslam",
+                30.252
+            ],
+            [
+                "curse",
+                42.017
+            ],
+            [
+                "doubleedge",
+                69.748
+            ],
+            [
+                "fireblast",
+                24.37
+            ]
+        ],
+        "sets": {
+            "bodyslam|charm|rest|sleeptalk": 18.487,
+            "bodyslam|fireblast|rest|sleeptalk": 11.765,
+            "charm|doubleedge|rest|sleeptalk": 15.126,
+            "curse|doubleedge|rest|sleeptalk": 42.017,
+            "doubleedge|fireblast|rest|sleeptalk": 12.605
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "wobbuffet": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 137,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "counter",
+                100.0
+            ],
+            [
+                "mimic",
+                100.0
+            ],
+            [
+                "safeguard",
+                100.0
+            ],
+            [
+                "mirrorcoat",
+                100.0
+            ]
+        ],
+        "sets": {
+            "counter|mimic|mirrorcoat|safeguard": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "xatu": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 93,
+        "items": [
+            [
+                "unknown_item",
+                50.538
+            ],
+            [
+                "leftovers",
+                49.462
+            ]
+        ],
+        "moves": [
+            [
+                "confuseray",
+                30.108
+            ],
+            [
+                "psychic",
+                100.0
+            ],
+            [
+                "drillpeck",
+                100.0
+            ],
+            [
+                "thief",
+                50.538
+            ],
+            [
+                "hiddenpowerfire",
+                20.43
+            ],
+            [
+                "sleeptalk",
+                49.462
+            ],
+            [
+                "rest",
+                49.462
+            ]
+        ],
+        "sets": {
+            "confuseray|drillpeck|psychic|thief": 30.108,
+            "drillpeck|hiddenpowerfire|psychic|thief": 20.43,
+            "drillpeck|psychic|rest|sleeptalk": 49.462
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "yanma": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 87,
+        "items": [
+            [
+                "unknown_item",
+                64.368
+            ],
+            [
+                "blackbelt",
+                35.632
+            ]
+        ],
+        "moves": [
+            [
+                "wingattack",
+                35.632
+            ],
+            [
+                "hiddenpowerbug",
+                35.632
+            ],
+            [
+                "thief",
+                64.368
+            ],
+            [
+                "gigadrain",
+                64.368
+            ],
+            [
+                "endure",
+                35.632
+            ],
+            [
+                "return102",
+                64.368
+            ],
+            [
+                "reversal",
+                35.632
+            ],
+            [
+                "hiddenpowerflying",
+                64.368
+            ]
+        ],
+        "sets": {
+            "endure|hiddenpowerflying|return102|reversal": 35.632,
+            "gigadrain|hiddenpowerbug|thief|wingattack": 35.632,
+            "gigadrain|hiddenpowerflying|return102|thief": 28.736
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    },
+    "zapdos": {
+        "abilities": [
+            [
+                "noability",
+                100.0
+            ]
+        ],
+        "count": 106,
+        "items": [
+            [
+                "leftovers",
+                100.0
+            ]
+        ],
+        "moves": [
+            [
+                "sleeptalk",
+                100.0
+            ],
+            [
+                "rest",
+                100.0
+            ],
+            [
+                "hiddenpowerice",
+                100.0
+            ],
+            [
+                "thunder",
+                100.0
+            ]
+        ],
+        "sets": {
+            "hiddenpowerice|rest|sleeptalk|thunder": 100.0
+        },
+        "spreads": [
+            [
+                "serious",
+                "252,252,252,252,252,252",
+                100.0
+            ]
+        ]
+    }
+}

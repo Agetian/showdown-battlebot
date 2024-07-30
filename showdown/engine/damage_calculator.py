@@ -5,7 +5,6 @@ import constants
 from data import all_move_json
 from data import pokedex
 
-
 pokemon_type_indicies = {
     'normal': 0,
     'fire': 1,
@@ -31,7 +30,7 @@ pokemon_type_indicies = {
     '???': 18,
 }
 
-damage_multipication_array = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1/2, 0, 1, 1, 1/2, 1, 1],
+damage_multiplication_array = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1/2, 0, 1, 1, 1/2, 1, 1],
                               [1, 1/2, 1/2, 1, 2, 2, 1, 1, 1, 1, 1, 2, 1/2, 1, 1/2, 1, 2, 1, 1],
                               [1, 2, 1/2, 1, 1/2, 1, 1, 1, 2, 1, 1, 1, 2, 1, 1/2, 1, 1, 1, 1],
                               [1, 1, 2, 1/2, 1/2, 1, 1, 1, 0, 2, 1, 1, 1, 1, 1/2, 1, 1, 1, 1],
@@ -52,9 +51,30 @@ damage_multipication_array = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1/2, 0, 1, 1,
                               [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
 
 
+# Type chart modification based on format gen (TODO: needs refactoring so that 'gen' is easier to access)
+from config import ShowdownConfig
+gen = ShowdownConfig.get_generation()
+if gen == 1:
+    damage_multiplication_array[13][10] = 0 # Ghost vs. Psychic - FIXME: how does Showdown treat this?
+    damage_multiplication_array[11][7] = 2 # Bug vs. Poison
+    damage_multiplication_array[7][11] = 2 # Poison vs. Bug
+    damage_multiplication_array[5][1] = 1 # Ice vs. Fire
+    for i in range(18):
+        damage_multiplication_array[17][i] = damage_multiplication_array[i][17] = 1 # No Fairy type, so set the relevant effectiveness to 1 just in case.
+        damage_multiplication_array[16][i] = damage_multiplication_array[i][16] = 1 # No Steel type, so set the relevant effectiveness to 1 just in case.
+        damage_multiplication_array[15][i] = damage_multiplication_array[i][15] = 1 # No Dark type, so set the relevant effectiveness to 1 just in case.
+elif gen < 6:
+    damage_multiplication_array[13][16] = 1/2 # Ghost vs. Steel
+    damage_multiplication_array[15][16] = 1/2 # Dark vs. Steel
+    for i in range(18):
+        damage_multiplication_array[17][i] = damage_multiplication_array[i][17] = 1 # No Fairy type, so set the relevant effectiveness to 1 just in case.
+else:
+    pass
+
+
 SPECIAL_LOGIC_MOVES = {
     "seismictoss": lambda attacker, defender: [int(attacker.level)] if "ghost" not in defender.types else None,
-    "nightshade": lambda attacker, defender: [int(attacker.level)] if "normal" not in defender.types else None,
+    "nightshade": lambda attacker, defender: [int(attacker.level)] if ("normal" not in defender.types or gen == 1) else None,
     "superfang": lambda attacker, defender: [int(defender.hp / 2)] if "ghost" not in defender.types else None,
     "naturesmadness": lambda attacker, defender: [int(defender.hp / 2)],
     "ruination": lambda attacker, defender: [int(defender.hp / 2)],
@@ -164,10 +184,19 @@ def is_not_very_effective(move_type, defending_pokemon_types):
     return multiplier < 1
 
 
-def calculate_modifier(attacker, defender, defending_types, attacking_move, conditions):
+def is_immune(move_type, defending_pokemon_types):
+    multiplier = type_effectiveness_modifier(move_type, defending_pokemon_types)
+    return multiplier == 0
 
+
+def calculate_modifier(attacker, defender, defending_types, attacking_move, conditions):
     modifier = 1
     modifier *= type_effectiveness_modifier(attacking_move[constants.TYPE], defending_types)
+    if gen == 1:
+        if (attacking_move[constants.ID] == "nightshade") and ("psychic" in defending_types):
+            modifier = 1 # Nightshade is effective vs. Psychic in gen 1, so assume effective
+        elif (attacking_move[constants.ID] == "counter") and ("ghost" in defending_types):
+            modifier = 1 # Counter is effective vs. Ghost in gen 1, so assume effective
     modifier *= weather_modifier(attacking_move, conditions.get(constants.WEATHER))
     modifier *= stab_modifier(attacker, attacking_move)
     modifier *= burn_modifier(attacker, attacking_move)
@@ -236,7 +265,7 @@ def type_effectiveness_modifier(attacking_move_type, defending_types):
     attacking_type_index = pokemon_type_indicies[attacking_move_type]
     for pkmn_type in defending_types:
         defending_type_index = pokemon_type_indicies[pkmn_type]
-        modifier *= damage_multipication_array[attacking_type_index][defending_type_index]
+        modifier *= damage_multiplication_array[attacking_type_index][defending_type_index]
 
     return modifier
 

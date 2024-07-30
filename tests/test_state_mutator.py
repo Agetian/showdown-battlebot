@@ -862,3 +862,24 @@ class TestStatemutator(unittest.TestCase):
         self.assertEqual(3, self.state.user.active.special_attack)
         self.assertEqual(4, self.state.user.active.special_defense)
         self.assertEqual(5, self.state.user.active.speed)
+
+    def test_terastallize_changes_type_sets_flag_and_reverses(self):
+        self.state.user.active.types = ["water", "fire"]
+        instruction = (
+            constants.MUTATOR_TERASTALLIZE,
+            constants.USER,
+            "water",
+            ["water", "fire"]
+        )
+        list_of_instructions = [instruction]
+        self.mutator.apply(list_of_instructions)
+
+        self.assertEqual(["water"], self.state.user.active.types)
+        self.assertTrue(self.state.user.active.terastallized)
+        self.assertTrue(self.state.user.used_tera)
+
+        self.mutator.reverse(list_of_instructions)
+
+        self.assertEqual(["water", "fire"], self.state.user.active.types)
+        self.assertFalse(self.state.user.active.terastallized)
+        self.assertFalse(self.state.user.used_tera)

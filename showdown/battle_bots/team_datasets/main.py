@@ -3,11 +3,14 @@ from copy import deepcopy
 
 from data.team_datasets import TeamDatasets
 from showdown.battle import Battle
-from ..helpers import pick_safest_move_from_battles
+from ..helpers import pick_safest_move_from_battles, pick_safest_move_using_dynamic_search_depth
 from ..helpers import format_decision
 
 logger = logging.getLogger(__name__)
 
+from config import ShowdownConfig
+ShowdownConfig.configure()
+search_depth = ShowdownConfig.search_depth
 
 def set_most_likely_pokemon_from_team_datasets(pkmn):
     """
@@ -23,9 +26,10 @@ def set_most_likely_pokemon_from_team_datasets(pkmn):
         pkmn.ability = predicted_set.ability
         pkmn.item = predicted_set.item
         pkmn.set_spread(predicted_set.nature, predicted_set.evs)
+        pkmn.tera_type = predicted_set.tera_type
         logger.debug(
-            "Assumed set for opponent's {}:\t{} {} {} {} {}".format(
-                pkmn.name, pkmn.nature, pkmn.evs, pkmn.ability, pkmn.item, pkmn.moves)
+            "Assumed set for opponent's {}:\t{} {} {} {} {} {}".format(
+                pkmn.name, pkmn.nature, pkmn.evs, pkmn.ability, pkmn.item, pkmn.moves, pkmn.tera_type)
         )
         return
 
@@ -37,18 +41,18 @@ def set_most_likely_pokemon_from_team_datasets(pkmn):
         for mv in predicted_set.moves:
             pkmn.add_move(mv)
         pkmn.set_spread(predicted_set.nature, predicted_set.evs)
+        pkmn.tera_type = predicted_set.tera_type
         logger.debug(
-            "Assumed set for opponent's {}:\t{} {} {} {} {}".format(
-                pkmn.name, pkmn.nature, pkmn.evs, pkmn.ability, pkmn.item, pkmn.moves)
+            "Assumed set for opponent's {}:\t{} {} {} {} {} {}".format(
+                pkmn.name, pkmn.nature, pkmn.evs, pkmn.ability, pkmn.item, pkmn.moves, pkmn.tera_type)
         )
-        return
 
     pkmn.guess_most_likely_attributes()
 
     logger.debug(
-        "Assumed set for opponent's {}:\t{} {} {} {} {}".format(
-            pkmn.name, pkmn.nature, pkmn.evs, pkmn.ability, pkmn.item, pkmn.moves)
-        )
+        "Assumed set for opponent's {}:\t{} {} {} {} {} {}".format(
+            pkmn.name, pkmn.nature, pkmn.evs, pkmn.ability, pkmn.item, pkmn.moves, pkmn.tera_type)
+    )
 
 
 def prepare_battles(battle):
@@ -87,6 +91,7 @@ class BattleBot(Battle):
                 for pkmn_obj in self.opponent.reserve:
                     if pkmn_obj.name == pkmn:
                         split_info = pkmn_info.split("|")
+                        pkmn_obj.tera_type = split_info[0]
                         pkmn_obj.ability = split_info[1]
                         pkmn_obj.item = split_info[2]
                         pkmn_obj.set_spread(
@@ -98,5 +103,9 @@ class BattleBot(Battle):
 
     def find_best_move(self):
         battles = prepare_battles(self)
-        safest_move = pick_safest_move_from_battles(battles)
+        if search_depth > 0:
+            safest_move = pick_safest_move_from_battles(battles)
+        else:
+            safest_move = pick_safest_move_using_dynamic_search_depth(battles)
+
         return format_decision(self, safest_move)

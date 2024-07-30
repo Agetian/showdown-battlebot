@@ -1,0 +1,404 @@
+{
+	"acid": {
+		"inherit": true,
+		"secondary": {
+			"chance": 33,
+			"boosts": {
+				"defense": -1
+			}
+		},
+		"target": "normal"
+	},
+	"amnesia": {
+		"inherit": true,
+		"boosts": {
+			"special-attack": 2,
+			"special-defense": 2
+		}
+	},
+	"aurorabeam": {
+		"inherit": true,
+		"secondary": {
+			"chance": 33,
+			"boosts": {
+				"attack": -1
+			}
+		}
+	},
+	"bide": {
+		"inherit": true,
+		"priority": 0,
+		"accuracy": true,
+		"type": "???" 
+	},
+	"bind": {
+		"inherit": true,
+		"ignoreImmunity": true,
+		"volatileStatus": "partiallytrapped",
+		"self": {
+			"volatileStatus": "partialtrappinglock"
+		}
+	},
+	"bite": {
+		"inherit": true,
+		"category": "Physical",
+		"secondary": {
+			"chance": 10,
+			"volatileStatus": "flinch"
+		},
+		"type": "normal"
+	},
+	"blizzard": {
+		"inherit": true,
+		"accuracy": 90,
+		"target": "normal"
+	},
+	"bubble": {
+		"inherit": true,
+		"secondary": {
+			"chance": 33,
+			"boosts": {
+				"speed": -1
+			}
+		},
+		"target": "normal"
+	},
+	"bubblebeam": {
+		"inherit": true,
+		"secondary": {
+			"chance": 33,
+			"boosts": {
+				"speed": -1
+			}
+		}
+	},
+	"clamp": {
+		"inherit": true,
+		"accuracy": 75,
+		"pp": 10,
+		"volatileStatus": "partiallytrapped",
+		"self": {
+			"volatileStatus": "partialtrappinglock"
+		}
+	},
+	"constrict": {
+		"inherit": true,
+		"secondary": {
+			"chance": 33,
+			"boosts": {
+				"speed": -1
+			}
+		}
+	},
+	"conversion": {
+		"inherit": true,
+		"target": "normal"
+	},
+	"counter": {
+		"inherit": true,
+		"ignoreImmunity": true,
+		"willCrit": false,
+		"basePower": 1,
+		"flags": {"contact": 1, "protect": 1, "metronome": 1}
+	},
+	"crabhammer": {
+		"inherit": true,
+		"critRatio": 2
+	},
+	"dig": {
+		"inherit": true,
+		"basePower": 100,
+		"condition": {}
+	},
+	"disable": {
+		"num": 50,
+		"accuracy": 55,
+		"basePower": 0,
+		"category": "Status",
+		"name": "Disable",
+		"pp": 20,
+		"priority": 0,
+		"flags": {"protect": 1, "mirror": 1, "bypasssub": 1, "metronome": 1},
+		"volatileStatus": "disable",
+		"secondary": null,
+		"target": "normal",
+		"type": "normal"
+	},
+	"dizzypunch": {
+		"inherit": true,
+		"secondary": null
+	},
+	"doubleedge": {
+		"inherit": true,
+		"basePower": 100
+	},
+	"dragonrage": {
+		"inherit": true,
+		"basePower": 1
+	},
+	"explosion": {
+		"inherit": true,
+		"basePower": 170,
+		"target": "normal"
+	},
+	"fireblast": {
+		"inherit": true,
+		"secondary": {
+			"chance": 30,
+			"status": "brn"
+		}
+	},
+	"firespin": {
+		"inherit": true,
+		"accuracy": 70,
+		"basePower": 15,
+		"volatileStatus": "partiallytrapped",
+		"self": {
+			"volatileStatus": "partialtrappinglock"
+		}
+	},
+	"fly": {
+		"inherit": true,
+		"condition": {}
+	},
+	"focusenergy": {
+		"inherit": true
+	},
+	"glare": {
+		"inherit": true,
+		"ignoreImmunity": true
+	},
+	"growth": {
+		"inherit": true,
+		"boosts": {
+			"special-attack": 1,
+			"special-defense": 1
+		}
+	},
+	"gust": {
+		"inherit": true,
+		"type": "normal"
+	},
+	"haze": {
+		"inherit": true,
+		"target": "self"
+	},
+	"highjumpkick": {
+		"inherit": true
+	},
+	"jumpkick": {
+		"inherit": true
+	},
+	"karatechop": {
+		"inherit": true,
+		"critRatio": 2,
+		"type": "normal"
+	},
+	"leechseed": {
+		"inherit": true
+	},
+	"lightscreen": {
+		"num": 113,
+		"accuracy": true,
+		"basePower": 0,
+		"category": "Status",
+		"name": "Light Screen",
+		"pp": 30,
+		"priority": 0,
+		"flags": {"metronome": 1},
+		"volatileStatus": "lightscreen",
+		"target": "self",
+		"type": "psychic"
+	},
+	"mimic": {
+		"inherit": true,
+		"flags": {"protect": 1, "bypasssub": 1, "metronome": 1}
+	},
+	"mirrormove": {
+		"inherit": true
+	},
+	"mist": {
+		"inherit": true
+	},
+	"nightshade": {
+		"inherit": true,
+		"ignoreImmunity": true,
+		"basePower": 1
+	},
+	"petaldance": {
+		"inherit": true
+	},
+	"poisonsting": {
+		"inherit": true,
+		"secondary": {
+			"chance": 20,
+			"status": "psn"
+		}
+	},
+	"psychic": {
+		"inherit": true,
+		"secondary": {
+			"chance": 33,
+			"boosts": {
+				"special-attack": -1,
+				"special-defense": -1
+			}
+		}
+	},
+	"psywave": {
+		"inherit": true,
+		"basePower": 1
+	},
+	"rage": {
+		"inherit": true,
+		"self": {
+			"volatileStatus": "rage"
+		}
+	},
+	"razorleaf": {
+		"inherit": true,
+		"critRatio": 2,
+		"target": "normal"
+	},
+	"razorwind": {
+		"inherit": true,
+		"critRatio": 1,
+		"target": "normal"
+	},
+	"recover": {
+		"inherit": true,
+		"heal": null
+	},
+	"reflect": {
+		"num": 115,
+		"accuracy": true,
+		"basePower": 0,
+		"category": "Status",
+		"name": "Reflect",
+		"pp": 20,
+		"priority": 0,
+		"flags": {"metronome": 1},
+		"volatileStatus": "reflect",
+		"secondary": null,
+		"target": "self",
+		"type": "psychic"
+	},
+	"rest": {
+		"inherit": true
+	},
+	"roar": {
+		"inherit": true,
+		"forceSwitch": false,
+		"priority": 0
+	},
+	"rockslide": {
+		"inherit": true,
+		"secondary": null,
+		"target": "normal"
+	},
+	"rockthrow": {
+		"inherit": true,
+		"accuracy": 65
+	},
+	"sandattack": {
+		"inherit": true,
+		"ignoreImmunity": true,
+		"type": "normal"
+	},
+	"seismictoss": {
+		"inherit": true,
+		"ignoreImmunity": true,
+		"basePower": 1
+	},
+	"selfdestruct": {
+		"inherit": true,
+		"basePower": 130,
+		"target": "normal"
+	},
+	"skullbash": {
+		"inherit": true
+	},
+	"skyattack": {
+		"inherit": true
+	},
+	"slash": {
+		"inherit": true,
+		"critRatio": 2
+	},
+	"sludge": {
+		"inherit": true,
+		"secondary": {
+			"chance": 40,
+			"status": "psn"
+		}
+	},
+	"solarbeam": {
+		"inherit": true
+	},
+	"sonicboom": {
+		"inherit": true,
+		"ignoreImmunity": true,
+		"basePower": 1
+	},
+	"softboiled": {
+		"inherit": true,
+		"heal": null
+	},
+	"struggle": {
+		"inherit": true,
+		"pp": 10,
+		"recoil": [1, 2]
+	},
+	"substitute": {
+		"num": 164,
+		"accuracy": true,
+		"basePower": 0,
+		"category": "Status",
+		"name": "Substitute",
+		"pp": 10,
+		"priority": 0,
+		"flags": {"metronome": 1},
+		"volatileStatus": "substitute",
+		"secondary": null,
+		"target": "self",
+		"type": "normal"
+	},
+	"superfang": {
+		"inherit": true,
+		"ignoreImmunity": true,
+		"basePower": 1
+	},
+	"thrash": {
+		"inherit": true
+	},
+	"thunder": {
+		"inherit": true,
+		"secondary": {
+			"chance": 10,
+			"status": "par"
+		}
+	},
+	"triattack": {
+		"inherit": true,
+		"secondary": null
+	},
+	"whirlwind": {
+		"inherit": true,
+		"accuracy": 85,
+		"forceSwitch": false,
+		"priority": 0
+	},
+	"wingattack": {
+		"inherit": true,
+		"basePower": 35
+	},
+	"wrap": {
+		"inherit": true,
+		"accuracy": 85,
+		"ignoreImmunity": true,
+		"volatileStatus": "partiallytrapped",
+		"self": {
+			"volatileStatus": "partialtrappinglock"
+		}
+	}
+}

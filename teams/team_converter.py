@@ -66,9 +66,10 @@ def single_pokemon_export_to_dict(pkmn_export_string):
     species = get_species(name)
     if species:
         pkmn_dict["species"] = normalize_name(species)
-        pkmn_dict["name"] = normalize_name(species)
+        pkmn_dict["name"] = name.split("(")[0].strip()
     else:
-        pkmn_dict["name"] = normalize_name(name.strip())
+        pkmn_dict["name"] = name.split("(")[0].strip()
+        pkmn_dict["species"] = normalize_name(name).strip()
     if '@' in pkmn_info[0]:
         pkmn_dict["item"] = normalize_name(pkmn_info[0].split('@')[1])
     for line in map(str.strip, pkmn_info[1:]):
@@ -95,8 +96,12 @@ def single_pokemon_export_to_dict(pkmn_export_string):
 def export_to_packed(export_string):
     team_dict = list()
     team_members = export_string.split('\n\n')
+    num_mon = 0
     for pkmn in filter(None, team_members):
+        num_mon += 1
         pkmn_dict = single_pokemon_export_to_dict(pkmn)
         team_dict.append(pkmn_dict)
+        if num_mon == 6:
+            break
 
     return json_to_packed(team_dict)

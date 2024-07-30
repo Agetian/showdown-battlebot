@@ -4,6 +4,7 @@ import asyncio
 import concurrent.futures
 from copy import deepcopy
 import logging
+import re
 
 import data
 from data.helpers import get_standard_battle_sets
@@ -105,6 +106,7 @@ async def read_messages_until_first_pokemon_is_seen(ps_websocket_client, battle,
                 if opponent_id in line and constants.SWITCH_STRING in line:
                     battle.start_non_team_preview_battle(user_json, line)
 
+                # FIXME: the following is commented out in SwagMander's fork, but may not actually fix a bug (per pmariglia)
                 elif battle.started:
                     await async_update_battle(battle, line)
 
@@ -128,14 +130,33 @@ async def start_random_battle(ps_websocket_client: PSWebsocketClient, pokemon_ba
 async def start_standard_battle(ps_websocket_client: PSWebsocketClient, pokemon_battle_type):
     battle, opponent_id, user_json = await initialize_battle_with_tag(ps_websocket_client, set_request_json=False)
     battle.battle_type = constants.STANDARD_BATTLE
+    battle.pokemon_mode = pokemon_battle_type
     battle.generation = pokemon_battle_type[:4]
 
     if battle.generation in constants.NO_TEAM_PREVIEW_GENS:
+        # Load the appropriate Smogon stats data for the relevant tier
+        # We don't know which mon we're going to face, so get info on all of them
+        smogon_usage_data = get_standard_battle_sets(battle.pokemon_mode)
+        data.pokemon_sets = smogon_usage_data
+        for pkmn, values in smogon_usage_data.items():
+            data.effectiveness[pkmn] = values["effectiveness"]
+
         await read_messages_until_first_pokemon_is_seen(ps_websocket_client, battle, opponent_id, user_json)
     else:
         msg = ''
         while constants.START_TEAM_PREVIEW not in msg:
             msg = await ps_websocket_client.receive_message()
+            if "Battle Factory Tier:" in msg:
+                bf_tier = re.findall("Battle Factory Tier: (\w+)<", msg)[0]
+                print("Battle Factory Tier detected as: " + bf_tier)
+                if bf_tier == "Uber": battle.pokemon_mode = f"{battle.generation}ubers"
+                elif bf_tier == "OU": battle.pokemon_mode = f"{battle.generation}ou"
+                elif bf_tier == "UU": battle.pokemon_mode = f"{battle.generation}uu"
+                elif bf_tier == "RU": battle.pokemon_mode = f"{battle.generation}ru"
+                elif bf_tier == "NU": battle.pokemon_mode = f"{battle.generation}nu"
+                elif bf_tier == "PU": battle.pokemon_mode = f"{battle.generation}pu"
+                elif bf_tier == "LC": battle.pokemon_mode = f"{battle.generation}lc"
+                elif bf_tier == "Mono": battle.pokemon_mode = f"{battle.generation}monotype"
 
         preview_string_lines = msg.split(constants.START_TEAM_PREVIEW)[-1].split('\n')
 
@@ -152,7 +173,7 @@ async def start_standard_battle(ps_websocket_client: PSWebsocketClient, pokemon_
         battle.during_team_preview()
 
         smogon_usage_data = get_standard_battle_sets(
-            pokemon_battle_type,
+            battle.pokemon_mode,
             pokemon_names=set(p.name for p in battle.opponent.reserve + battle.user.reserve)
         )
         data.pokemon_sets = smogon_usage_data
@@ -165,14 +186,19 @@ async def start_standard_battle(ps_websocket_client: PSWebsocketClient, pokemon_
 
 
 async def start_battle(ps_websocket_client, pokemon_battle_type):
-    if "random" in pokemon_battle_type:
+    if "random" in pokemon_battle_type: # FIXME: applies to battlefactory/bss as well?
         Scoring.POKEMON_ALIVE_STATIC = 30  # random battle benefits from a lower static score for an alive pkmn
         battle = await start_random_battle(ps_websocket_client, pokemon_battle_type)
+    elif "battlefactory" in pokemon_battle_type or "bssfactory" in pokemon_battle_type or "challengecup" in pokemon_battle_type or "computergeneratedteams" in pokemon_battle_type:
+        Scoring.POKEMON_ALIVE_STATIC = 30  # FIXME: do these random battle types also benefit from this?
+        battle = await start_standard_battle(ps_websocket_client, pokemon_battle_type)
     else:
         battle = await start_standard_battle(ps_websocket_client, pokemon_battle_type)
 
     await ps_websocket_client.send_message(battle.battle_tag, ["hf"])
-    await ps_websocket_client.send_message(battle.battle_tag, ['/timer on'])
+
+    if ShowdownConfig.battle_timer:
+        await ps_websocket_client.send_message(battle.battle_tag, ['/timer on'])
 
     return battle
 

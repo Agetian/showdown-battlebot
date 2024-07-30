@@ -46,11 +46,35 @@ def pokemon_is_similar(normalized_name, list_of_pkmn_names):
 
 
 def get_pokemon_information(smogon_stats_url, pkmn_names=None):
-    r = requests.get(smogon_stats_url)
-    if r.status_code == 404:
-        r = requests.get(get_smogon_stats_file_name(ntpath.basename(smogon_stats_url.replace('-0.json', '')), month_delta=2))
+    logger.debug("Trying to load: " + smogon_stats_url) # DEBUG
+    # Try to load the Chaos stats file locally or from a URL
+    import os
+    import json
+    infos = ""
+    custom_json = f"smogon/{ntpath.basename(smogon_stats_url)}"
+    custom_json_1 = f"smogon/{ntpath.basename(smogon_stats_url.replace('-0.json', '-custom.json'))}"
 
-    infos = r.json()['data']
+    if os.path.exists(custom_json):
+        logger.debug(f"Loading {custom_json} for stats...")
+        with open(custom_json) as localfile:
+            infos = json.load(localfile)['data']
+    elif os.path.exists(custom_json_1):
+        logger.debug(f"Loading {custom_json_1} for stats...")
+        with open(custom_json_1) as localfile:
+            infos = json.load(localfile)['data']
+
+    # Load from URL if the local file doesn't exist
+    if infos == "":
+        r = requests.get(smogon_stats_url)
+        if r.status_code == 404:
+            r = requests.get(get_smogon_stats_file_name(ntpath.basename(smogon_stats_url.replace('-0.json', '')), month_delta=2))
+        if r.status_code != 404:
+            infos = r.json()['data']
+
+    if infos == "":
+        logger.debug("No information found, returning empty data...")
+        return {}
+
     final_infos = {}
     for pkmn_name, pkmn_information in infos.items():
         normalized_name = normalize_name(pkmn_name)
@@ -73,10 +97,11 @@ def get_pokemon_information(smogon_stats_url, pkmn_names=None):
         total_count = pkmn_information['Raw count']
         final_infos[normalized_name] = {}
 
-        for counter_name, counter_information in pkmn_information["Checks and Counters"].items():
-            counter_name = normalize_name(counter_name)
-            if counter_name in pkmn_names:
-                matchup_effectiveness[counter_name] = round(1 - counter_information[1], 2)
+        if pkmn_names is not None:
+            for counter_name, counter_information in pkmn_information["Checks and Counters"].items():
+                counter_name = normalize_name(counter_name)
+                if counter_name in pkmn_names:
+                    matchup_effectiveness[counter_name] = round(1 - counter_information[1], 2)
 
         for spread, count in sorted(pkmn_information['Spreads'].items(), key=lambda x: x[1], reverse=True):
             percentage = round(100 * count / total_count, 2)

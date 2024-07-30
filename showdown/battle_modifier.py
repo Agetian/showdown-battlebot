@@ -24,6 +24,11 @@ logger = logging.getLogger(__name__)
 MOVE_END_STRINGS = {'move', 'switch', 'upkeep', ''}
 
 
+# Generation difference support
+from config import ShowdownConfig
+gen = ShowdownConfig.get_generation()
+
+
 def can_have_priority_modified(battle, pokemon, move_name):
     return (
         "prankster" in [normalize_name(a) for a in pokedex[pokemon.name][constants.ABILITIES].values()] or
@@ -329,7 +334,7 @@ def move(battle, split_msg):
 
     try:
         if all_move_json[move_name][constants.CATEGORY] == constants.STATUS:
-            logger.debug("{} used a status-move. Setting can_have_assultvest to False".format(pkmn.name))
+            logger.debug("{} used a status-move. Setting can_have_assaultvest to False".format(pkmn.name))
             pkmn.can_have_assaultvest = False
     except KeyError:
         pass
@@ -387,11 +392,11 @@ def unboost(battle, split_msg):
 
 
 def status(battle, split_msg):
+    side = battle.user
     if is_opponent(battle, split_msg):
-        pkmn = battle.opponent.active
-    else:
-        pkmn = battle.user.active
+        side = battle.opponent
 
+    pkmn = side.active
     if len(split_msg) > 4 and 'item: ' in split_msg[4]:
         pkmn.item = normalize_name(split_msg[4].split('item:')[-1])
 
@@ -437,9 +442,12 @@ def prepare(battle, split_msg):
 def terastallize(battle, split_msg):
     if is_opponent(battle, split_msg):
         pkmn = battle.opponent.active
+        side = battle.opponent
     else:
         pkmn = battle.user.active
+        side = battle.user
 
+    side.used_tera = True
     pkmn.terastallized = True
     pkmn.types = [normalize_name(split_msg[3])]
     logger.debug("Terastallized {}".format(pkmn.name))
@@ -524,6 +532,9 @@ def curestatus(battle, split_msg):
             )
             pkmn = side.active
 
+    if pkmn.status == constants.SLEEP:
+        side.side_conditions[constants.SLEEP_COUNT] = 0
+
     pkmn.status = None
 
 
@@ -534,8 +545,12 @@ def cureteam(battle, split_msg):
     else:
         side = battle.user
 
+    if side.active.status == constants.SLEEP:
+        side.side_conditions[constants.SLEEP_COUNT] = 0
     side.active.status = None
     for pkmn in filter(lambda p: isinstance(p, Pokemon), side.reserve):
+        if pkmn.status == constants.SLEEP:
+            side.side_conditions[constants.SLEEP_COUNT] = 0
         pkmn.status = None
 
 
@@ -615,6 +630,10 @@ def swapsideconditions(battle, _):
 
 
 def set_item(battle, split_msg):
+    if gen == 1:
+        side.active.item = None
+        return
+
     """Set the opponent's item"""
     if is_opponent(battle, split_msg):
         side = battle.opponent
@@ -739,6 +758,27 @@ def singleturn(battle, split_msg):
 
 
 def upkeep(battle, _):
+    logger.debug("!!!!!!!! IN UPKEEP !!!!!!!!")
+    # from pprint import pprint
+    # logger.debug(pprint(vars(battle.user)))
+
+    # Track sleep to help the bot not overuse Sleep Talk (and maybe other reasons).
+    # Note side_conditions currently only allows ints, I tried putting a dict in there
+    # but it broke something else). Therefore we can't track sleep for multiple mons on 
+    # a single team, but at least most formats have Sleep Clause I guess.
+    if battle.user.active.status == constants.SLEEP:
+        # Make sure this wasn't a sleeping mon brought in from U-turn etc.
+        last_move = battle.user.last_used_move
+        if last_move.pokemon_name == battle.user.active.name:
+            battle.user.side_conditions[constants.SLEEP_COUNT] += 1
+            logger.debug("Incrementing sleep count for the bot to {}".format(battle.user.side_conditions[constants.SLEEP_COUNT]))
+    if battle.opponent.active.status == constants.SLEEP:
+        # Make sure this wasn't a sleeping mon brought in from U-turn etc.
+        last_move = battle.opponent.last_used_move
+        if last_move.pokemon_name == battle.opponent.active.name:
+            battle.opponent.side_conditions[constants.SLEEP_COUNT] += 1
+            logger.debug("Incrementing sleep count for the opponent to {}".format(battle.opponent.side_conditions[constants.SLEEP_COUNT]))
+
     if battle.user.side_conditions[constants.PROTECT] > 0:
         battle.user.side_conditions[constants.PROTECT] -= 1
         logger.debug("Setting protect to {} for the bot".format(battle.user.side_conditions[constants.PROTECT]))
@@ -762,7 +802,6 @@ def upkeep(battle, _):
     if battle.opponent.future_sight[0] > 0:
         battle.opponent.future_sight = (battle.opponent.future_sight[0] - 1, battle.opponent.future_sight[1])
         logger.debug("Decrementing future_sight to {} for the opponent".format(battle.opponent.future_sight[0]))
-
 
 def mega(battle, split_msg):
     if is_opponent(battle, split_msg):
@@ -869,10 +908,10 @@ def check_speed_ranges(battle, msg_lines):
         speed_threshold = int(speed_threshold * 2)
 
     if battle.opponent.active.status == constants.PARALYZED:
-        speed_threshold = int(speed_threshold * 2)
+        speed_threshold = int(speed_threshold * 2) if gen >= 7 else int(speed_threshold * 4) # Gen 1-6: 25% (-75%)
 
     if battle.user.active.status == constants.PARALYZED:
-        speed_threshold = int(speed_threshold / 2)
+        speed_threshold = int(speed_threshold / 2) if gen >= 7 else int(speed_threshold / 4) # Gen 1-6: 25% (-75%)
 
     if battle.user.active.item == "choicescarf":
         speed_threshold = int(speed_threshold * 1.5)
@@ -900,6 +939,9 @@ def check_speed_ranges(battle, msg_lines):
 
 
 def check_choicescarf(battle, msg_lines):
+    if gen <= 3: # No items in Gen 1, no Scarf in generations less than 4
+        return
+    
     # If either side switched this turn - don't do this check
     if any(ln.startswith("|switch|") for ln in msg_lines) or not battle.request_json:
         return
@@ -935,7 +977,7 @@ def check_choicescarf(battle, msg_lines):
         has_scarf = bot_effective_speed > opponent_effective_speed
 
     if has_scarf:
-        logger.debug("Opponent {} could not have gone first - setting it's item to choicescarf".format(battle.opponent.active.name))
+        logger.debug("Opponent {} could not have gone first - setting its item to choicescarf".format(battle.opponent.active.name))
         battle.opponent.active.item = 'choicescarf'
 
 
@@ -976,6 +1018,9 @@ def get_damage_dealt(battle, split_msg, next_messages):
 
 
 def check_choice_band_or_specs(battle, damage_dealt):
+    if gen == 1: # No items in Gen 1
+        return
+
     if (
         battle.opponent.active is None or
         battle.opponent.active.item != constants.UNKNOWN_ITEM or
@@ -993,10 +1038,10 @@ def check_choice_band_or_specs(battle, damage_dealt):
         logger.debug("Could not find the move {}, skipping choice item check".format(move))
         return
 
-    if move_dict[constants.CATEGORY] == constants.PHYSICAL:
+    if gen >= 3 and move_dict[constants.CATEGORY] == constants.PHYSICAL:
         choice_item = 'choiceband'
         spread = 'adamant', '0,252,0,0,0,0'
-    elif move_dict[constants.CATEGORY] == constants.SPECIAL:
+    elif gen >= 4 and move_dict[constants.CATEGORY] == constants.SPECIAL:
         choice_item = 'choicespecs'
         spread = 'modest', '0,0,0,252,0,0'
     else:
@@ -1062,6 +1107,9 @@ def check_choice_band_or_specs(battle, damage_dealt):
 
 
 def check_heavydutyboots(battle, msg_lines):
+    if gen == 1: # No items in Gen 1
+        return
+
     side_to_check = battle.opponent
 
     if (

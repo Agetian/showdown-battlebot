@@ -46,16 +46,37 @@ def apply_move_mods(gen_number):
 def apply_pokedex_mods(gen_number):
     logger.debug("Applying dex mod for gen {}".format(gen_number))
     for gen_number in reversed(range(gen_number, CURRENT_GEN)):
-        with open("{}/gen{}_pokedex_mods.json".format(PWD, gen_number), 'r') as f:
-            pokedex_mods = json.load(f)
-        for pokemon, modifications in pokedex_mods.items():
-            pokedex[pokemon].update(modifications)
+        try:
+            with open("{}/gen{}_pokedex_mods.json".format(PWD, gen_number), 'r') as f:
+                pokedex_mods = json.load(f)
+            for pokemon, modifications in pokedex_mods.items():
+                pokedex[pokemon].update(modifications)
+        except:
+            continue
 
 
 def set_random_battle_sets(gen_number):
     logger.debug("Setting random battle sets for gen {}".format(gen_number))
     with open("{}/random_battle_sets_gen{}.json".format(PWD, gen_number), 'r') as f:
         data.random_battle_sets = json.load(f)
+
+
+def apply_gen_1_mods():
+    # TODO: special_attack + special_defense as one property
+    constants.REQUEST_DICT_ABILITY = "baseAbility"
+    apply_move_mods(1)
+    apply_pokedex_mods(1)
+    undo_physical_special_split()
+
+
+def apply_gen_2_mods():
+    constants.HIDDEN_POWER_TYPE_STRING_INDEX = -2
+    constants.HIDDEN_POWER_ACTIVE_MOVE_BASE_DAMAGE_STRING = "70"
+    constants.HIDDEN_POWER_RESERVE_MOVE_BASE_DAMAGE_STRING = "70"
+    constants.REQUEST_DICT_ABILITY = "baseAbility"
+    apply_move_mods(2)
+    apply_pokedex_mods(2)
+    undo_physical_special_split()
 
 
 def apply_gen_3_mods():
@@ -112,9 +133,13 @@ def undo_physical_special_split():
 
 
 def apply_mods(game_mode):
-    if "gen3" in game_mode:
+    if "gen1" in game_mode:
+        apply_gen_1_mods()
+    elif "gen2" in game_mode:
+        apply_gen_2_mods()
+    elif "gen3" in game_mode:
         apply_gen_3_mods()
-    if "gen4" in game_mode:
+    elif "gen4" in game_mode:
         apply_gen_4_mods()
     elif "gen5" in game_mode:
         apply_gen_5_mods()
@@ -126,8 +151,16 @@ def apply_mods(game_mode):
         apply_gen_8_mods()
 
     if game_mode[:3] == "gen":
-        if int(game_mode[3]) < 8:
-            set_random_battle_sets(7)
+        gen = int(game_mode[3])
+        if gen < 8:
             damage_calculator.TERRAIN_DAMAGE_BOOST = 1.5  # terrain gave a 1.5x damage boost prior to gen8
-        if int(game_mode[3]) < 9:
+        if gen < 9:
             constants.ICE_WEATHER = constants.HAIL  # ice-type weather was hail prior to gen9
+
+        # modify the random battle sets if on earlier generations
+        if gen < 8:
+            try:
+                set_random_battle_sets(gen)
+            except:
+                logger.warning(f"Random battle sets not found for generation {gen}, will load the 7th generation sets")
+                set_random_battle_sets(7)

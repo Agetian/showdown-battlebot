@@ -13,6 +13,11 @@ from data.parse_smogon_stats import ITEM_STRING
 import logging
 logger = logging.getLogger(__name__)
 
+import random
+
+from config import ShowdownConfig
+gen = ShowdownConfig.get_generation()
+
 
 # these items will either reveal themselves automatically, or do not have a meaningful impact to the bot
 # therefore, we do not want to assign them to a pokemon as a guess
@@ -54,6 +59,8 @@ def get_all_possible_moves_for_random_battle(pkmn_name, known_moves):
     except KeyError:
         logger.warning("{} not in the random-battle sets lookup".format(pkmn_name))
         return []
+
+    # TODO: for earlier gens, use the Smogon stats for tiers as a basis for possible sets, probably better than nothing at all
 
     new_moves = list()
     for key in sets[constants.SETS]:
@@ -158,26 +165,40 @@ def get_most_likely_spread(pkmn_name):
         sets = get_pokemon_sets(pkmn_name)
     except KeyError:
         logger.warning("{} not in the sets lookup".format(pkmn_name))
-        return 'serious', "85,85,85,85,85,85", 0
+        if gen <= 2: # Gen 1-2 has relaxed EV limit, so assume 252 for each
+            return 'serious', "252,252,252,252,252,252", 0
+        else:
+            return 'serious', "85,85,85,85,85,85", 0
 
     return sets[SPREADS_STRING][0]
 
 
 def get_standard_battle_sets(battle_mode, pokemon_names=None):
-    if any(battle_mode.endswith(s) for s in constants.SMOGON_HAS_STATS_PAGE_SUFFIXES):
+    # UPDATED: Allow local custom json files
+    import os, ntpath, re
+    custom_json = f"smogon/{ntpath.basename(get_smogon_stats_file_name(battle_mode))}"
+    custom_json_1 = f"smogon/{ntpath.basename(get_smogon_stats_file_name(battle_mode).replace('-0.json', '-custom.json'))}"
+
+    if any(battle_mode.endswith(s) for s in constants.SMOGON_HAS_STATS_PAGE_SUFFIXES) or os.path.exists(custom_json) or os.path.exists(custom_json_1):
         smogon_stats_file_name = get_smogon_stats_file_name(battle_mode)
         logger.debug("Making HTTP request to {} for usage stats".format(smogon_stats_file_name))
         smogon_usage_data = get_pokemon_information(smogon_stats_file_name, pkmn_names=pokemon_names)
     else:
-        # use ALL data for a mode like battle-factory
+        # use ALL data for a mode like random / bss factory
         logger.debug("Making HTTP request for ALL usage stats\nplease wait...")
-        ubers_data = get_pokemon_information(get_smogon_stats_file_name("gen9ubers"), pkmn_names=pokemon_names)
-        ou_data = get_pokemon_information(get_smogon_stats_file_name("gen9ou"), pkmn_names=pokemon_names)
-        uu_data = get_pokemon_information(get_smogon_stats_file_name("gen9uu"), pkmn_names=pokemon_names)
-        ru_data = get_pokemon_information(get_smogon_stats_file_name("gen9ru"), pkmn_names=pokemon_names)
-        nu_data = get_pokemon_information(get_smogon_stats_file_name("gen9nu"), pkmn_names=pokemon_names)
-        pu_data = get_pokemon_information(get_smogon_stats_file_name("gen9pu"), pkmn_names=pokemon_names)
-        lc_data = get_pokemon_information(get_smogon_stats_file_name("gen9lc"), pkmn_names=pokemon_names)
+
+        # UPDATE: Gen X support
+        gen = "gen9"
+        if battle_mode.find("gen") != -1:
+            gen = re.findall("gen\d+", battle_mode)[0]
+
+        ubers_data = get_pokemon_information(get_smogon_stats_file_name(f"{gen}ubers"), pkmn_names=pokemon_names)
+        ou_data = get_pokemon_information(get_smogon_stats_file_name(f"{gen}ou"), pkmn_names=pokemon_names)
+        uu_data = get_pokemon_information(get_smogon_stats_file_name(f"{gen}uu"), pkmn_names=pokemon_names)
+        ru_data = get_pokemon_information(get_smogon_stats_file_name(f"{gen}ru"), pkmn_names=pokemon_names)
+        nu_data = get_pokemon_information(get_smogon_stats_file_name(f"{gen}nu"), pkmn_names=pokemon_names)
+        pu_data = get_pokemon_information(get_smogon_stats_file_name(f"{gen}pu"), pkmn_names=pokemon_names)
+        lc_data = get_pokemon_information(get_smogon_stats_file_name(f"{gen}lc"), pkmn_names=pokemon_names)
 
         smogon_usage_data = lc_data
         for pkmn_data in [pu_data, nu_data, ru_data, uu_data, ou_data, ubers_data]:
@@ -192,6 +213,6 @@ def get_mega_pkmn_name(pkmn_name):
     mega_name = "{}mega".format(pkmn_name)
     if mega_name in pokedex:
         return mega_name
-    elif mega_name + "x" in pokedex:  # for megas with two evolutions, return the x version
-        return mega_name + "x"
+    elif mega_name + "x" in pokedex:  # for megas with two evolutions, return randomly either the x or the y version
+        return mega_name + "x" if random.choice([True, False]) else mega_name + "y"
     return None

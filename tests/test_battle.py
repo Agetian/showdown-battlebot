@@ -13,6 +13,8 @@ from showdown.battle import Move
 # so we can instantiate a Battle object for testing
 Battle.__abstractmethods__ = set()
 
+from showdown.engine.objects import MoveChoice
+
 
 class TestPokemonInit(unittest.TestCase):
     def test_alternate_pokemon_name_initializes(self):
@@ -484,7 +486,7 @@ class TestGetPossibleItems(unittest.TestCase):
 
         self.assertEqual(expected_items, possible_items)
 
-    def test_does_not_guess_assultvest_when_can_have_assultvest_flag_is_false(self):
+    def test_does_not_guess_assaultvest_when_can_have_assaultvest_flag_is_false(self):
         p = Pokemon('pikachu', 100)
         p.item = constants.UNKNOWN_ITEM
         p.can_have_assaultvest = False
@@ -502,7 +504,7 @@ class TestGetPossibleItems(unittest.TestCase):
 
         self.assertEqual(expected_items, possible_items)
 
-    def test_guesses_assultvest_when_can_have_assultvest_flag_is_true(self):
+    def test_guesses_assaultvest_when_can_have_assaultvest_flag_is_true(self):
         p = Pokemon('pikachu', 100)
         p.item = constants.UNKNOWN_ITEM
         p.can_have_assaultvest = True
@@ -842,6 +844,9 @@ class TestBattlerActiveLockedIntoMove(unittest.TestCase):
 class TestBattle(unittest.TestCase):
     def setUp(self):
         self.battle = Battle(None)
+        self.battle.generation = "gen9"
+        self.battle.user.used_tera = True
+        self.battle.opponent.used_tera = True
         self.battle.user.active = Pokemon('Pikachu', 100)
         self.battle.opponent.active = Pokemon('Pikachu', 100)
 
@@ -853,7 +858,7 @@ class TestBattle(unittest.TestCase):
             Move('thunderbolt')
         ]
 
-        expected_options = ['thunderbolt'], ['thunderbolt']
+        expected_options = [MoveChoice('thunderbolt')], [MoveChoice('thunderbolt')]
 
         self.assertEqual(expected_options, self.battle.get_all_options())
 
@@ -870,7 +875,7 @@ class TestBattle(unittest.TestCase):
 
         self.battle.user.active.volatile_statuses = ["phantomforce"]
 
-        expected_options = ['phantomforce'], ['thunderbolt']
+        expected_options = [MoveChoice('phantomforce')], [MoveChoice('thunderbolt')]
 
         self.assertEqual(expected_options, self.battle.get_all_options())
 
@@ -887,7 +892,7 @@ class TestBattle(unittest.TestCase):
 
         self.battle.opponent.active.volatile_statuses = ["phantomforce"]
 
-        expected_options = ['thunderbolt'], ['phantomforce']
+        expected_options = [MoveChoice('thunderbolt')], [MoveChoice('phantomforce')]
 
         self.assertEqual(expected_options, self.battle.get_all_options())
 
@@ -907,16 +912,16 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'thunderbolt',
-                'agility',
-                'tackle',
-                'charm'
+                MoveChoice('thunderbolt'),
+                MoveChoice('agility'),
+                MoveChoice('tackle'),
+                MoveChoice('charm')
             ],
             [
-                'thunderbolt',
-                'swift',
-                'dragondance',
-                'stealthrock'
+                MoveChoice('thunderbolt'),
+                MoveChoice('swift'),
+                MoveChoice('dragondance'),
+                MoveChoice('stealthrock')
             ]
         )
 
@@ -931,11 +936,11 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie'
+                MoveChoice('caterpie', is_switch=True)
             ],
             [
-                'splash',
-                'switch caterpie'
+                MoveChoice('splash'),
+                MoveChoice('caterpie', is_switch=True)
             ]
         )
 
@@ -955,10 +960,10 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie'
+                MoveChoice('caterpie', is_switch=True)
             ],
             [
-                'splash',
+                MoveChoice('splash')
             ]
         )
 
@@ -981,10 +986,10 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie'
+                MoveChoice('caterpie', is_switch=True)
             ],
             [
-                'splash',
+                MoveChoice('splash'),
             ]
         )
 
@@ -999,13 +1004,13 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie',
-                'switch spinarak'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('spinarak', is_switch=True)
             ],
             [
-                'splash',
-                'switch caterpie',
-                'switch houndour'
+                MoveChoice('splash'),
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('houndour', is_switch=True)
             ]
         )
 
@@ -1026,16 +1031,16 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'tackle',
-                'charm',
-                'switch caterpie',
-                'switch spinarak'
+                MoveChoice('tackle'),
+                MoveChoice('charm'),
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('spinarak', is_switch=True)
             ],
             [
-                'tackle',
-                'thunderbolt',
-                'switch caterpie',
-                'switch houndour'
+                MoveChoice('tackle'),
+                MoveChoice('thunderbolt'),
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('houndour', is_switch=True)
             ]
         )
 
@@ -1057,11 +1062,11 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie',
-                'switch spinarak'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('spinarak', is_switch=True)
             ],
             [
-                'splash'
+                MoveChoice('splash')
             ]
         )
 
@@ -1083,11 +1088,11 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie',
-                'switch spinarak'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('spinarak', is_switch=True)
             ],
             [
-                'splash'
+                MoveChoice('splash')
             ]
         )
 
@@ -1109,11 +1114,11 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'splash'
+                MoveChoice('splash')
             ],
             [
-                'switch caterpie',
-                'switch houndour'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('houndour', is_switch=True)
             ]
         )
 
@@ -1135,11 +1140,11 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'splash'
+                MoveChoice('splash')
             ],
             [
-                'switch caterpie',
-                'switch houndour'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('houndour', is_switch=True)
             ]
         )
 
@@ -1162,12 +1167,12 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie',
-                'switch spinarak'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('spinarak', is_switch=True)
             ],
             [
-                'switch caterpie',
-                'switch houndour'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('houndour', is_switch=True)
             ]
         )
 
@@ -1186,14 +1191,14 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'tackle',
-                'charm',
-                'switch caterpie',
-                'switch spinarak'
+                MoveChoice('tackle'),
+                MoveChoice('charm'),
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('spinarak', is_switch=True)
             ],
             [
-                'splash',
-                'switch caterpie',
+                MoveChoice('splash'),
+                MoveChoice('caterpie', is_switch=True),
             ]
         )
 
@@ -1233,12 +1238,12 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie',
-                'switch spinarak'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('spinarak', is_switch=True)
             ],
             [
-                'tackle',
-                'charm',
+                MoveChoice('tackle'),
+                MoveChoice('charm'),
             ]
         )
 
@@ -1277,11 +1282,11 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie',
-                'switch spinarak'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('spinarak', is_switch=True)
             ],
             [
-                'splash'
+                MoveChoice('splash')
             ]
         )
 
@@ -1320,11 +1325,11 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie',
-                'switch spinarak'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('spinarak', is_switch=True)
             ],
             [
-                'splash'
+                MoveChoice('splash')
             ]
         )
 
@@ -1367,11 +1372,11 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie',
-                'switch spinarak'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('spinarak', is_switch=True)
             ],
             [
-                'splash'
+                MoveChoice('splash')
             ]
         )
 
@@ -1414,11 +1419,11 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie',
-                'switch spinarak'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('spinarak', is_switch=True)
             ],
             [
-                'splash'
+                MoveChoice('splash')
             ]
         )
 
@@ -1461,11 +1466,141 @@ class TestBattle(unittest.TestCase):
 
         expected_options = (
             [
-                'switch caterpie',
-                'switch spinarak'
+                MoveChoice('caterpie', is_switch=True),
+                MoveChoice('spinarak', is_switch=True)
             ],
             [
-                'splash'
+                MoveChoice('splash')
+            ]
+        )
+
+        self.assertEqual(expected_options, self.battle.get_all_options())
+
+    def test_get_user_moves_when_tera_is_an_option(self):
+        self.battle.user.used_tera = False
+        self.battle.user.active.can_terastallize = True
+        self.battle.user.active.moves = [
+            Move('tackle'),
+            Move('charm'),
+            Move('uturn'),
+        ]
+        self.battle.opponent.active.moves = [
+            Move('tackle'),
+            Move('charm'),
+        ]
+
+        self.battle.user.reserve = []
+        self.battle.opponent.reserve = []
+        expected_options = (
+            [
+                MoveChoice('tackle'),
+                MoveChoice('charm'),
+                MoveChoice('uturn'),
+                MoveChoice('tackle', terastallize=True),
+                MoveChoice('charm', terastallize=True),
+                MoveChoice('uturn', terastallize=True),
+            ],
+            [
+                MoveChoice('tackle'),
+                MoveChoice('charm')
+            ]
+        )
+
+        self.assertEqual(expected_options, self.battle.get_all_options())
+
+    def test_get_opponent_moves_when_tera_is_an_option(self):
+        self.battle.opponent.used_tera = False
+        self.battle.user.active.moves = [
+            Move('tackle'),
+            Move('charm'),
+            Move('uturn'),
+        ]
+        self.battle.opponent.active.moves = [
+            Move('tackle'),
+            Move('charm'),
+        ]
+
+        self.battle.user.reserve = []
+        self.battle.opponent.reserve = []
+        expected_options = (
+            [
+                MoveChoice('tackle'),
+                MoveChoice('charm'),
+                MoveChoice('uturn'),
+            ],
+            [
+                MoveChoice('tackle'),
+                MoveChoice('charm'),
+                MoveChoice('tackle', terastallize=True),
+                MoveChoice('charm', terastallize=True)
+            ]
+        )
+
+        self.assertEqual(expected_options, self.battle.get_all_options())
+
+    def test_user_and_opponent_options_when_tera_is_available(self):
+        self.battle.user.used_tera = False
+        self.battle.user.active.can_terastallize = True
+        self.battle.opponent.used_tera = False
+        self.battle.user.active.moves = [
+            Move('tackle'),
+            Move('charm'),
+            Move('uturn'),
+        ]
+        self.battle.opponent.active.moves = [
+            Move('tackle'),
+            Move('charm'),
+        ]
+
+        self.battle.user.reserve = []
+        self.battle.opponent.reserve = []
+        expected_options = (
+            [
+                MoveChoice('tackle'),
+                MoveChoice('charm'),
+                MoveChoice('uturn'),
+                MoveChoice('tackle', terastallize=True),
+                MoveChoice('charm', terastallize=True),
+                MoveChoice('uturn', terastallize=True),
+            ],
+            [
+                MoveChoice('tackle'),
+                MoveChoice('charm'),
+                MoveChoice('tackle', terastallize=True),
+                MoveChoice('charm', terastallize=True)
+            ]
+        )
+
+        self.assertEqual(expected_options, self.battle.get_all_options())
+
+    def test_switches_dont_allow_tera(self):
+        self.battle.user.active.can_terastallize = True
+        self.battle.user.used_tera = False
+        self.battle.user.active.moves = [
+            Move('tackle'),
+            Move('charm'),
+            Move('uturn'),
+        ]
+        self.battle.opponent.active.moves = [
+            Move('tackle'),
+            Move('charm'),
+        ]
+
+        self.battle.user.reserve = [Pokemon("Pikachu", 100)]
+        self.battle.opponent.reserve = []
+        expected_options = (
+            [
+                MoveChoice('tackle'),
+                MoveChoice('charm'),
+                MoveChoice('uturn'),
+                MoveChoice('tackle', terastallize=True),
+                MoveChoice('charm', terastallize=True),
+                MoveChoice('uturn', terastallize=True),
+                MoveChoice('pikachu', is_switch=True)
+            ],
+            [
+                MoveChoice('tackle'),
+                MoveChoice('charm'),
             ]
         )
 
