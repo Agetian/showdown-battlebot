@@ -42,8 +42,12 @@ def format_decision(battle, decision):
         if battle.user.active.can_dynamax and all(p.hp == 0 for p in battle.user.reserve):
             message = "{} {}".format(message, constants.DYNAMAX)
 
-        elif battle.user.active.can_terastallize and decision.terastallize:
-            message = "{} {}".format(message, constants.TERASTALLIZE)
+        # Terastallization: try to predict usefulness, but use Stellar for the last mon if nothing was terastallized yet
+        # TODO: proper Stellar support
+        elif battle.user.active.can_terastallize:
+            if decision.terastallize or \
+                (all(p.hp == 0 for p in battle.user.reserve) and battle.user.active.tera_type == 'stellar'):
+                    message = "{} {}".format(message, constants.TERASTALLIZE)
 
         # Z move
         if battle.user.active.get_move(decision.id).can_z:

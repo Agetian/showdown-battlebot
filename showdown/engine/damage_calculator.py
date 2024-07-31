@@ -28,6 +28,9 @@ pokemon_type_indicies = {
     # ??? and typeless are the same thing
     'typeless': 18,
     '???': 18,
+
+    # FIXME: proper support for Stellar is needed, this simply avoids a crash
+    'stellar': 18
 }
 
 damage_multiplication_array = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1/2, 0, 1, 1, 1/2, 1, 1],
