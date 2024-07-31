@@ -227,6 +227,14 @@ def solarbeam(attacking_side, attacking_move, defending_move, attacking_pokemon,
     return attacking_move
 
 
+def electroshot(attacking_side, attacking_move, defending_move, attacking_pokemon, defending_pokemon, first_move, weather, terrain):
+    if weather == constants.RAIN:
+        attacking_move = attacking_move.copy()
+        attacking_move[constants.FLAGS] = attacking_move[constants.FLAGS].copy()
+        attacking_move[constants.FLAGS].pop(constants.CHARGE, None)
+    return attacking_move
+
+
 def toxic(attacking_side, attacking_move, defending_move, attacking_pokemon, defending_pokemon, first_move, weather, terrain):
     if 'poison' in attacking_pokemon.types:
         attacking_move = attacking_move.copy()
@@ -748,6 +756,7 @@ move_lookup = {
     'terablast': terablast,
     'counter': counter,
     'mirrorcoat': mirrorcoat,
+    'electroshot': electroshot
 }
 
 
