@@ -44,6 +44,7 @@ def save_env(ents):
             env_file.write(f'SAVE_REPLAY={ents["SAVE_REPLAY"]}\n')
             env_file.write(f'BATTLE_TIMER={ents["BATTLE_TIMER"]}\n')
             env_file.write(f'EXPECTED_MODS={ents["EXPECTED_MODS"]}\n')
+            env_file.write(f'ALLOW_TERA_TO_STELLAR_TYPE={ents["ALLOW_TERA_TO_STELLAR_TYPE"]}\n')
             env_file.write(f'PREFERRED_AVATAR={ents["PREFERRED_AVATAR"]}\n')
             env_file.write(f'LOCAL_INSECURE_LOGIN={ents["LOCAL_INSECURE_LOGIN"]}\n')
             env_file.write(f'LOG_LEVEL={ents["LOG_LEVEL"]}\n')
@@ -83,6 +84,7 @@ def btn_save_click():
         "SAVE_REPLAY": "True" if chk_savereplay.get() == 1 else "False",
         "BATTLE_TIMER": "True" if chk_battletimer.get() == 1 else "False",
         "PREFERRED_AVATAR": txt_prefavatar.get(),
+        "ALLOW_TERA_TO_STELLAR_TYPE": "True" if chk_terastellar.get() == 1 else "False",
         "LOCAL_INSECURE_LOGIN": "True" if chk_locallogin.get() == 1 else "False",
         "LOG_LEVEL": lbx_loglevel.get(),
     }
@@ -201,80 +203,86 @@ if __name__ == '__main__':
     lbx_expmods.grid(row=9, column=1, sticky=E, **pad_opts)
     # TODO: process --> lbx_expmods.select_set(0)
 
+    # Allow Tera to Stellar Type?
+    chk_terastellar = IntVar()
+    cbx_terastellar = Checkbutton(root, text = "Allow Terastallizing to Stellar Type", variable = chk_terastellar)
+    cbx_terastellar.grid(row=10, column=0, sticky=W, **pad_opts)
+    chk_terastellar.set(is_true(env["ALLOW_TERA_TO_STELLAR_TYPE"]))
+
     # Run Count
     lbl_runcount = Label(root, text = "Run Count (0 = run indefinitely):")
-    lbl_runcount.grid(row=10, column=0, sticky=W, **pad_opts)
+    lbl_runcount.grid(row=11, column=0, sticky=W, **pad_opts)
 
     txt_runcount = StringVar()
     ent_runcount = Entry(root, textvariable = txt_runcount)
-    ent_runcount.grid(row=10, column=1, sticky=E, **pad_opts)
+    ent_runcount.grid(row=11, column=1, sticky=E, **pad_opts)
     txt_runcount.set(env["RUN_COUNT"])
 
     # State Search Depth
     lbl_searchdepth = Label(root, text = "State Search Depth (default 2, 0 = dynamic):")
-    lbl_searchdepth.grid(row=11, column=0, sticky=W, **pad_opts)
+    lbl_searchdepth.grid(row=12, column=0, sticky=W, **pad_opts)
 
     txt_searchdepth = StringVar()
     ent_searchdepth = Entry(root, textvariable = txt_searchdepth)
-    ent_searchdepth.grid(row=11, column=1, sticky=E, **pad_opts)
+    ent_searchdepth.grid(row=12, column=1, sticky=E, **pad_opts)
     txt_searchdepth.set(env["STATE_SEARCH_DEPTH"])
 
     # Dynamic Search Depth Option Product Threshold
     lbl_dynsmaxopts = Label(root, text = "Dynamic Depth Option Product Threshold (default 20):")
-    lbl_dynsmaxopts.grid(row=12, column=0, sticky=W, **pad_opts)
+    lbl_dynsmaxopts.grid(row=13, column=0, sticky=W, **pad_opts)
 
     txt_dynsmaxopts = StringVar()
     ent_dynsmaxopts = Entry(root, textvariable = txt_dynsmaxopts)
-    ent_dynsmaxopts.grid(row=12, column=1, sticky=E, **pad_opts)
+    ent_dynsmaxopts.grid(row=13, column=1, sticky=E, **pad_opts)
     txt_dynsmaxopts.set(env["DYNAMIC_SEARCH_OPTS_FOR_MAX"])
 
     # Dynamic Search Depth Option Product Threshold
     lbl_dynsbatthreshold = Label(root, text = "Dynamic Depth Battle Threshold (default 1):")
-    lbl_dynsbatthreshold.grid(row=13, column=0, sticky=W, **pad_opts)
+    lbl_dynsbatthreshold.grid(row=14, column=0, sticky=W, **pad_opts)
 
     txt_dynsbatthreshold = StringVar()
     ent_dynsbatthreshold = Entry(root, textvariable = txt_dynsbatthreshold)
-    ent_dynsbatthreshold.grid(row=13, column=1, sticky=E, **pad_opts)
+    ent_dynsbatthreshold.grid(row=14, column=1, sticky=E, **pad_opts)
     txt_dynsbatthreshold.set(env["DYNAMIC_SEARCH_BATTLE_THRESHOLD"])
 
     # Prune Search Tree?
     chk_prunetree = IntVar()
     cbx_prunetree = Checkbutton(root, text = "Prune Search Tree", variable = chk_prunetree)
-    cbx_prunetree.grid(row=14, column=0, sticky=W, **pad_opts)
+    cbx_prunetree.grid(row=15, column=0, sticky=W, **pad_opts)
     chk_prunetree.set(is_true(env["STATE_SEARCH_PRUNE_TREE"]))
 
     # Save Replay?
     chk_savereplay = IntVar()
     cbx_savereplay = Checkbutton(root, text = "Save Replay", variable = chk_savereplay)
-    cbx_savereplay.grid(row=15, column=0, sticky=W, **pad_opts)
+    cbx_savereplay.grid(row=16, column=0, sticky=W, **pad_opts)
     chk_savereplay.set(is_true(env["SAVE_REPLAY"]))
 
     # Use Battle Timer?
     chk_battletimer = IntVar()
     cbx_battletimer = Checkbutton(root, text = "Use Battle Timer", variable = chk_battletimer)
-    cbx_battletimer.grid(row=16, column=0, sticky=W, **pad_opts)
+    cbx_battletimer.grid(row=17, column=0, sticky=W, **pad_opts)
     chk_battletimer.set(is_true(env["BATTLE_TIMER"]))
 
     # Local Insecure Login?
     chk_locallogin = IntVar()
     cbx_locallogin = Checkbutton(root, text = "Password-less Login (Local Server Only!)", variable = chk_locallogin)
-    cbx_locallogin.grid(row=17, column=0, sticky=W, **pad_opts)
+    cbx_locallogin.grid(row=18, column=0, sticky=W, **pad_opts)
     chk_locallogin.set(is_true(env["LOCAL_INSECURE_LOGIN"]))
 
     # Log Level
     lbl_loglevel = Label(root, text = "Log Level:")
-    lbl_loglevel.grid(row=18, column=0, sticky=W, **pad_opts)
+    lbl_loglevel.grid(row=19, column=0, sticky=W, **pad_opts)
 
     lbx_loglevel = Combobox(root, state = "readonly", values = LOG_LEVELS)
-    lbx_loglevel.grid(row=18, column=1, sticky=E, **pad_opts)
+    lbx_loglevel.grid(row=19, column=1, sticky=E, **pad_opts)
     lbx_loglevel.set(env["LOG_LEVEL"])
 
     # Save Button
     btn_save = Button(root, text = "Save", command = btn_save_click)
-    btn_save.grid(row=19, column=0, sticky=W, **pad_opts)
+    btn_save.grid(row=20, column=0, sticky=W, **pad_opts)
 
     # Quit Button
     btn_quit = Button(root, text = "Quit", command = btn_quit_click)
-    btn_quit.grid(row=19, column=1, sticky=W, **pad_opts)
+    btn_quit.grid(row=20, column=1, sticky=W, **pad_opts)
 
     root.mainloop()

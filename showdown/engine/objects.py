@@ -5,6 +5,7 @@ from dataclasses import dataclass
 import constants
 from data import all_move_json
 
+from config import ShowdownConfig
 
 boost_multiplier_lookup = {
     -6: 2/8,
@@ -54,8 +55,9 @@ class State(object):
             ]
 
         if not self.user.used_tera and self.tera_allowed:
-            for mv in possible_moves[:]:
-                possible_moves.append(MoveChoice(mv.id, terastallize=True))
+            if ShowdownConfig.allow_tera_to_stellar_type or self.user.active.tera_type != 'stellar':
+                for mv in possible_moves[:]:
+                    possible_moves.append(MoveChoice(mv.id, terastallize=True))
 
         if self.user.trapped(self.opponent.active):
             possible_switches = []

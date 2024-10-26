@@ -296,8 +296,9 @@ class Battle(ABC):
                     MoveChoice(m.name) for m in self.user.active.moves if not m.disabled
                 ]
                 if self.user.active.can_terastallize and self.tera_possible():
-                    for mv in user_options[:]:
-                        user_options.append(MoveChoice(mv.id, terastallize=True))
+                    if ShowdownConfig.allow_tera_to_stellar_type or self.user.active.tera_type != 'stellar':
+                        for mv in user_options[:]:
+                            user_options.append(MoveChoice(mv.id, terastallize=True))
                 user_options += self.user.get_switches()
 
             opponent_forced_move = self.opponent.active.forced_move()

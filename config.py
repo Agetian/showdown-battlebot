@@ -78,6 +78,7 @@ class _ShowdownConfig:
     prune_search_tree: bool
     dynsearch_opts_for_max: int
     dynsearch_battle_threshold: int
+    allow_tera_to_stellar_type: bool
 
     def configure(self):
         self.battle_bot_module = env("BATTLE_BOT")
@@ -112,6 +113,8 @@ class _ShowdownConfig:
             self.expected_mods_derived = ""
         else:
             self.expected_mods += self.expected_mods_derived
+        
+        self.allow_tera_to_stellar_type = env.bool("ALLOW_TERA_TO_STELLAR_TYPE", True)
 
         self.local_insecure_login = env.bool("LOCAL_INSECURE_LOGIN", False)
         if not hasattr(self, "preferred_avatar"):
