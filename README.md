@@ -15,6 +15,7 @@ Core features of this fork (not meant to be an extensive list):
 - Bot profiles/personalities (name + avatar combinations) can be set up for the local server/client, but this is mostly undocumented for now, and it ONLY works on the local server which requires some patching to support password-less insecure login. If you're interested, check out the source code (e.g. for LOCAL_INSECURE_LOGIN, PS_USERNAME and PS_PASSWORD, as well as PREFERRED_AVATAR) and keep in mind that you're on your own if you decide to try it! Don't try it on the official Pokemon Showdown, it won't work and you may possibly even be banned!
 - Some minor features from other forks are integrated here, e.g. the Random battle bot, courtesy of its original author SwagMander.
 - There's now a rudimentary GUI configuration tool which allows you to set up the "env" file, check out configure_tk.py. Note that it requires TkInter, and for some reason it's reported not to work on MacOS - sadly, can't test or comment on this since I don't own a Mac personally.
+- There's now an option (ALLOW_TERA_TO_STELLAR_TYPE) that enables (default) or disables the ability of the bot to terastallize into Stellar type. Disabling this option may be a good way to practice for a Draft where tera captains are chosen, which terastallize to specific types, and other mon are usually marked with Stellar to show that they can't terastallize.
 - Probably some other (mostly minor) stuff that I forgot.
 
 This fork may be modified further as time goes by in case I find something interesting to try, test, and improve.
