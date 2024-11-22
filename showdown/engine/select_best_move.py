@@ -128,6 +128,9 @@ def modify_score_conditionally(score, depth, mutator, user_move, state_scores):
 
         considered_move = get_move(user_move.id)
         if considered_move:
+            # FIXME: The AI overextends if it tries to use Rest when at full HP, expecting to get the Sleep status and use Sleep Talk next
+            if considered_move["id"] == 'rest' and mutator.state.user.active.hp == mutator.state.user.active.maxhp:
+                score -= 1000
             # FIXME: Additionally debuff moves that the target would be immune to (e.g. Electric vs. Ground)
             if is_immune(considered_move["type"], mutator.state.opponent.active.types):
                 score -= 1000
