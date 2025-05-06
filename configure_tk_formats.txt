@@ -146,9 +146,11 @@ gen9almostanyability
 gen9anythinggoes
 gen9balancedhackmons
 gen9balancedhackmonsuu
+gen9battlefactory
 gen9battlestadiumsingles
 gen9bssfactory
 gen9camomons
+gen9draftfactory
 gen9fortemons
 gen9lc
 gen9mixandmega

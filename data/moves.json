@@ -2141,7 +2141,7 @@
         "secondary": null,
         "target": "all",
         "type": "ice",
-        "weather": "snow"
+        "weather": "snowscape"
     },
     "chipaway": {
         "accuracy": 100,
@@ -13956,7 +13956,7 @@
         "secondary": null,
         "target": "all",
         "type": "ice",
-        "weather": "snow"
+        "weather": "snowscape"
     },
     "soak": {
         "accuracy": 100,
@@ -14114,7 +14114,6 @@
         "priority": 0,
         "secondary": {
             "chance": 100,
-            "dustproof": true,
             "volatileStatus": "sparklingaria"
         },
         "target": "allAdjacent",

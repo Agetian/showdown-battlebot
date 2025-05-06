@@ -142,7 +142,7 @@ class PSWebsocketClient:
             await self.set_random_avatar()
 
     async def update_team(self, battle_format, team):
-        is_random_battle = any(mode in battle_format for mode in ["random", "bssfactory", "battlefactory", "challengecup", "computergeneratedteams"])
+        is_random_battle = any(mode in battle_format for mode in ["random", "bssfactory", "battlefactory", "challengecup", "computergeneratedteams", "draftfactory"])
         if is_random_battle:
             logger.info("Setting team to None because the pokemon mode is {}".format(battle_format))
             message = ["/utm None"]
